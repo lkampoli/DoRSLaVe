@@ -38,10 +38,12 @@ def square_fig():
 
 from IPython.display import HTML
 ```
+# The Typical Launch Vehicle Design Process {data-visibility="uncounted"}
 -->
 
-# The Typical Launch Vehicle Design Process {data-visibility="uncounted"}
+## The Typical Launch Vehicle Design Process
 
+<!--
 ## Space launch system
 
 ![The major elements of a launch vehicle design process.](figs/fig1.9.png)
@@ -49,10 +51,11 @@ from IPython.display import HTML
 ## Spacecraft system
 
 ![The design and operation of many spacecraft systems, shown in blue shading, depend heavily on the launch vehicle.](figs/fig1.10.png)
-
 ## Typical Launch Vehicle Design Process
+-->
 
-The typical LV design process begins with the development of mission
-requirements and design constraints.
-
+<!--The typical LV design process begins with the development of mission requirements and design constraints.
 ![Launch vehicle design process.](figs/fig1.11.png)
+-->
+
+<img src="figs/fig1.11.png" alt="The typical LV design process begins with the development of mission requirements and design constraints." width="80%" />

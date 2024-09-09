@@ -73,8 +73,10 @@ $headingColor: #383D3D;
 }
 
 .reveal .slide-logo {
-    max-height: 80px !important;
-    right: 7px !important;
+    max-height: 120px !important; /* Increase height */
+    max-width: 120px !important;  /* Optionally set a maximum width */
+    left: 7px !important;
+    top: -10px !important;        /* Move logo 20px down (adjust as needed) */
 }
 
 // Add a yellow bar to the right of the slide.
@@ -85,7 +87,7 @@ $headingColor: #383D3D;
     right: 0;
     width: 100px;
     height: 100%;
-    background: #fedc00;
+    background: #ffffff; //#fedc00;
     @media (max-width: 900px) {
         width: 0px;
     }
@@ -100,8 +102,8 @@ $headingColor: #383D3D;
     left: 0;
     right: 100px;
     z-index: -1; /* Place it behind the actual content */
-    clip-path: polygon(10% 70%, 70% 5%, 95% 40%, 80% 80%, 30% 95%, 10% 70%);
-    background: #fedc00;
+//    clip-path: polygon(10% 70%, 70% 5%, 95% 40%, 80% 80%, 30% 95%, 10% 70%);
+    background: #ffffff; //#fedc00;
   }
 
 // In reveal-js you can have code that folds away to be hidden.
