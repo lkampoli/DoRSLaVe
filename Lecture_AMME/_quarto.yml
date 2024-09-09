@@ -1,0 +1,136 @@
+project:
+  title: "DoRSLaVe"
+  type: website
+  render:
+    - "*.qmd"
+    - "!*.ipynb"
+    - "!*.md"
+  output-dir: docs
+  post-render:
+    - scripts/remove_require_js.py
+    #- scripts/decktape_pdfs.py
+
+website:
+  title: "DoRSLaVe"
+  page-navigation: true
+  sidebar:
+    contents:
+      - href: index.qmd
+        text: Home
+      - section: "Lecture 0"
+        contents:
+          - Lecture0/lecture0.qmd
+      - section: "Lecture 1"
+        contents:
+          - Lecture1/lecture1.qmd
+          - Labs/python.qmd
+          - Labs/julia.qmd
+          - Labs/c++.qmd
+          - Labs/fortran.qmd
+          - Labs/matlab.qmd
+          - Ex/coding.qmd
+      - section: "Lecture 2"
+        contents:
+          #- Lecture2/lecture2.qmd
+          #- Lecture2/generative-networks.qmd
+          #- Lecture2/gans.qmd
+          #- Lecture2/course-overview.qmd
+          #- Tabular-Data/categorical-variables.qmd
+          #- Tabular-Data/classification.qmd
+          #- Tabular-Data/project.qmd
+          #- Labs/matplotlib-lab.qmd
+          #- Exercises/victorian-crash-severity.qmd
+          #- Exercises/french-motor-frequency.qmd
+      - section: "Lecture 3"
+        contents:
+          #- Lecture3/lecture3.qmd
+          #- Computer-Vision/computer-vision.qmd
+          #- Labs/latex-lab.qmd
+          #- Exercises/hurricane-damage.qmd
+      - section: "Lecture 4"
+        contents:
+          - Lecture4/lecture4.qmd
+          - Labs/internal-ballistics.qmd
+          - Ex/internal-ballistics.qmd
+      - section: "Lecture 5"
+        contents:
+          #- Time-Series-And-Recurrent-Neural-Networks/time-series-and-rnns.qmd
+          #- Exercises/sydney-airport-temperature.qmd
+      - section: "Lecture 6"
+        contents:
+          #- Advanced-Tabular-Data/entity-embedding.qmd
+          #- Advanced-Tabular-Data/optimisation.qmd
+          #- Labs/forward-pass-lab.qmd
+          #- Labs/optimisation-lab.qmd
+          #- Labs/backpropagation-lab.qmd
+      - section: "Lecture 7"
+        contents:
+          #- Distributional-Regression/distributional-regression.qmd
+          #- Advanced-Topics/interpretability.qmd
+          #- Labs/distributional-regression-lab.qmd
+      - section: "Lecture 8"
+        contents:
+          #- Generative-Networks/generative-networks.qmd
+          #- Generative-Networks/gans.qmd
+      - section: "Lecture 9"
+        contents:
+      - section: "Lecture 10"
+        contents:
+      - section: "Lecture 11"
+        contents:
+      - section: "Lecture 12"
+        contents:
+      - section: "Lecture 13"
+        contents:
+      - section: "Lecture 14"
+        contents:
+      - section: "Lecture 15"
+        contents:
+
+format:
+  html:
+    theme: [serif, shared.scss, html-style.scss]
+    toc: true
+    shift-heading-level-by: 1
+
+  revealjs:
+    output-ext: "slides.html"
+    theme: [serif, shared.scss, revealjs-style.scss]
+    controls: true
+    controls-tutorial: true
+    logo: unsw-logo.png
+    transition: none
+    slide-number: c/t
+    preview-links: false
+    margin: 0.10
+    width: 1000
+    chalkboard:
+      boardmarker-width: 4
+      grid: false
+      background:
+        - "rgba(255,255,255,0.0)"
+        - "https://github.com/rajgoel/reveal.js-plugins/raw/master/chalkboard/img/blackboard.png"
+    history: false
+    code-annotations: none
+    include-before-body:
+      text: |
+        <script>
+          let selectedAnnoteEl;
+        </script>
+    filters:
+      - reveal-auto-agenda
+    auto-agenda:
+      heading: Lecture Outline
+
+subtitle: AERO3261
+author: Lorenzo Campoli
+strip-comments: true
+html-math-method: katex
+highlight-style: blue-pygments.theme
+syntax-definitions:
+  - python.xml
+pdf-engine: pdflatex
+execute:
+  echo: true
+  freeze: false
+  daemon: false

@@ -1,0 +1,115 @@
+---
+title: Lecture 4
+subtitle: Propulsion
+---
+
+## Combustion
+
+$$
+u_e = \sqrt{2 \cdot \frac{\gamma}{\gamma - 1} \cdot R \cdot T_c \cdot \left( 1 - \frac{1}{\left( \frac{p_c}{p_e} \right)^{\frac{\gamma - 1}{\gamma}}} \right)}
+$$
+
+$$
+u_e = \sqrt{\frac{2 \cdot \gamma}{\gamma - 1} \cdot R \cdot T_c \cdot \left(1 - \left(\frac{p_e}{p_c}\right)^{\frac{\gamma - 1}{\gamma}}\right)}
+$$
+
+## The Thrust equation
+
+::: {.columns}
+::: {.column width="50%"}
+![Rocket thrust control volume.](figs/fig4.1.png)
+
+:::
+::: {.column width="50%"}
+![a) Grossly overexpanded flow; b) overexpanded flow; c) ideally expanded flow; d) underexpanded flow.](figs/fig4.2.png)
+:::
+:::
+
+---
+
+### Exhaust velocity
+
+---
+
+### Rocket performances
+
+![Typical Specific Impulse Values.](tabs/tab4.1.png)
+
+---
+
+![Typical Sea-level and Vacuum Volumetric Specific Impulse Values.](tabs/tab4.2.png)
+
+---
+
+![Specific impulse as a function of nozzle expansion ratio and chamber pressure.
+(a) Nozzle throat (t) and exit (e) dimensions; (b) I sp vs chamber pressure expansion ratio.
+Source: @Ley](figs/fig4.5.png)
+
+---
+
+![Specific impulse as a function of propellant type and oxidizer–fuel ratio.
+Source: @Ley](figs/fig4.6.png)
+
+---
+
+![Relationships Between Propellant Mix Ratios and Bulk Density.](tabs/tab4.3.png)
+
+---
+
+![Effective specific impulse considers the variation in \( I_{sp} \) with time or altitude. A recommended value is: 
+\[ I_{sp, \text{eff}} = \frac{2}{3} I_{sp,\text{vac}} + \frac{1}{3} I_{sp,\text{SL}} \]
+](figs/fig4.7.png)
+
+---
+
+## The Rocket equation
+
+### Propellant Mass Fraction and Total Impulse
+
+::: {.columns}
+::: {.column width="50%"}
+<!--![Typical arrangement of liquid propellant with ullage space for pressurizing gas.](figs/fig4.8.png)-->
+<img src="figs/fig4.8.png" alt="Typical arrangement of liquid propellant with ullage space for pressurizing gas." width="80%" />
+<!--<img src="figs/fig4.1.png" alt="Rocket thrust control volume." style="max-width: 80%; height: auto;" />-->
+
+:::
+::: {.column width="50%"}
+:::
+:::
+
+---
+
+### Thrust-to-weight ratio and burn time
+
+---
+
+### Rocket Engine Parameters
+
+![Rocket Engine Parameter Conversions.](tabs/tab4.4.png)
+
+## Solid Rocket Motors (SRMs)
+
+### Basic configurations
+
+![Basic arrangement of a solid-propellant rocket motor. Source: Northrop-Grumman.](figs/fig4.9.png)
+
+---
+
+### SRM types and burn rates
+
+![Two primary types of SRMs: left: end burner; right: core burner.](figs/fig4.10.png)
+
+---
+
+### Thrust profile and grain shape
+
+![Examples of grain shapes and accompanying thrust profiles. Source:
+http:// www.braeunig.us.](figs/fig4.12.png)
+
+---
+
+### SRM propellant additives
+
+---
+
+### SRM exhaust toxicity

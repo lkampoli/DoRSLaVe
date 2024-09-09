@@ -1,0 +1,345 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Design of Rockets and Space Launch Vehicles",
+    "section": "",
+    "text": "These are the lecture slides for the “Design of Rockets and Space Launch Vehicles” course from The University of Sydney. They can be used to see and follow which topics are covered in the course. The slides are not intended to be used to learn the design of rockets and space launch vehicles from scratch. For that, you need to attend the lectures and complete the assignments and assessment sessions."
+  },
+  {
+    "objectID": "index.html#overview",
+    "href": "index.html#overview",
+    "title": "Design of Rockets and Space Launch Vehicles",
+    "section": "",
+    "text": "These are the lecture slides for the “Design of Rockets and Space Launch Vehicles” course from The University of Sydney. They can be used to see and follow which topics are covered in the course. The slides are not intended to be used to learn the design of rockets and space launch vehicles from scratch. For that, you need to attend the lectures and complete the assignments and assessment sessions."
+  },
+  {
+    "objectID": "index.html#lecture-materials",
+    "href": "index.html#lecture-materials",
+    "title": "Design of Rockets and Space Launch Vehicles",
+    "section": "Lecture Materials",
+    "text": "Lecture Materials\n\nLecture 0: Course Overview (slides)\nLecture 1: Introduction to Launch Vehicles (LVs) (slides)\nLecture 2: History of rocketry & LVs (slides)\nLecture 3: Mission requirements (slides)\nLecture 4: Propulsion (slides)\nLecture 5: Performance estimation (slides)\nLecture 6: LV trajectory optimization (slides)\nLecture 7: LV structures (slides)\nLecture 8: LV ground, transportation & ascent loads (slides)\nLecture 9: Launch environment (slides)\nLecture 10: Stability & Instabilities (slides)\nLecture 11: LV Manufacturing (slides)\nLecture 12: LV systems (slides)\nLecture 13: Testing (slides)\nLecture 14: Failures (slides)\nLecture 15: LV Financial analysis (slides)"
+  },
+  {
+    "objectID": "index.html#readings",
+    "href": "index.html#readings",
+    "title": "Design of Rockets and Space Launch Vehicles",
+    "section": "Readings",
+    "text": "Readings\nA significant amount of resources has been utilized to compile the lecture notes, which serve as the primary reference for this course. All cited books, papers, reports, and theses can be accessed through electronic databases or found at The University of Sydney Library. Below, you will find the recommended readings for each topic and week. Additional references are available in the bibliography for further exploration.\n\n\n\n\n\n\n\nWeek\nReadings\n\n\n\n\n1\nEdberg (2022): Chapter 1\n\n\n2\nEdberg (2022): Chapter 2\n\n\n3\nEdberg (2022): Chapter 3\n\n\n4\nEdberg (2022): Chapter 4, Humble (1995): Chapter 6, Hill & Peterson (1992): Chapter 10, 11, 12, Sutton & Biblarz (2011): Chapter 12, 13, 14, 15, Zucrow (1948): Chapter 12\n\n\n5\nEdberg (2022): Chapter 5\n\n\n6\nEdberg (2022): Chapter 6\n\n\n7\nEdberg (2022): Chapter 7\n\n\n8\nEdberg (2022): Chapter 8\n\n\n9\nEdberg (2022): Chapter 9\n\n\n10\nEdberg (2022): Chapter 10\n\n\n11\nEdberg (2022): Chapter 11\n\n\n12\nEdberg (2022): Chapter 12\n\n\n13\nEdberg (2022): Chapter 13\n\n\n14\nEdberg (2022): Chapter 14\n\n\n15\nEdberg (2022): Chapter 15"
+  },
+  {
+    "objectID": "index.html#contributors",
+    "href": "index.html#contributors",
+    "title": "Design of Rockets and Space Launch Vehicles",
+    "section": "Contributors",
+    "text": "Contributors\n\nLorenzo Campoli"
+  },
+  {
+    "objectID": "index.html#copyright",
+    "href": "index.html#copyright",
+    "title": "Design of Rockets and Space Launch Vehicles",
+    "section": "Copyright",
+    "text": "Copyright\nLorenzo Campoli"
+  },
+  {
+    "objectID": "Lecture3/lecture3.html",
+    "href": "Lecture3/lecture3.html",
+    "title": "Lecture 3",
+    "section": "",
+    "text": "Placeholder"
+  },
+  {
+    "objectID": "Lecture3/lecture3.slides.html#placeholder",
+    "href": "Lecture3/lecture3.slides.html#placeholder",
+    "title": "Lecture 3",
+    "section": "Placeholder",
+    "text": "Placeholder"
+  },
+  {
+    "objectID": "Lecture1/lecture1.html",
+    "href": "Lecture1/lecture1.html",
+    "title": "Lecture 1",
+    "section": "",
+    "text": "The major elements of a launch vehicle design process.\n\n\n\n\n\n\n\n\nThe design and operation of many spacecraft systems, shown in blue shading, depend heavily on the launch vehicle.\n\n\n\n\n\nThe typical LV design process begins with the development of mission requirements and design constraints.\n\n\n\nLaunch vehicle design process."
+  },
+  {
+    "objectID": "Lecture1/lecture1.html#the-typical-launch-vehicle-design-process",
+    "href": "Lecture1/lecture1.html#the-typical-launch-vehicle-design-process",
+    "title": "Lecture 1",
+    "section": "",
+    "text": "The major elements of a launch vehicle design process.\n\n\n\n\n\n\n\n\nThe design and operation of many spacecraft systems, shown in blue shading, depend heavily on the launch vehicle.\n\n\n\n\n\nThe typical LV design process begins with the development of mission requirements and design constraints.\n\n\n\nLaunch vehicle design process."
+  },
+  {
+    "objectID": "Lecture1/lecture1.slides.html#space-launch-system",
+    "href": "Lecture1/lecture1.slides.html#space-launch-system",
+    "title": "Lecture 1",
+    "section": "Space launch system",
+    "text": "Space launch system\n\nThe major elements of a launch vehicle design process."
+  },
+  {
+    "objectID": "Lecture1/lecture1.slides.html#spacecraft-system",
+    "href": "Lecture1/lecture1.slides.html#spacecraft-system",
+    "title": "Lecture 1",
+    "section": "Spacecraft system",
+    "text": "Spacecraft system\n\nThe design and operation of many spacecraft systems, shown in blue shading, depend heavily on the launch vehicle."
+  },
+  {
+    "objectID": "Lecture1/lecture1.slides.html#typical-launch-vehicle-design-process",
+    "href": "Lecture1/lecture1.slides.html#typical-launch-vehicle-design-process",
+    "title": "Lecture 1",
+    "section": "Typical Launch Vehicle Design Process",
+    "text": "Typical Launch Vehicle Design Process\nThe typical LV design process begins with the development of mission requirements and design constraints.\n\n\n\nLaunch vehicle design process."
+  },
+  {
+    "objectID": "Lecture0/lecture0.slides.html#your-lecturer",
+    "href": "Lecture0/lecture0.slides.html#your-lecturer",
+    "title": "Course Overview",
+    "section": "Your lecturer",
+    "text": "Your lecturer\n\n\n\n\n\nDr. Lorenzo Campoli\n\n\n\n\n\nBachelor in Aerospace Engineering (Sapienza)\nMaster in Space Engineering (Sapienza)\nII Level Master in STS (Sapienza)\nPhD in Theoretical and Applied Mechanics (Sapienza)\nPost-doc at SPBGU, Russia\nAssociate Professor at SPBGU, Russia\nPost-doc at UniMelb\nAssociate Professor at Macquarie University\nSenior System Modelling Engineer, Gilmour Space"
+  },
+  {
+    "objectID": "Lecture0/lecture0.slides.html#course-objectives",
+    "href": "Lecture0/lecture0.slides.html#course-objectives",
+    "title": "Course Overview",
+    "section": "Course objectives",
+    "text": "Course objectives\nDesign of Rockets and Space Launch Vehicles\nYou will:\n\nunderstand rocket and space launch vehicle systems\nnavigate the typical LV design process\ndefine and evaluate mission requirements and design constraints\ndefine critical project reviews and milestones\ndefine and perform test campaigns\ngain hands-on experience about sub-system modelling using analytical and/or computational tools (e.g. structural analysis, fluid mechanic simulations, fluid-structure interactions, etc.)"
+  },
+  {
+    "objectID": "Lecture0/lecture0.slides.html#lecture-plans",
+    "href": "Lecture0/lecture0.slides.html#lecture-plans",
+    "title": "Course Overview",
+    "section": "Lecture plans",
+    "text": "Lecture plans\n\n\n\nIntroduction to Launch Vehicles (LVs)\nHistory of rocketry & LVs\nMission requirements\nPropulsion\nPerformance estimation\nLV trajectory optimization\nLV structures\nLV ground, transportation & ascent loads\nLaunch environment\nStability & Instabilities\nLV Manufacturing\nLV systems\nTesting\nFailures\nLV Financial analysis"
+  },
+  {
+    "objectID": "Lecture0/lecture0.slides.html#moodle-forum",
+    "href": "Lecture0/lecture0.slides.html#moodle-forum",
+    "title": "Course Overview",
+    "section": "Moodle & Forum",
+    "text": "Moodle & Forum\nThe Moodle page contains:\n\nassignments (upload individual and group project & exam here),\nlecture recordings,\nlink to lecture materials (https://lcampoli.au/DoRSLaVe),\nlink to forum.\n\nThe forum will be used for announcements and for questions about the course.\nIf it is something confidential, then email me."
+  },
+  {
+    "objectID": "Lecture0/lecture0.slides.html#learning-activities-1",
+    "href": "Lecture0/lecture0.slides.html#learning-activities-1",
+    "title": "Course Overview",
+    "section": "Learning activities",
+    "text": "Learning activities\nThe learning activities of this course involve the following (besides additional self-revision):\n\nLectures:\n\nPreparing for & engaging in each week’s lecture\n\nSelf-study:\n\nPerforming reading of relevant textbook chapters\nDoing lab questions (conceptual and applied)\n\nLabs:\n\nActively engaging in the lab sessions\n\n\nLecture’s format\nThe current emphasis in the pedagogic literature is that teachers should try to encourage “active learning” in order to make lectures “unmissable” Race1993, instead of the “transmit and receive” model of the past. Active learning refers to the idea that students are actively engaged in the learning process, rather than passively absorbing lectures. Active learning involves discussion, problemsolving, presentations, group work such as buzz groups, brainstorming, role plays, debates–anything that gets students interacting with each other and engaging with the lecture material.\nWe are going to use the “primacy-recency effect” to optimize engaging activities in the lecture Lenz2015.\n\n\n\nThe line depicts the level of audience attention during a 60-minute lecture and includes periods of high attention and low attention. The blue boxes highlight the proper timing for instruction (prime time) relative to the level of attention, and the gray box (down time) highlights the appropriate placement for engaging activities to activate the audience.\n\n\n\n\n\nProper positioning of audience participation within a lecture.\n\n\n\n\n\n\n\nTo counteract low attention periods, a 60-minute lecture can be divided into three segments lasting 20 minutes each. The engaging activities are then placed in the middle of each 20-minute cycle.\n\n\n\n\n\nUse of multiple prime time-down time cycles."
+  },
+  {
+    "objectID": "Lecture0/lecture0.slides.html#contact-hours",
+    "href": "Lecture0/lecture0.slides.html#contact-hours",
+    "title": "Course Overview",
+    "section": "Contact hours",
+    "text": "Contact hours\nThe lectures are 2 hours each week.\nThe tutorials are a mix of practical coding and theoretical questions.\nMake sure to use this time to ask your tutor for guidance on your project.\nIn later weeks, the tutorials will focus on project help and exam preparation.\nConsultation hours can be online or in-person and scheduled weekly (see Moodle for Zoom link)."
+  },
+  {
+    "objectID": "Lecture0/lecture0.slides.html#exercises",
+    "href": "Lecture0/lecture0.slides.html#exercises",
+    "title": "Course Overview",
+    "section": "Exercises",
+    "text": "Exercises\nOn the website, I have added longer exercises for you to try.\nTry to finish them around the week they are released.\nThese will be useful practice for the final exam."
+  },
+  {
+    "objectID": "Lecture0/lecture0.slides.html#course-grade-breakdown",
+    "href": "Lecture0/lecture0.slides.html#course-grade-breakdown",
+    "title": "Course Overview",
+    "section": "Course Grade Breakdown",
+    "text": "Course Grade Breakdown\n\nIndividual Assignments (30%)\nGroup Project (40%)\nExam (30%)"
+  },
+  {
+    "objectID": "Lecture0/lecture0.slides.html#assignments",
+    "href": "Lecture0/lecture0.slides.html#assignments",
+    "title": "Course Overview",
+    "section": "Assignments",
+    "text": "Assignments\nThere are 15 assignment tasks, each worth 2% each.\nThe best 10 of 15 being counted, adding up to 30%.\nThese are formative assignments, so are marked.\nThey are due on Friday at noon in each week.\nI’ll release them at least 10 days before the due date."
+  },
+  {
+    "objectID": "Lecture0/lecture0.slides.html#project",
+    "href": "Lecture0/lecture0.slides.html#project",
+    "title": "Course Overview",
+    "section": "Project",
+    "text": "Project\nGroup project over the term. You will:\n\ndesign a space mission program\ndesign a space launch vehicle system\ndefine and evaluate mission requirements and design constraints\nperform preliminary feasibility studies\ndefine critical project reviews and milestones\ndefine and perform test campaigns\nmodel sub-systems using analytical and/or computational tools\nverify compliance\nwrite a discussion of the results."
+  },
+  {
+    "objectID": "Lecture0/lecture0.slides.html#project-components",
+    "href": "Lecture0/lecture0.slides.html#project-components",
+    "title": "Course Overview",
+    "section": "Project components",
+    "text": "Project components\nThe deliverables for the project will include:\n\nReport Part 1 (sub-systems) due at noon on Friday in Week 5 (15%),\nReport Part 2 (system) due at noon on Monday of Week 10 (15%).\nRecorded presentation due at noon on Friday in Week 15 (10%),"
+  },
+  {
+    "objectID": "Lecture0/lecture0.slides.html#due-dates",
+    "href": "Lecture0/lecture0.slides.html#due-dates",
+    "title": "Course Overview",
+    "section": "Due dates",
+    "text": "Due dates\nAll due dates are at noon of the following weeks (“IA” = Individual Assignments, “GP” = Group Project):\n\nIA1\nIA2 (Fri)\nIA3 (Fri)\nIA4 (Fri)\nIA5 and GP Report I (Fri)\nIA6 (Fri)\nIA7 (Fri)\nIA8 (Fri)\nIA9 (Fri)\nIA10 and GP Report II (Fri)\nIA11 (Fri)\nIA12 (Fri)\nIA13 (Fri)\nIA14 (Fri)\nIA15 and GP Presentation (Fri)"
+  },
+  {
+    "objectID": "Lecture0/lecture0.slides.html#late-policy",
+    "href": "Lecture0/lecture0.slides.html#late-policy",
+    "title": "Course Overview",
+    "section": "Late policy",
+    "text": "Late policy\nIf submitting late, you must apply for special considerations through The University of Sydney central system. If you ask me for an extension, I will refer you to the special considerations system.\nWithout special consideration, late assignments will not be marked. I have noticed that special considerations will not be granted for assignments tasks if you can still get full marks without that task.\nFor the project, the general policy is:\n\nLate submission will incur a penalty of 5% per day or part thereof (including weekends) from the due date and time. An assignment will not be accepted after 5 days (120 hours) of the original deadline unless special consideration has been approved. Dura lex, sed lex."
+  },
+  {
+    "objectID": "Lecture0/lecture0.slides.html#final-exam",
+    "href": "Lecture0/lecture0.slides.html#final-exam",
+    "title": "Course Overview",
+    "section": "Final exam",
+    "text": "Final exam\nThe exam will test the concepts presented in the lectures.\nThe exam is a take-home format, and thus will be open book and open notes.\nYou’ll be given 5 exercises randomly selected from the lecture material, and will work individually to complete it."
+  },
+  {
+    "objectID": "Lecture0/lecture0.slides.html#best-parts-of-the-course-project",
+    "href": "Lecture0/lecture0.slides.html#best-parts-of-the-course-project",
+    "title": "Course Overview",
+    "section": "Best parts of the course? Project",
+    "text": "Best parts of the course? Project\n\n“Having an open ended project allowed me to do something I had interest in.”\n\n\n“The assignment was really good as it gave you ownership of what problem to choose and investigate. The course itself is super interesting and insightful, and really practical since time isn’t wasted on coding but rather the concepts and how to apply these models.”\n\n\n“The course content was very interesting and provided a refreshing break from the endless calculations in other actuarial courses. It’s also great to learn how to build models in Python as an alternative to R.”"
+  },
+  {
+    "objectID": "Lecture0/lecture0.slides.html#the-style",
+    "href": "Lecture0/lecture0.slides.html#the-style",
+    "title": "Course Overview",
+    "section": "The style",
+    "text": "The style\n\n“I think the hands–on approach to learning how to code up neural networks was quite useful. Not going too deeply into the inner workings of the neural network models ( some ways this might happen would be deriving certian formulas and proofs of certian theorems ) allowed us to devote more attention to learning how neural networks worked in an intuitive way. This perhaps is more helpful for a first timer to the subject area. I think that being too entrenched in the theorem–and–proof style of learning, though instilling rigor to the course as well as being entertaining to the geniuses and masochists, can make content too heavy and turgid for most. Having a lighter approach is more suitable to the needs of us actuarial students and allows us to gain a sufficient grasp of more types of neural networks.”"
+  },
+  {
+    "objectID": "Lecture0/lecture0.slides.html#comments-put-in-the-wrong-form",
+    "href": "Lecture0/lecture0.slides.html#comments-put-in-the-wrong-form",
+    "title": "Course Overview",
+    "section": "Comments put in the wrong form",
+    "text": "Comments put in the wrong form\nNot about the course but about me:\n\n“crazy amount of interest in field demonstrated by lecturer. Amazing personality.”\n\n\n“He carried some of that young energy with him.”"
+  },
+  {
+    "objectID": "Lecture0/lecture0.slides.html#improvements",
+    "href": "Lecture0/lecture0.slides.html#improvements",
+    "title": "Course Overview",
+    "section": "Improvements",
+    "text": "Improvements\nWhat could be improved?\n\n“More time for the project and removal of the final exam. I believe this project can reflect the real world even more if we had more time.”\n\nThere were others related to deadlines and number of StoryWall tasks, which were already implemented.\nThe next slides are answering the question: Is there anything you wish you could have told your former self before starting to help them be prepared to learn these topics?"
+  },
+  {
+    "objectID": "Lecture0/lecture0.slides.html#brushing-up-on-actl3142",
+    "href": "Lecture0/lecture0.slides.html#brushing-up-on-actl3142",
+    "title": "Course Overview",
+    "section": "Brushing up on ACTL3142",
+    "text": "Brushing up on ACTL3142\n\n“In hindsight, a piece of advice I would give my past self before starting this course would be to have a solid grasp of introductory statistical learning. I believe reinstating such prerequisites would greatly enhance the ability for students to fully thrive in this course.”\n\nWe are adding this back again for next year.\n\n“Something I wish I could have told my former self before taking this course, was to brush up on general Python skills, as well as, my understanding of non-deep learning models, such as those covered in ACTL3142.”"
+  },
+  {
+    "objectID": "Lecture0/lecture0.slides.html#being-careful-about-project-selection-i",
+    "href": "Lecture0/lecture0.slides.html#being-careful-about-project-selection-i",
+    "title": "Course Overview",
+    "section": "Being careful about project selection I",
+    "text": "Being careful about project selection I\n\n“If I had the chance to redo this course, I would add an additional project milestone of selecting the initial dataset and determining the problem statement. I believe the selection of the dataset is crucial since it broadly determines what models you can feasibly build, and how complex your model can be. I selected a almost purely numerical tabular dataset, which meant that when later concepts such as RNN and CNN were introduced, it was not feasible to implement those models since my dataset did not represent time-series or pictures. Only later in the modelling phase did I fully capture the importance of selecting a good dataset, but it was a lesson learned through the course.”"
+  },
+  {
+    "objectID": "Lecture0/lecture0.slides.html#being-careful-about-project-selection-ii",
+    "href": "Lecture0/lecture0.slides.html#being-careful-about-project-selection-ii",
+    "title": "Course Overview",
+    "section": "Being careful about project selection II",
+    "text": "Being careful about project selection II\n\n“Something I would have done differently for this course would be to choose an alternative supervised learning problem for my assignment, in particular, the dataset. Specifically, I would have preferred to explore something beyond the conventional 2D longitudinal dataset, such as working with images or unstructured text. This would have added a new dimension to my learning experience and allowed me to broaden my skill set even further.”"
+  },
+  {
+    "objectID": "Lecture0/lecture0.slides.html#time-management",
+    "href": "Lecture0/lecture0.slides.html#time-management",
+    "title": "Course Overview",
+    "section": "Time management",
+    "text": "Time management\n\n“If I could give advice to my former self it would be to start the project early and try to read ahead. Looking forward, I hope to continue to be able to learn more about deep learning and am glad to have been exposed to resources like Keras.”\n\n\n“Something that I would have told my former self before starting is to not fall behind in the early stages of the term as the first couple weeks really builds the foundation for the remaining weeks of the term. Because I fell behind earlier, it was quite difficult for me to catch up during the rest of the term.”\n\n\n“Moreover, I would still ask myself to start assignments earlier instead of leaving until the last minute.”"
+  },
+  {
+    "objectID": "Lecture0/lecture0.slides.html#planning",
+    "href": "Lecture0/lecture0.slides.html#planning",
+    "title": "Course Overview",
+    "section": "Planning",
+    "text": "Planning\n\n“If I could tell my former self something before starting, it would be to really focus on understanding the concepts first before jumping into coding the deep learning techniques. I think I could have saved a lot of time in the story walls and the assignment if I spent more time understanding the concepts in more depth instead of rushing into the coding aspect of things.”\n\n\n“In terms of the assignment and coding I would have told my former self to do things properly the first time rather than doing a rough job and having to go back and fix it. Going back and altering early code can lead to really frustrating problems later so I would have told myself to not be lazy in the initial stages because it makes life a lot easier towards the end of the project.”"
+  },
+  {
+    "objectID": "Lecture0/lecture0.slides.html#patience",
+    "href": "Lecture0/lecture0.slides.html#patience",
+    "title": "Course Overview",
+    "section": "Patience",
+    "text": "Patience\n\n“If I could go back and advise my former self before starting the course, I would emphasise the importance of patience. Deep learning can be quite challenging, and it’s easy to get discouraged when facing complex algorithms and debugging errors. I would advise myself to just clear my mind then come back when this happens, rather than rack my brain for hours to no avail.”\n\n\n“If I was give some advice to my former self, I would say that coding takes a long time to master and be prepared to put in the time and effort. There were some storywalls which I really struggled to understand the concept, resulting in many errors (some of which were just caused by Python behaviour I was not aware of) and many hours of debugging.”"
+  },
+  {
+    "objectID": "Lecture0/lecture0.slides.html#dont-panic",
+    "href": "Lecture0/lecture0.slides.html#dont-panic",
+    "title": "Course Overview",
+    "section": "Don’t panic",
+    "text": "Don’t panic\n\n\n\n“If I could go back to tell my former self (when I was struggling to work with the first ever StoryWall), I would tell myself that do not panic and read the lecture slides carefully. The slides are actually extremely helpful in tackling the StoryWall (and even assignment) questions.”\n\n\n\n\n\nGet a rubber duck\n\n\n\n\n\nSource: Wikipedia, Rubber duck debugging"
+  },
+  {
+    "objectID": "Lecture0/lecture0.html",
+    "href": "Lecture0/lecture0.html",
+    "title": "Course Overview",
+    "section": "",
+    "text": "Dr. Lorenzo Campoli\n\n\n\n\n\nBachelor in Aerospace Engineering (Sapienza)\nMaster in Space Engineering (Sapienza)\nII Level Master in STS (Sapienza)\nPhD in Theoretical and Applied Mechanics (Sapienza)\nPost-doc at SPBGU, Russia\nAssociate Professor at SPBGU, Russia\nPost-doc at UniMelb\nAssociate Professor at Macquarie University\nSenior System Modelling Engineer, Gilmour Space"
+  },
+  {
+    "objectID": "Lecture0/lecture0.html#learning-activities",
+    "href": "Lecture0/lecture0.html#learning-activities",
+    "title": "Course Overview",
+    "section": "Learning activities",
+    "text": "Learning activities\n\nLearning activities\nThe learning activities of this course involve the following (besides additional self-revision):\n\nLectures:\n\nPreparing for & engaging in each week’s lecture\n\nSelf-study:\n\nPerforming reading of relevant textbook chapters\nDoing lab questions (conceptual and applied)\n\nLabs:\n\nActively engaging in the lab sessions\n\n\n\nLecture’s format\nThe current emphasis in the pedagogic literature is that teachers should try to encourage “active learning” in order to make lectures “unmissable” Race1993, instead of the “transmit and receive” model of the past. Active learning refers to the idea that students are actively engaged in the learning process, rather than passively absorbing lectures. Active learning involves discussion, problemsolving, presentations, group work such as buzz groups, brainstorming, role plays, debates–anything that gets students interacting with each other and engaging with the lecture material.\nWe are going to use the “primacy-recency effect” to optimize engaging activities in the lecture Lenz2015.\n\n\n\nThe line depicts the level of audience attention during a 60-minute lecture and includes periods of high attention and low attention. The blue boxes highlight the proper timing for instruction (prime time) relative to the level of attention, and the gray box (down time) highlights the appropriate placement for engaging activities to activate the audience.\n\n\n\n\n\nProper positioning of audience participation within a lecture.\n\n\n\n\n\n\n\nTo counteract low attention periods, a 60-minute lecture can be divided into three segments lasting 20 minutes each. The engaging activities are then placed in the middle of each 20-minute cycle.\n\n\n\n\n\nUse of multiple prime time-down time cycles.\n\n\n\n\n\n\n\nContact hours\nThe lectures are 2 hours each week.\nThe tutorials are a mix of practical coding and theoretical questions.\nMake sure to use this time to ask your tutor for guidance on your project.\nIn later weeks, the tutorials will focus on project help and exam preparation.\nConsultation hours can be online or in-person and scheduled weekly (see Moodle for Zoom link).\n\n\nExercises\nOn the website, I have added longer exercises for you to try.\nTry to finish them around the week they are released.\nThese will be useful practice for the final exam."
+  },
+  {
+    "objectID": "Lecture0/lecture0.html#assessment",
+    "href": "Lecture0/lecture0.html#assessment",
+    "title": "Course Overview",
+    "section": "Assessment",
+    "text": "Assessment\n\nCourse Grade Breakdown\n\nIndividual Assignments (30%)\nGroup Project (40%)\nExam (30%)\n\n\n\nAssignments\nThere are 15 assignment tasks, each worth 2% each.\nThe best 10 of 15 being counted, adding up to 30%.\nThese are formative assignments, so are marked.\nThey are due on Friday at noon in each week.\nI’ll release them at least 10 days before the due date.\n\n\nProject\nGroup project over the term. You will:\n\ndesign a space mission program\ndesign a space launch vehicle system\ndefine and evaluate mission requirements and design constraints\nperform preliminary feasibility studies\ndefine critical project reviews and milestones\ndefine and perform test campaigns\nmodel sub-systems using analytical and/or computational tools\nverify compliance\nwrite a discussion of the results.\n\n\n\nProject components\nThe deliverables for the project will include:\n\nReport Part 1 (sub-systems) due at noon on Friday in Week 5 (15%),\nReport Part 2 (system) due at noon on Monday of Week 10 (15%).\nRecorded presentation due at noon on Friday in Week 15 (10%),\n\n\n\nDue dates\nAll due dates are at noon of the following weeks (“IA” = Individual Assignments, “GP” = Group Project):\n\nIA1\nIA2 (Fri)\nIA3 (Fri)\nIA4 (Fri)\nIA5 and GP Report I (Fri)\nIA6 (Fri)\nIA7 (Fri)\nIA8 (Fri)\nIA9 (Fri)\nIA10 and GP Report II (Fri)\nIA11 (Fri)\nIA12 (Fri)\nIA13 (Fri)\nIA14 (Fri)\nIA15 and GP Presentation (Fri)\n\n\n\nLate policy\nIf submitting late, you must apply for special considerations through The University of Sydney central system. If you ask me for an extension, I will refer you to the special considerations system.\nWithout special consideration, late assignments will not be marked. I have noticed that special considerations will not be granted for assignments tasks if you can still get full marks without that task.\nFor the project, the general policy is:\n\nLate submission will incur a penalty of 5% per day or part thereof (including weekends) from the due date and time. An assignment will not be accepted after 5 days (120 hours) of the original deadline unless special consideration has been approved. Dura lex, sed lex.\n\n\n\nFinal exam\nThe exam will test the concepts presented in the lectures.\nThe exam is a take-home format, and thus will be open book and open notes.\nYou’ll be given 5 exercises randomly selected from the lecture material, and will work individually to complete it."
+  },
+  {
+    "objectID": "Lecture0/lecture0.html#past-student-feedback",
+    "href": "Lecture0/lecture0.html#past-student-feedback",
+    "title": "Course Overview",
+    "section": "Past student feedback",
+    "text": "Past student feedback\n\nBest parts of the course? Project\n\n“Having an open ended project allowed me to do something I had interest in.”\n\n\n“The assignment was really good as it gave you ownership of what problem to choose and investigate. The course itself is super interesting and insightful, and really practical since time isn’t wasted on coding but rather the concepts and how to apply these models.”\n\n\n“The course content was very interesting and provided a refreshing break from the endless calculations in other actuarial courses. It’s also great to learn how to build models in Python as an alternative to R.”\n\n\n\nThe style\n\n“I think the hands–on approach to learning how to code up neural networks was quite useful. Not going too deeply into the inner workings of the neural network models ( some ways this might happen would be deriving certian formulas and proofs of certian theorems ) allowed us to devote more attention to learning how neural networks worked in an intuitive way. This perhaps is more helpful for a first timer to the subject area. I think that being too entrenched in the theorem–and–proof style of learning, though instilling rigor to the course as well as being entertaining to the geniuses and masochists, can make content too heavy and turgid for most. Having a lighter approach is more suitable to the needs of us actuarial students and allows us to gain a sufficient grasp of more types of neural networks.”\n\n\n\nComments put in the wrong form\nNot about the course but about me:\n\n“crazy amount of interest in field demonstrated by lecturer. Amazing personality.”\n\n\n“He carried some of that young energy with him.”\n\n\n\nImprovements\nWhat could be improved?\n\n“More time for the project and removal of the final exam. I believe this project can reflect the real world even more if we had more time.”\n\nThere were others related to deadlines and number of StoryWall tasks, which were already implemented.\nThe next slides are answering the question: Is there anything you wish you could have told your former self before starting to help them be prepared to learn these topics?\n\n\nBrushing up on ACTL3142\n\n“In hindsight, a piece of advice I would give my past self before starting this course would be to have a solid grasp of introductory statistical learning. I believe reinstating such prerequisites would greatly enhance the ability for students to fully thrive in this course.”\n\nWe are adding this back again for next year.\n\n“Something I wish I could have told my former self before taking this course, was to brush up on general Python skills, as well as, my understanding of non-deep learning models, such as those covered in ACTL3142.”\n\n\n\nBeing careful about project selection I\n\n“If I had the chance to redo this course, I would add an additional project milestone of selecting the initial dataset and determining the problem statement. I believe the selection of the dataset is crucial since it broadly determines what models you can feasibly build, and how complex your model can be. I selected a almost purely numerical tabular dataset, which meant that when later concepts such as RNN and CNN were introduced, it was not feasible to implement those models since my dataset did not represent time-series or pictures. Only later in the modelling phase did I fully capture the importance of selecting a good dataset, but it was a lesson learned through the course.”\n\n\n\nBeing careful about project selection II\n\n“Something I would have done differently for this course would be to choose an alternative supervised learning problem for my assignment, in particular, the dataset. Specifically, I would have preferred to explore something beyond the conventional 2D longitudinal dataset, such as working with images or unstructured text. This would have added a new dimension to my learning experience and allowed me to broaden my skill set even further.”\n\n\n\nTime management\n\n“If I could give advice to my former self it would be to start the project early and try to read ahead. Looking forward, I hope to continue to be able to learn more about deep learning and am glad to have been exposed to resources like Keras.”\n\n\n“Something that I would have told my former self before starting is to not fall behind in the early stages of the term as the first couple weeks really builds the foundation for the remaining weeks of the term. Because I fell behind earlier, it was quite difficult for me to catch up during the rest of the term.”\n\n\n“Moreover, I would still ask myself to start assignments earlier instead of leaving until the last minute.”\n\n\n\nPlanning\n\n“If I could tell my former self something before starting, it would be to really focus on understanding the concepts first before jumping into coding the deep learning techniques. I think I could have saved a lot of time in the story walls and the assignment if I spent more time understanding the concepts in more depth instead of rushing into the coding aspect of things.”\n\n\n“In terms of the assignment and coding I would have told my former self to do things properly the first time rather than doing a rough job and having to go back and fix it. Going back and altering early code can lead to really frustrating problems later so I would have told myself to not be lazy in the initial stages because it makes life a lot easier towards the end of the project.”\n\n\n\nPatience\n\n“If I could go back and advise my former self before starting the course, I would emphasise the importance of patience. Deep learning can be quite challenging, and it’s easy to get discouraged when facing complex algorithms and debugging errors. I would advise myself to just clear my mind then come back when this happens, rather than rack my brain for hours to no avail.”\n\n\n“If I was give some advice to my former self, I would say that coding takes a long time to master and be prepared to put in the time and effort. There were some storywalls which I really struggled to understand the concept, resulting in many errors (some of which were just caused by Python behaviour I was not aware of) and many hours of debugging.”\n\n\n\nDon’t panic\n\n\n\n“If I could go back to tell my former self (when I was struggling to work with the first ever StoryWall), I would tell myself that do not panic and read the lecture slides carefully. The slides are actually extremely helpful in tackling the StoryWall (and even assignment) questions.”\n\n\n\n\n\nGet a rubber duck\n\n\n\n\n\nSource: Wikipedia, Rubber duck debugging"
+  },
+  {
+    "objectID": "Lecture2/lecture2.slides.html#placeholder",
+    "href": "Lecture2/lecture2.slides.html#placeholder",
+    "title": "Lecture 2",
+    "section": "Placeholder",
+    "text": "Placeholder"
+  },
+  {
+    "objectID": "Lecture2/lecture2.html",
+    "href": "Lecture2/lecture2.html",
+    "title": "Lecture 2",
+    "section": "",
+    "text": "Placeholder"
+  },
+  {
+    "objectID": "Lecture4/lecture4.slides.html#combustion",
+    "href": "Lecture4/lecture4.slides.html#combustion",
+    "title": "Lecture 4",
+    "section": "Combustion",
+    "text": "Combustion\n\nu_e = \\sqrt{2 \\cdot \\frac{\\gamma}{\\gamma - 1} \\cdot R \\cdot T_c \\cdot \\left( 1 - \\frac{1}{\\left( \\frac{p_c}{p_e} \\right)^{\\frac{\\gamma - 1}{\\gamma}}} \\right)}\n\n\nu_e = \\sqrt{\\frac{2 \\cdot \\gamma}{\\gamma - 1} \\cdot R \\cdot T_c \\cdot \\left(1 - \\left(\\frac{p_e}{p_c}\\right)^{\\frac{\\gamma - 1}{\\gamma}}\\right)}"
+  },
+  {
+    "objectID": "Lecture4/lecture4.slides.html#the-thrust-equation",
+    "href": "Lecture4/lecture4.slides.html#the-thrust-equation",
+    "title": "Lecture 4",
+    "section": "The Thrust equation",
+    "text": "The Thrust equation\n\n\n\n\n\nRocket thrust control volume.\n\n\n\n\n\n\na) Grossly overexpanded flow; b) overexpanded flow; c) ideally expanded flow; d) underexpanded flow."
+  },
+  {
+    "objectID": "Lecture4/lecture4.slides.html#the-rocket-equation",
+    "href": "Lecture4/lecture4.slides.html#the-rocket-equation",
+    "title": "Lecture 4",
+    "section": "The Rocket equation",
+    "text": "The Rocket equation\nPropellant Mass Fraction and Total Impulse"
+  },
+  {
+    "objectID": "Lecture4/lecture4.slides.html#solid-rocket-motors-srms",
+    "href": "Lecture4/lecture4.slides.html#solid-rocket-motors-srms",
+    "title": "Lecture 4",
+    "section": "Solid Rocket Motors (SRMs)",
+    "text": "Solid Rocket Motors (SRMs)\nBasic configurations\n\nBasic arrangement of a solid-propellant rocket motor. Source: Northrop-Grumman."
+  },
+  {
+    "objectID": "Lecture4/lecture4.html",
+    "href": "Lecture4/lecture4.html",
+    "title": "Lecture 4",
+    "section": "",
+    "text": "Combustion\n\nu_e = \\sqrt{2 \\cdot \\frac{\\gamma}{\\gamma - 1} \\cdot R \\cdot T_c \\cdot \\left( 1 - \\frac{1}{\\left( \\frac{p_c}{p_e} \\right)^{\\frac{\\gamma - 1}{\\gamma}}} \\right)}\n\n\nu_e = \\sqrt{\\frac{2 \\cdot \\gamma}{\\gamma - 1} \\cdot R \\cdot T_c \\cdot \\left(1 - \\left(\\frac{p_e}{p_c}\\right)^{\\frac{\\gamma - 1}{\\gamma}}\\right)}\n\n\n\nThe Thrust equation\n\n\n\n\n\nRocket thrust control volume.\n\n\n\n\n\n\na) Grossly overexpanded flow; b) overexpanded flow; c) ideally expanded flow; d) underexpanded flow.\n\n\n\n\n\n\nExhaust velocity\n\n\n\nRocket performances\n\n\n\nTypical Specific Impulse Values.\n\n\n\n\n\n\nTypical Sea-level and Vacuum Volumetric Specific Impulse Values.\n\n\n\n\n\n\nSpecific impulse as a function of nozzle expansion ratio and chamber pressure. (a) Nozzle throat (t) and exit (e) dimensions; (b) I sp vs chamber pressure expansion ratio. Source: @Ley\n\n\n\n\n\n\nSpecific impulse as a function of propellant type and oxidizer–fuel ratio. Source: @Ley\n\n\n\n\n\n\nRelationships Between Propellant Mix Ratios and Bulk Density.\n\n\n\n\n\n\nEffective specific impulse considers the variation in ( I_{sp} ) with time or altitude. A recommended value is: [ I_{sp, } = I_{sp,} + I_{sp,} ]\n\n\n\n\n\n\nThe Rocket equation\n\nPropellant Mass Fraction and Total Impulse\n\n\n \n\n\n\n\n\n\n\nThrust-to-weight ratio and burn time\n\n\n\nRocket Engine Parameters\n\n\n\nRocket Engine Parameter Conversions.\n\n\n\n\n\nSolid Rocket Motors (SRMs)\n\nBasic configurations\n\n\n\nBasic arrangement of a solid-propellant rocket motor. Source: Northrop-Grumman.\n\n\n\n\n\nSRM types and burn rates\n\n\n\nTwo primary types of SRMs: left: end burner; right: core burner.\n\n\n\n\n\nThrust profile and grain shape\n\n\n\nExamples of grain shapes and accompanying thrust profiles. Source: http:// www.braeunig.us.\n\n\n\n\n\nSRM propellant additives\n\n\n\nSRM exhaust toxicity"
+  }
+]

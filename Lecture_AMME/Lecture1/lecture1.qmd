@@ -1,0 +1,58 @@
+---
+title: Lecture 1
+subtitle: Introduction to Launch Vehicles (LVs)
+---
+
+<!--
+```{python}
+#| echo: false
+#| warning: false
+# TODO: Update following section
+import matplotlib.pyplot as plt
+import cycler
+
+colors = ["#91CCCC", "#FF8FA9", "#CC91BC", "#3F9999", "#A5FFB8"]
+plt.rcParams["axes.prop_cycle"] = cycler.cycler(color=colors)
+
+
+def set_square_figures():
+    plt.rcParams["figure.figsize"] = (2.0, 2.0)
+
+
+def set_rectangular_figures():
+    plt.rcParams["figure.figsize"] = (5.0, 2.0)
+
+
+set_rectangular_figures()
+plt.rcParams["figure.dpi"] = 350
+plt.rcParams["savefig.bbox"] = "tight"
+plt.rcParams["font.family"] = "serif"
+
+plt.rcParams["axes.spines.right"] = False
+plt.rcParams["axes.spines.top"] = False
+
+
+def square_fig():
+    return plt.figure(figsize=(2, 2), dpi=350).gca()
+
+
+from IPython.display import HTML
+```
+-->
+
+# The Typical Launch Vehicle Design Process {data-visibility="uncounted"}
+
+## Space launch system
+
+![The major elements of a launch vehicle design process.](figs/fig1.9.png)
+
+## Spacecraft system
+
+![The design and operation of many spacecraft systems, shown in blue shading, depend heavily on the launch vehicle.](figs/fig1.10.png)
+
+## Typical Launch Vehicle Design Process
+
+The typical LV design process begins with the development of mission
+requirements and design constraints.
+
+![Launch vehicle design process.](figs/fig1.11.png)
