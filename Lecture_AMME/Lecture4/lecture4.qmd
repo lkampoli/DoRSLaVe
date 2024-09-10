@@ -129,11 +129,11 @@ $$ \rho u A = (\rho + d\rho)(u + du)(A + dA) \quad \Rightarrow \quad d(\rho u A)
 
 For **momentum conservation**:
  
-$$ \dot{m}(u + du) - \dot{m}u = pA + \left(p + \frac{dp}{2}\right)dA - \left(p + dp\right)(A + dA) \quad \Rightarrow \quad dp + \rho u \, du = 0 $$
+$$ \dot{m}(u + du) - \dot{m}u = pA + \left(p + \frac{dp}{2}\right)dA - \left(p + dp\right)(A + dA) \quad \Rightarrow \quad dp + \rho u du = 0 $$
 
 For **energy conservation**:
 
-$$ \dot{m} (e + \frac{u^2}{2} + d(e + \frac{u^2}{2}) - \dot{m}(e+\frac{u^2}{2}) = puA - (\rho + d \rho)(u + du)(A + dA) $$ 
+$$ \dot{m} \left[e + \frac{u^2}{2} + d \left(e + \frac{u^2}{2} \right) \right] - \dot{m} \left(e+\frac{u^2}{2}\right) = puA - (p + dp)(u + du)(A + dA) $$ 
 
 $$ \dot{m} d\left(e + \frac{u^2}{2}\right) + d(puA) = 0 \quad \Rightarrow \quad \dot{m} d\left(e + \frac{u^2}{2}\right) + d\left(\dot{m} \frac{p}{\rho}\right) = 0 $$
 
@@ -141,35 +141,33 @@ $$ \dot{m} d\left(e + \frac{p}{\rho} + \frac{u^2}{2}\right) = 0 \quad \Rightarro
 
 ---
 
-$$ Tds = dh = dp/\rho \quad \Rightarrow \quad Tds = dh + udu = dh_0 = 0 $$
+$$ Tds = dh - dp/\rho \quad \Rightarrow \quad Tds = dh + udu = dh_0 = 0 $$
 
-$$ dh - dp/\rho = 0 \quad \Rightarrow \quad \frac{T}{T_c} = (\frac{p}{p_c})^\frac{\gamma - 1}{\gamma} $$
+$$ dh - dp/\rho = 0 \quad \Rightarrow \quad \frac{T}{T_c} = \left(\frac{p}{p_c}\right)^\frac{\gamma - 1}{\gamma} $$
+
+Thus:
+
+$$ h_0 = h_c, T_0 = T_c, p_0 = p_c, ... $$
 
 ---
 
-<!--
 $$
-u_e = \sqrt{2 \cdot \frac{\gamma}{\gamma - 1} \cdot R \cdot T_c \cdot \left( 1 - \frac{1}{\left( \frac{p_c}{p_e} \right)^{\frac{\gamma - 1}{\gamma}}} \right)}
-$$
--->
-
-$$
-u_e = \sqrt{\frac{2 \gamma}{\gamma - 1} R T_c \left(1 - \left(\frac{T_e}{T_c}\right)^{\frac{\gamma - 1}{\gamma}}\right)}
+u_e = \sqrt{2(h_c - h_e)} = \sqrt{\frac{2 \gamma}{\gamma - 1} R T_c \left(1 - \frac{T_e}{T_c}\right)}
 \quad \Rightarrow \quad 
-u_e = \sqrt{\frac{2 \gamma}{\gamma - 1} R T_c \left(1 - \left(\frac{p_e}{p_c}\right)^{\frac{\gamma - 1}{\gamma}}\right)}
+u_e = \sqrt{\frac{2 \gamma}{\gamma - 1} \frac{\mathcal{R} T_c}{\mathcal{M}} \left[1 - \left(\frac{p_e}{p_c}\right)^{\frac{\gamma - 1}{\gamma}}\right]}
 $$
 
-$$ since: h = c_p T  \quad and \quad c_p = \frac{\gamma R}{\gamma - 1} $$
+<!-- since $$ h = c_p T \qquad c_p = \frac{\gamma R}{\gamma - 1} $$-->
 
 ::: {.columns}
 ::: {.column width="50%"}
 
 $$ 
-u_{lim} = \sqrt{\frac{2\gamma}{\gamma - 1} \frac{RT_c}{M}} 
+u_{lim} = \sqrt{\frac{2\gamma}{\gamma - 1} \frac{\mathcal{R}T_c}{\mathcal{M}}} 
 $$
 
 $$ 
-u_e = u_{lim} \sqrt{1 - \left(\frac{p_e}{p_c}\right)^\frac{\gamma-1}{\gamma}} 
+u_e = u_{lim} \sqrt{\left[1 - \left(\frac{p_e}{p_c}\right)^\frac{\gamma-1}{\gamma}\right]} 
 $$
 
 :::
@@ -185,30 +183,26 @@ This equation allows for important considerations about the quantities on which 
 ---
 
 $$
-\dot{m} = \rho^* u^* A^* = \rho_t u_t A_t
+\dot{m} = \rho_* u_* A_* = \rho_t u_t A_t
 $$
 
 $$
-u_t = a_t = \sqrt{\gamma R T_t} = \sqrt{\gamma R T_c \frac{T_t}{T_c}} = \sqrt{\gamma R T_c \frac{1}{1+\frac{\gamma - 1}{2}M_t^2}} = \sqrt{\gamma R T_c} \left(\frac{2}{\gamma + 1}\right)^{0.5}
+u_t = a_t = \sqrt{\gamma R T_t} = \sqrt{\gamma R T_c \left(\frac{T_t}{T_c}\right)} = \sqrt{\gamma R T_c \left(\frac{1}{1+\frac{\gamma - 1}{2}M_t^2}\right)} = \sqrt{\gamma R T_c} \left(\frac{2}{\gamma + 1}\right)^{1/2}
 $$
 
-$$ \rho_t = \rho_c \left(\frac{\rho_t}{\rho_c}\right) = \frac{p_c}{T_c} \left(\frac{1}{1+\frac{\gamma - 1}{2}M_t^2}\right)^\frac{1}{\gamma - 1} = \frac{p_c}{RT_c} \left(\frac{2}{\gamma + 1}\right)^\frac{1}{\gamma - 1} 
-$$
-
-$$
-\dot{m} = \frac{p_c}{RT_c} \left(\frac{2}{\gamma + 2}\right)^\frac{1}{\gamma - 1} \sqrt{\gamma R T_c} \left(\frac{2}{\gamma + 1}\right)^{0.5}
+$$ \rho_t = \rho_c \left(\frac{\rho_t}{\rho_c}\right) = \frac{p_c}{R T_c} \left(\frac{1}{1+\frac{\gamma - 1}{2}M_t^2}\right)^\frac{1}{\gamma - 1} = \frac{p_c}{RT_c} \left(\frac{2}{\gamma + 1}\right)^\frac{1}{\gamma - 1} 
 $$
 
 $$
-\dot{m} = \frac{p_c A_t}{RT_c} \left[\gamma \left(\frac{2}{\gamma + 2}\right)^\frac{\gamma + 1}{\gamma - 1}\right]
-$$
-
-$$
-\Gamma = \sqrt{\gamma \left[\frac{2}{(\gamma + 1)} \right]^\frac{\gamma + 1}{\gamma - 1}}
+\dot{m} = \frac{p_c}{RT_c} \left(\frac{2}{\gamma + 1}\right)^\frac{1}{\gamma - 1} \sqrt{\gamma R T_c} \left(\frac{2}{\gamma + 1}\right)^{1/2} A_t = \frac{p_c A_t}{\sqrt{RT_c}} \sqrt{\gamma \left(\frac{2}{\gamma + 1}\right)^\frac{\gamma + 1}{\gamma - 1}}
 $$
 
 $$
 \dot{m} = \frac{\Gamma p_c A_t}{\sqrt{R T_c}}
+$$
+
+$$
+\texttt{where:} \Gamma = \sqrt{\gamma \left(\frac{2}{\gamma + 1} \right)^\frac{\gamma + 1}{\gamma - 1}}
 $$
 
 ### Notes:
@@ -219,86 +213,110 @@ It is observed that \( \dot{m} \) depends only on \( A_t \) and varies little wi
 
 ## SRM Performance
 
-$$
-F = \dot{m}u_e + (p_e - p_a)A_e
-$$
-
-$$
-dF = \dot{m} du_e + (p_e - p_a)dA_e + A_e dp_e
-$$
-
-$$
-dF = \rho_e u_e A_e du_e + A_e dp_e + (p_e - p_a)dA_e = (\rho_e u_e du_e + dp_e) A_e + (p_e - p_a)dA_e  = (p_e - p_a)dA_e
-$$
-
-$$
-F = \dot{m}_p u_e = \Gamma p_c A_t \sqrt{\frac{2\gamma}{\gamma-1} \left(1 - \left(\frac{p_e}{p_c}\right)^\frac{\gamma-1}{\gamma}\right)}
-$$
-
-$$
-C_F = \frac{F}{p_c A_t}
-$$
-
-$$
-C_F = \Gamma \sqrt{\frac{2\gamma}{\gamma-1} \left(1 - \left(\frac{p_e}{p_c}\right)^\frac{\gamma-1}{\gamma}\right)} + \frac{A_e}{A_t} \left( \frac{p_e}{p_c} - \frac{p_a}{p_c} \right)
-$$
-
-$$
-\epsilon = \frac{\Gamma}{\sqrt{\frac{2}{\gamma} \left[1 - \left(\frac{p_e}{p_c}\right]^\frac{\gamma-1}{\gamma}\right)}}
-$$
-
-$$ C_F = f(\gamma, \epsilon, p_c/p_a) $$
-
-### Notes:
-
----
-
-![Thrust coefficient C_F of an adapted nozzle as a function of pressure ratio and specific heat ratio.](figs/fig3.5.png)
-
----
-
-![Thrust coefficient C_F as a function of expansion ratio and p_c/p_a ratio.](figs/fig16.5.png)
-
----
-
-$$
-I_{sp} = \frac{u_{eq}}{g_0} = \frac{F}{\dot{m}g_0} = \frac{1}{g_0} \left(\frac{p_c A_t}{\dot{m}} \right) = \frac{c^* C_F}{g_0}
-$$
-
-$$
-c^* = \frac{p_c A_t}{\dot{m}_p} = \frac{\sqrt{R T_c}}{\Gamma} = \frac{1}{\Gamma} \sqrt{\frac{R T_c}{M}}
-$$
-
-### Notes:
-
----
-
-## The Thrust equation
-
 ::: {.columns}
 ::: {.column width="50%"}
-![Rocket thrust control volume.](figs/fig4.1.png)
+
+<!-- <span style="font-size: small; line-height: 1.2;">We obtained expressions for the mass flow rate --> 
+
+<span style="line-height: 1.05;">We obtained expressions for the mass flow rate
+   and exhaust velocity as a function of the variables in the combustion
+   chamber, area ratio, and the propulsive fluid properties.
+</span>
+
+<span style="color: red;">Now, we want to investigate how these variables influence the SRM performance. </span>
 
 :::
 ::: {.column width="50%"}
-![a) Grossly overexpanded flow; b) overexpanded flow; c) ideally expanded flow; d) underexpanded flow.](figs/fig4.2.png)
+![](figs/fig4.1.png)
+<p align="center">Rocket thrust control volume.</p>
 :::
 :::
+
+$$F = \dot{m}u_e + (p_e - p_a)A_e$$
 
 ---
 
-### Rocket performances
+What is the expansion ratio that gives the maximum thrust?
+
+$$dF = \dot{m} du_e + (p_e - p_a)dA_e + A_e dp_e$$
+
+$$
+\begin{align*}
+dF &= \rho_e u_e A_e du_e + A_e dp_e + (p_e - p_a) dA_e \\
+   &= (\rho_e u_e du_e + dp_e) A_e + (p_e - p_a) dA_e \\
+   &= (p_e - p_a) dA_e
+\end{align*}
+$$
+
+<span style="color: blue;">Adapted nozzle!</span>
+
+Thrust of an adapted nozzle:
+
+$$F = \dot{m}_p u_e = \Gamma p_c A_t \sqrt{\frac{2\gamma}{\gamma-1} \left[1 - \left(\frac{p_e}{p_c}\right)^\frac{\gamma-1}{\gamma}\right]}$$
+<!--The thrust is independent of $\mathcal{M}$ and $T_c$, directly dependent on $p_c A_t$, $\gamma$ and expansion ratio.-->
+
+---
+
+Then, we can define the thrust coefficient:
+
+$$C_F = \frac{F}{p_c A_t} = \Gamma \sqrt{\frac{2\gamma}{\gamma-1} \left[1 - \left(\frac{p_e}{p_c}\right)^\frac{\gamma-1}{\gamma}\right]} + \frac{A_e}{A_t} \left( \frac{p_e}{p_c} - \frac{p_a}{p_c} \right)$$
+
+$$\epsilon = \frac{\Gamma}{\sqrt{\frac{2\gamma}{\gamma-1} \left(\frac{p_e}{p_c}\right)^\frac{2}{\gamma} \left[1 - \left(\frac{p_e}{p_c}\right)^\frac{\gamma-1}{\gamma}\right]}}$$
+
+$$C_F = f(\gamma, \epsilon, p_c/p_a)$$
+
+### The thrust $F = C_F p_c A_t$ is:
+<ul style="line-height: 1.05;">
+  <li>independent of $\mathcal{M}$ and $T_c$</li>
+  <li>linearly dependent on $A_t$</li>
+  <li>more than linearly dependent on $p_c$</li>
+  <li>linear in $C_F$ which itself decreases with $\gamma$ and has a maximum when $\epsilon$ is such that $p_e = p_a$</li>
+</ul>
+
+---
+
+![Thrust coefficient $C_F$ of an adapted nozzle as a function of the expansion ratio and specific heat ratio.](figs/fig3.5.png)
+
+---
+
+![Thrust coefficient $C_F$ as a function of expansion ratio and $p_c/p_a$ ratio.](figs/fig16.5.png)
+
+---
+
+Let's introduce another characteristic parameter of SRMs, the **Specific Impulse**:
+
+$$I_{sp} = \frac{u_{eq}}{g_0} = \frac{F}{\dot{m_p}g_0} = \frac{1}{g_0} \left(\frac{p_c A_t}{\dot{m_p}} \right) C_F = \frac{c^* C_F}{g_0}$$
+
+$$c^* = \frac{p_c A_t}{\dot{m}_p} = \frac{\sqrt{R T_c}}{\Gamma} = \frac{1}{\Gamma} \sqrt{\frac{\mathcal{R} T_c}{\mathcal{M}}}$$
+
+### The specific impulse:
+<ul style="line-height: 1.05;">
+  <li>increases with $T_C$</li>
+  <li>decreases with $\mathcal{M}</li>
+  <li>has a maximum when $\epsilon$ is such that $p_e = p_a$</li>
+  <li>slighlty increases with $p_c$ thanks to the increases of the pressure term in C_F</li>
+</ul>
+
+---
+
+<!--
+<div style="display: flex; justify-content: center; align-items: center; height: 300px;">
+  <img src="tabs/tab4.1.png" alt="Typical Specific Impulse Values." style="max-width: 100%; height: auto;">
+</div>
+-->
 
 ![Typical Specific Impulse Values.](tabs/tab4.1.png)
 
 ---
+
+<div style="margin-bottom: 50px;"></div>
 
 ![Typical Sea-level and Vacuum Volumetric Specific Impulse Values.](tabs/tab4.2.png)
 
 ---
 
 ![Specific impulse as a function of nozzle expansion ratio and chamber pressure.
-(a) Nozzle throat (t) and exit (e) dimensions; (b) $$I_{sp}$$ vs chamber pressure expansion ratio.
+(a) Nozzle throat (t) and exit (e) dimensions; (b) $I_{sp}$ vs chamber pressure expansion ratio.
 Source: @Ley](figs/fig4.5.png)
 
 ---
@@ -311,8 +329,7 @@ Source: @Ley](figs/fig4.5.png)
 
 ---
 
-![Effective specific impulse considers the variation in \( I_{sp} \) with time or altitude. A recommended value is: 
-\[ I_{sp, \text{eff}} = \frac{2}{3} I_{sp,\text{vac}} + \frac{1}{3} I_{sp,\text{SL}} \]
+![Effective specific impulse considers the variation in $I_{sp}$ with time or altitude. A recommended value is: $I_{sp-eff} = \frac{2}{3} I_{sp-vac} + \frac{1}{3} I_{sp-SL}$
 ](figs/fig4.7.png)
 
 ---

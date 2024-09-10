@@ -265,7 +265,6 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#lectures-objective" id="toc-lectures-objective" class="nav-link" data-scroll-target="#lectures-objective">Lecture’s objective</a></li>
   <li><a href="#ideal-nozzle" id="toc-ideal-nozzle" class="nav-link" data-scroll-target="#ideal-nozzle">Ideal Nozzle</a></li>
   <li><a href="#srm-performance" id="toc-srm-performance" class="nav-link" data-scroll-target="#srm-performance">SRM Performance</a></li>
-  <li><a href="#the-thrust-equation" id="toc-the-thrust-equation" class="nav-link" data-scroll-target="#the-thrust-equation">The Thrust equation</a></li>
   <li><a href="#solid-rocket-motors-srms" id="toc-solid-rocket-motors-srms" class="nav-link" data-scroll-target="#solid-rocket-motors-srms">Solid Rocket Motors (SRMs)</a></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="lecture4.slides.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
@@ -412,28 +411,29 @@ A quasi 1D duct.
 <p>For <strong>mass conservation</strong>:</p>
 <p><span class="math display"> \rho u A = (\rho + d\rho)(u + du)(A + dA) \quad \Rightarrow \quad d(\rho u A) = 0 \quad \Rightarrow \quad \dot{m} = \rho u A = \text{const.} </span></p>
 <p>For <strong>momentum conservation</strong>:</p>
-<p><span class="math display"> \dot{m}(u + du) - \dot{m}u = pA + \left(p + \frac{dp}{2}\right)dA - \left(p + dp\right)(A + dA) \quad \Rightarrow \quad dp + \rho u \, du = 0 </span></p>
+<p><span class="math display"> \dot{m}(u + du) - \dot{m}u = pA + \left(p + \frac{dp}{2}\right)dA - \left(p + dp\right)(A + dA) \quad \Rightarrow \quad dp + \rho u du = 0 </span></p>
 <p>For <strong>energy conservation</strong>:</p>
-<p><span class="math display"> \dot{m} (e + \frac{u^2}{2} + d(e + \frac{u^2}{2}) - \dot{m}(e+\frac{u^2}{2}) = puA - (\rho + d \rho)(u + du)(A + dA) </span></p>
+<p><span class="math display"> \dot{m} \left[e + \frac{u^2}{2} + d \left(e + \frac{u^2}{2} \right) \right] - \dot{m} \left(e+\frac{u^2}{2}\right) = puA - (p + dp)(u + du)(A + dA) </span></p>
 <p><span class="math display"> \dot{m} d\left(e + \frac{u^2}{2}\right) + d(puA) = 0 \quad \Rightarrow \quad \dot{m} d\left(e + \frac{u^2}{2}\right) + d\left(\dot{m} \frac{p}{\rho}\right) = 0 </span></p>
 <p><span class="math display"> \dot{m} d\left(e + \frac{p}{\rho} + \frac{u^2}{2}\right) = 0 \quad \Rightarrow \quad dh_0 = 0 </span></p>
 <hr>
-<p><span class="math display"> Tds = dh = dp/\rho \quad \Rightarrow \quad Tds = dh + udu = dh_0 = 0 </span></p>
-<p><span class="math display"> dh - dp/\rho = 0 \quad \Rightarrow \quad \frac{T}{T_c} = (\frac{p}{p_c})^\frac{\gamma - 1}{\gamma} </span></p>
+<p><span class="math display"> Tds = dh - dp/\rho \quad \Rightarrow \quad Tds = dh + udu = dh_0 = 0 </span></p>
+<p><span class="math display"> dh - dp/\rho = 0 \quad \Rightarrow \quad \frac{T}{T_c} = \left(\frac{p}{p_c}\right)^\frac{\gamma - 1}{\gamma} </span></p>
+<p>Thus:</p>
+<p><span class="math display"> h_0 = h_c, T_0 = T_c, p_0 = p_c, ... </span></p>
 <hr>
 <p><span class="math display">
-u_e = \sqrt{\frac{2 \gamma}{\gamma - 1} R T_c \left(1 - \left(\frac{T_e}{T_c}\right)^{\frac{\gamma - 1}{\gamma}}\right)}
+u_e = \sqrt{2(h_c - h_e)} = \sqrt{\frac{2 \gamma}{\gamma - 1} R T_c \left(1 - \frac{T_e}{T_c}\right)}
 \quad \Rightarrow \quad
-u_e = \sqrt{\frac{2 \gamma}{\gamma - 1} R T_c \left(1 - \left(\frac{p_e}{p_c}\right)^{\frac{\gamma - 1}{\gamma}}\right)}
+u_e = \sqrt{\frac{2 \gamma}{\gamma - 1} \frac{\mathcal{R} T_c}{\mathcal{M}} \left[1 - \left(\frac{p_e}{p_c}\right)^{\frac{\gamma - 1}{\gamma}}\right]}
 </span></p>
-<p><span class="math display"> since: h = c_p T  \quad and \quad c_p = \frac{\gamma R}{\gamma - 1} </span></p>
 <div class="columns">
 <div class="column" style="width:50%;">
 <p><span class="math display">
-u_{lim} = \sqrt{\frac{2\gamma}{\gamma - 1} \frac{RT_c}{M}}
+u_{lim} = \sqrt{\frac{2\gamma}{\gamma - 1} \frac{\mathcal{R}T_c}{\mathcal{M}}}
 </span></p>
 <p><span class="math display">
-u_e = u_{lim} \sqrt{1 - \left(\frac{p_e}{p_c}\right)^\frac{\gamma-1}{\gamma}}
+u_e = u_{lim} \sqrt{\left[1 - \left(\frac{p_e}{p_c}\right)^\frac{\gamma-1}{\gamma}\right]}
 </span></p>
 </div><div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
@@ -448,24 +448,21 @@ u_e = u_{lim} \sqrt{1 - \left(\frac{p_e}{p_c}\right)^\frac{\gamma-1}{\gamma}}
 <h4 class="anchored" data-anchor-id="notes">Notes:</h4>
 <hr>
 <p><span class="math display">
-\dot{m} = \rho^* u^* A^* = \rho_t u_t A_t
+\dot{m} = \rho_* u_* A_* = \rho_t u_t A_t
 </span></p>
 <p><span class="math display">
-u_t = a_t = \sqrt{\gamma R T_t} = \sqrt{\gamma R T_c \frac{T_t}{T_c}} = \sqrt{\gamma R T_c \frac{1}{1+\frac{\gamma - 1}{2}M_t^2}} = \sqrt{\gamma R T_c} \left(\frac{2}{\gamma + 1}\right)^{0.5}
+u_t = a_t = \sqrt{\gamma R T_t} = \sqrt{\gamma R T_c \left(\frac{T_t}{T_c}\right)} = \sqrt{\gamma R T_c \left(\frac{1}{1+\frac{\gamma - 1}{2}M_t^2}\right)} = \sqrt{\gamma R T_c} \left(\frac{2}{\gamma + 1}\right)^{1/2}
 </span></p>
-<p><span class="math display"> \rho_t = \rho_c \left(\frac{\rho_t}{\rho_c}\right) = \frac{p_c}{T_c} \left(\frac{1}{1+\frac{\gamma - 1}{2}M_t^2}\right)^\frac{1}{\gamma - 1} = \frac{p_c}{RT_c} \left(\frac{2}{\gamma + 1}\right)^\frac{1}{\gamma - 1}
-</span></p>
-<p><span class="math display">
-\dot{m} = \frac{p_c}{RT_c} \left(\frac{2}{\gamma + 2}\right)^\frac{1}{\gamma - 1} \sqrt{\gamma R T_c} \left(\frac{2}{\gamma + 1}\right)^{0.5}
+<p><span class="math display"> \rho_t = \rho_c \left(\frac{\rho_t}{\rho_c}\right) = \frac{p_c}{R T_c} \left(\frac{1}{1+\frac{\gamma - 1}{2}M_t^2}\right)^\frac{1}{\gamma - 1} = \frac{p_c}{RT_c} \left(\frac{2}{\gamma + 1}\right)^\frac{1}{\gamma - 1}
 </span></p>
 <p><span class="math display">
-\dot{m} = \frac{p_c A_t}{RT_c} \left[\gamma \left(\frac{2}{\gamma + 2}\right)^\frac{\gamma + 1}{\gamma - 1}\right]
-</span></p>
-<p><span class="math display">
-\Gamma = \sqrt{\gamma \left[\frac{2}{(\gamma + 1)} \right]^\frac{\gamma + 1}{\gamma - 1}}
+\dot{m} = \frac{p_c}{RT_c} \left(\frac{2}{\gamma + 1}\right)^\frac{1}{\gamma - 1} \sqrt{\gamma R T_c} \left(\frac{2}{\gamma + 1}\right)^{1/2} A_t = \frac{p_c A_t}{\sqrt{RT_c}} \sqrt{\gamma \left(\frac{2}{\gamma + 1}\right)^\frac{\gamma + 1}{\gamma - 1}}
 </span></p>
 <p><span class="math display">
 \dot{m} = \frac{\Gamma p_c A_t}{\sqrt{R T_c}}
+</span></p>
+<p><span class="math display">
+\texttt{where:} \Gamma = \sqrt{\gamma \left(\frac{2}{\gamma + 1} \right)^\frac{\gamma + 1}{\gamma - 1}}
 </span></p>
 </section>
 <section id="notes-1" class="level4">
@@ -475,79 +472,88 @@ u_t = a_t = \sqrt{\gamma R T_t} = \sqrt{\gamma R T_c \frac{T_t}{T_c}} = \sqrt{\g
 </section>
 <section id="srm-performance" class="level3">
 <h3 class="anchored" data-anchor-id="srm-performance">SRM Performance</h3>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span style="line-height: 1.05;">We obtained expressions for the mass flow rate and exhaust velocity as a function of the variables in the combustion chamber, area ratio, and the propulsive fluid properties. </span></p>
+<p><span style="color: red;">Now, we want to investigate how these variables influence the SRM performance. </span></p>
+</div><div class="column" style="width:50%;">
+<img src="figs/fig4.1.png" class="img-fluid">
+<p align="center">
+Rocket thrust control volume.
+</p>
+</div>
+</div>
+<p><span class="math display">F = \dot{m}u_e + (p_e - p_a)A_e</span></p>
+<hr>
+<p>What is the expansion ratio that gives the maximum thrust?</p>
+<p><span class="math display">dF = \dot{m} du_e + (p_e - p_a)dA_e + A_e dp_e</span></p>
 <p><span class="math display">
-F = \dot{m}u_e + (p_e - p_a)A_e
+\begin{align*}
+dF &amp;= \rho_e u_e A_e du_e + A_e dp_e + (p_e - p_a) dA_e \\
+   &amp;= (\rho_e u_e du_e + dp_e) A_e + (p_e - p_a) dA_e \\
+   &amp;= (p_e - p_a) dA_e
+\end{align*}
 </span></p>
-<p><span class="math display">
-dF = \dot{m} du_e + (p_e - p_a)dA_e + A_e dp_e
-</span></p>
-<p><span class="math display">
-dF = \rho_e u_e A_e du_e + A_e dp_e + (p_e - p_a)dA_e = (\rho_e u_e du_e + dp_e) A_e + (p_e - p_a)dA_e  = (p_e - p_a)dA_e
-</span></p>
-<p><span class="math display">
-F = \dot{m}_p u_e = \Gamma p_c A_t \sqrt{\frac{2\gamma}{\gamma-1} \left(1 - \left(\frac{p_e}{p_c}\right)^\frac{\gamma-1}{\gamma}\right)}
-</span></p>
-<p><span class="math display">
-C_F = \frac{F}{p_c A_t}
-</span></p>
-<p><span class="math display">
-C_F = \Gamma \sqrt{\frac{2\gamma}{\gamma-1} \left(1 - \left(\frac{p_e}{p_c}\right)^\frac{\gamma-1}{\gamma}\right)} + \frac{A_e}{A_t} \left( \frac{p_e}{p_c} - \frac{p_a}{p_c} \right)
-</span></p>
-<p><span class="math display">
-\epsilon = \frac{\Gamma}{\sqrt{\frac{2}{\gamma} \left[1 - \left(\frac{p_e}{p_c}\right]^\frac{\gamma-1}{\gamma}\right)}}
-</span></p>
-<p><span class="math display"> C_F = f(\gamma, \epsilon, p_c/p_a) </span></p>
-<section id="notes-2" class="level4">
-<h4 class="anchored" data-anchor-id="notes-2">Notes:</h4>
+<p><span style="color: blue;">Adapted nozzle!</span></p>
+<p>Thrust of an adapted nozzle:</p>
+<p><span class="math display">F = \dot{m}_p u_e = \Gamma p_c A_t \sqrt{\frac{2\gamma}{\gamma-1} \left[1 - \left(\frac{p_e}{p_c}\right)^\frac{\gamma-1}{\gamma}\right]}</span> </p>
+<hr>
+<p>Then, we can define the thrust coefficient:</p>
+<p><span class="math display">C_F = \frac{F}{p_c A_t} = \Gamma \sqrt{\frac{2\gamma}{\gamma-1} \left[1 - \left(\frac{p_e}{p_c}\right)^\frac{\gamma-1}{\gamma}\right]} + \frac{A_e}{A_t} \left( \frac{p_e}{p_c} - \frac{p_a}{p_c} \right)</span></p>
+<p><span class="math display">\epsilon = \frac{\Gamma}{\sqrt{\frac{2\gamma}{\gamma-1} \left(\frac{p_e}{p_c}\right)^\frac{2}{\gamma} \left[1 - \left(\frac{p_e}{p_c}\right)^\frac{\gamma-1}{\gamma}\right]}}</span></p>
+<p><span class="math display">C_F = f(\gamma, \epsilon, p_c/p_a)</span></p>
+<section id="the-thrust-f-c_f-p_c-a_t-is" class="level4">
+<h4 class="anchored" data-anchor-id="the-thrust-f-c_f-p_c-a_t-is">The thrust <span class="math inline">F = C_F p_c A_t</span> is:</h4>
+<ul style="line-height: 1.05;">
+<li>
+independent of <span class="math inline">\mathcal{M}</span> and <span class="math inline">T_c</span>
+</li>
+<li>
+linearly dependent on <span class="math inline">A_t</span>
+</li>
+<li>
+more than linearly dependent on <span class="math inline">p_c</span>
+</li>
+<li>
+linear in <span class="math inline">C_F</span> which itself decreases with <span class="math inline">\gamma</span> and has a maximum when <span class="math inline">\epsilon</span> is such that <span class="math inline">p_e = p_a</span>
+</li>
+</ul>
 <hr>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="figs/fig3.5.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Thrust coefficient C_F of an adapted nozzle as a function of pressure ratio and specific heat ratio.</figcaption>
+<figcaption class="figure-caption">Thrust coefficient <span class="math inline">C_F</span> of an adapted nozzle as a function of the expansion ratio and specific heat ratio.</figcaption>
 </figure>
 </div>
 <hr>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="figs/fig16.5.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Thrust coefficient C_F as a function of expansion ratio and p_c/p_a ratio.</figcaption>
+<figcaption class="figure-caption">Thrust coefficient <span class="math inline">C_F</span> as a function of expansion ratio and <span class="math inline">p_c/p_a</span> ratio.</figcaption>
 </figure>
 </div>
 <hr>
-<p><span class="math display">
-I_{sp} = \frac{u_{eq}}{g_0} = \frac{F}{\dot{m}g_0} = \frac{1}{g_0} \left(\frac{p_c A_t}{\dot{m}} \right) = \frac{c^* C_F}{g_0}
-</span></p>
-<p><span class="math display">
-c^* = \frac{p_c A_t}{\dot{m}_p} = \frac{\sqrt{R T_c}}{\Gamma} = \frac{1}{\Gamma} \sqrt{\frac{R T_c}{M}}
-</span></p>
+<p>Let’s introduce another characteristic parameter of SRMs, the <strong>Specific Impulse</strong>:</p>
+<p><span class="math display">I_{sp} = \frac{u_{eq}}{g_0} = \frac{F}{\dot{m_p}g_0} = \frac{1}{g_0} \left(\frac{p_c A_t}{\dot{m_p}} \right) C_F = \frac{c^* C_F}{g_0}</span></p>
+<p><span class="math display">c^* = \frac{p_c A_t}{\dot{m}_p} = \frac{\sqrt{R T_c}}{\Gamma} = \frac{1}{\Gamma} \sqrt{\frac{\mathcal{R} T_c}{\mathcal{M}}}</span></p>
 </section>
-<section id="notes-3" class="level4">
-<h4 class="anchored" data-anchor-id="notes-3">Notes:</h4>
+<section id="the-specific-impulse" class="level4">
+<h4 class="anchored" data-anchor-id="the-specific-impulse">The specific impulse:</h4>
+<ul style="line-height: 1.05;">
+<li>
+increases with <span class="math inline">T_C</span>
+</li>
+<li>
+decreases with $
+</li>
+<li>
+has a maximum when <span class="math inline">\epsilon</span> is such that <span class="math inline">p_e = p_a</span>
+</li>
+<li>
+slighlty increases with <span class="math inline">p_c</span> thanks to the increases of the pressure term in C_F
+</li>
+</ul>
 <hr>
-</section>
-</section>
-<section id="the-thrust-equation" class="level3">
-<h3 class="anchored" data-anchor-id="the-thrust-equation">The Thrust equation</h3>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figs/fig4.1.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Rocket thrust control volume.</figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figs/fig4.2.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">a) Grossly overexpanded flow; b) overexpanded flow; c) ideally expanded flow; d) underexpanded flow.</figcaption>
-</figure>
-</div>
-</div>
-</div>
-<hr>
-<section id="rocket-performances" class="level4">
-<h4 class="anchored" data-anchor-id="rocket-performances">Rocket performances</h4>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="tabs/tab4.1.png" class="img-fluid figure-img"></p>
@@ -555,6 +561,9 @@ c^* = \frac{p_c A_t}{\dot{m}_p} = \frac{\sqrt{R T_c}}{\Gamma} = \frac{1}{\Gamma}
 </figure>
 </div>
 <hr>
+<div style="margin-bottom: 50px;">
+
+</div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="tabs/tab4.2.png" class="img-fluid figure-img"></p>
@@ -565,7 +574,7 @@ c^* = \frac{p_c A_t}{\dot{m}_p} = \frac{\sqrt{R T_c}}{\Gamma} = \frac{1}{\Gamma}
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="figs/fig4.5.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Specific impulse as a function of nozzle expansion ratio and chamber pressure. (a) Nozzle throat (t) and exit (e) dimensions; (b) <span class="math display">I_{sp}</span> vs chamber pressure expansion ratio. Source: <span class="citation" data-cites="Ley">@Ley</span></figcaption>
+<figcaption class="figure-caption">Specific impulse as a function of nozzle expansion ratio and chamber pressure. (a) Nozzle throat (t) and exit (e) dimensions; (b) <span class="math inline">I_{sp}</span> vs chamber pressure expansion ratio. Source: <span class="citation" data-cites="Ley">@Ley</span></figcaption>
 </figure>
 </div>
 <hr>
@@ -586,7 +595,7 @@ c^* = \frac{p_c A_t}{\dot{m}_p} = \frac{\sqrt{R T_c}}{\Gamma} = \frac{1}{\Gamma}
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="figs/fig4.7.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Effective specific impulse considers the variation in ( I_{sp} ) with time or altitude. A recommended value is: [ I_{sp, } = I_{sp,} + I_{sp,} ]</figcaption>
+<figcaption class="figure-caption">Effective specific impulse considers the variation in <span class="math inline">I_{sp}</span> with time or altitude. A recommended value is: <span class="math inline">I_{sp-eff} = \frac{2}{3} I_{sp-vac} + \frac{1}{3} I_{sp-SL}</span></figcaption>
 </figure>
 </div>
 <hr>
