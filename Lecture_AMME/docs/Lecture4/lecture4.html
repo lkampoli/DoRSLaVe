@@ -31,6 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../Lecture4/Ex/review-questions.html" rel="next">
 <link href="../Lecture1/lecture1.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -153,24 +154,6 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Lecture 1</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
- <span class="menu-text">Labs/python.qmd</span>
-  </li>
-          <li class="sidebar-item">
- <span class="menu-text">Labs/julia.qmd</span>
-  </li>
-          <li class="sidebar-item">
- <span class="menu-text">Labs/c++.qmd</span>
-  </li>
-          <li class="sidebar-item">
- <span class="menu-text">Labs/fortran.qmd</span>
-  </li>
-          <li class="sidebar-item">
- <span class="menu-text">Labs/matlab.qmd</span>
-  </li>
-          <li class="sidebar-item">
- <span class="menu-text">Ex/coding.qmd</span>
-  </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -197,11 +180,59 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </li>
           <li class="sidebar-item">
- <span class="menu-text">Labs/internal-ballistics.qmd</span>
-  </li>
+  <div class="sidebar-item-container"> 
+  <a href="../Lecture4/Ex/review-questions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lecture 4 – Review questions</span></a>
+  </div>
+</li>
           <li class="sidebar-item">
- <span class="menu-text">Ex/internal-ballistics.qmd</span>
-  </li>
+  <div class="sidebar-item-container"> 
+  <a href="../Lecture4/Ex/worked-exercises.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lecture 4 – Worked exercises</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Lecture4/Ex/proposed-exercises.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lecture 4 – Proposed exercises</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Lecture4/Lab/srm.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lecture 4 – Solid rocket motor design</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Lecture4/Lab/meteor.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lecture 4 – SRM design with Meteor</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Lecture4/Lab/openrocket.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lecture 4 – Rocket Design and Performance in OpenRocket</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Lecture4/Lab/burnrate.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lecture 4 – Propellant Burn Rate Estimator</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Lecture4/Lab/pseudofinocyl.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lecture 4 – Grain Geometric Analysis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Lecture4/Lab/rocstar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lecture 4 – Rocstar MultiPhysics simulation suite</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -444,8 +475,6 @@ u_e = u_{lim} \sqrt{\left[1 - \left(\frac{p_e}{p_c}\right)^\frac{\gamma-1}{\gamm
 </div>
 </div>
 </div>
-<section id="notes" class="level4">
-<h4 class="anchored" data-anchor-id="notes">Notes:</h4>
 <hr>
 <p><span class="math display">
 \dot{m} = \rho_* u_* A_* = \rho_t u_t A_t
@@ -464,11 +493,7 @@ u_t = a_t = \sqrt{\gamma R T_t} = \sqrt{\gamma R T_c \left(\frac{T_t}{T_c}\right
 <p><span class="math display">
 \texttt{where:} \Gamma = \sqrt{\gamma \left(\frac{2}{\gamma + 1} \right)^\frac{\gamma + 1}{\gamma - 1}}
 </span></p>
-</section>
-<section id="notes-1" class="level4">
-<h4 class="anchored" data-anchor-id="notes-1">Notes:</h4>
 <hr>
-</section>
 </section>
 <section id="srm-performance" class="level3">
 <h3 class="anchored" data-anchor-id="srm-performance">SRM Performance</h3>
@@ -502,9 +527,8 @@ dF &amp;= \rho_e u_e A_e du_e + A_e dp_e + (p_e - p_a) dA_e \\
 <p><span class="math display">C_F = \frac{F}{p_c A_t} = \Gamma \sqrt{\frac{2\gamma}{\gamma-1} \left[1 - \left(\frac{p_e}{p_c}\right)^\frac{\gamma-1}{\gamma}\right]} + \frac{A_e}{A_t} \left( \frac{p_e}{p_c} - \frac{p_a}{p_c} \right)</span></p>
 <p><span class="math display">\epsilon = \frac{\Gamma}{\sqrt{\frac{2\gamma}{\gamma-1} \left(\frac{p_e}{p_c}\right)^\frac{2}{\gamma} \left[1 - \left(\frac{p_e}{p_c}\right)^\frac{\gamma-1}{\gamma}\right]}}</span></p>
 <p><span class="math display">C_F = f(\gamma, \epsilon, p_c/p_a)</span></p>
-<section id="the-thrust-f-c_f-p_c-a_t-is" class="level4">
-<h4 class="anchored" data-anchor-id="the-thrust-f-c_f-p_c-a_t-is">The thrust <span class="math inline">F = C_F p_c A_t</span> is:</h4>
-<ul style="line-height: 1.05;">
+The thrust <span class="math inline">F = C_F p_c A_t</span> is:
+<ul style="line-height: 1.01;">
 <li>
 independent of <span class="math inline">\mathcal{M}</span> and <span class="math inline">T_c</span>
 </li>
@@ -515,7 +539,7 @@ linearly dependent on <span class="math inline">A_t</span>
 more than linearly dependent on <span class="math inline">p_c</span>
 </li>
 <li>
-linear in <span class="math inline">C_F</span> which itself decreases with <span class="math inline">\gamma</span> and has a maximum when <span class="math inline">\epsilon</span> is such that <span class="math inline">p_e = p_a</span>
+linear in <span class="math inline">C_F</span> (decreasing with <span class="math inline">\gamma</span> and has a max. when <span class="math inline">\epsilon</span> gives <span class="math inline">p_e = p_a</span>
 </li>
 </ul>
 <hr>
@@ -536,24 +560,25 @@ linear in <span class="math inline">C_F</span> which itself decreases with <span
 <p>Let’s introduce another characteristic parameter of SRMs, the <strong>Specific Impulse</strong>:</p>
 <p><span class="math display">I_{sp} = \frac{u_{eq}}{g_0} = \frac{F}{\dot{m_p}g_0} = \frac{1}{g_0} \left(\frac{p_c A_t}{\dot{m_p}} \right) C_F = \frac{c^* C_F}{g_0}</span></p>
 <p><span class="math display">c^* = \frac{p_c A_t}{\dot{m}_p} = \frac{\sqrt{R T_c}}{\Gamma} = \frac{1}{\Gamma} \sqrt{\frac{\mathcal{R} T_c}{\mathcal{M}}}</span></p>
-</section>
-<section id="the-specific-impulse" class="level4">
-<h4 class="anchored" data-anchor-id="the-specific-impulse">The specific impulse:</h4>
+The specific impulse:
 <ul style="line-height: 1.05;">
 <li>
 increases with <span class="math inline">T_C</span>
 </li>
 <li>
-decreases with $
+decreases with <span class="math inline">\mathcal{M}</span>
 </li>
 <li>
 has a maximum when <span class="math inline">\epsilon</span> is such that <span class="math inline">p_e = p_a</span>
 </li>
 <li>
-slighlty increases with <span class="math inline">p_c</span> thanks to the increases of the pressure term in C_F
+slighlty increases with <span class="math inline">p_c</span> thanks to the increases of the pressure term in <span class="math inline">C_F</span>
 </li>
 </ul>
 <hr>
+<div style="margin-bottom: 100px;">
+
+</div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="tabs/tab4.1.png" class="img-fluid figure-img"></p>
@@ -561,7 +586,7 @@ slighlty increases with <span class="math inline">p_c</span> thanks to the incre
 </figure>
 </div>
 <hr>
-<div style="margin-bottom: 50px;">
+<div style="margin-bottom: 100px;">
 
 </div>
 <div class="quarto-figure quarto-figure-center">
@@ -599,7 +624,6 @@ slighlty increases with <span class="math inline">p_c</span> thanks to the incre
 </figure>
 </div>
 <hr>
-</section>
 <section id="rocket-engine-parameters" class="level4">
 <h4 class="anchored" data-anchor-id="rocket-engine-parameters">Rocket Engine Parameters</h4>
 <div class="quarto-figure quarto-figure-center">
@@ -640,6 +664,155 @@ slighlty increases with <span class="math inline">p_c</span> thanks to the incre
 <figcaption class="figure-caption">Examples of grain shapes and accompanying thrust profiles. Source: http:// www.braeunig.us.</figcaption>
 </figure>
 </div>
+<hr>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Propulsion System</th>
+<th>u_eff (m/s)</th>
+<th>F/W_eng</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Chemical, liquid propellants</td>
+<td>2500 ÷ 4600</td>
+<td>50 ÷ 100</td>
+</tr>
+<tr class="even">
+<td>Chemical, solid propellants</td>
+<td>2000 ÷ 3000</td>
+<td>50 ÷ 100</td>
+</tr>
+<tr class="odd">
+<td>Resistojet</td>
+<td>2000 ÷ 8000</td>
+<td>0.06</td>
+</tr>
+<tr class="even">
+<td>Arcjet</td>
+<td>4000 ÷ 20000</td>
+<td>0.01</td>
+</tr>
+<tr class="odd">
+<td>Electrostatic</td>
+<td>25000 ÷ 34000</td>
+<td>0.001</td>
+</tr>
+<tr class="even">
+<td>Electromagnetic</td>
+<td>3000 ÷ 12000</td>
+<td>0.0001</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<table class="table">
+<colgroup>
+<col style="width: 13%">
+<col style="width: 40%">
+<col style="width: 21%">
+<col style="width: 16%">
+<col style="width: 8%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Engine</th>
+<th>Thrust (kN) Sea Level/Vacuum</th>
+<th>Adopted by</th>
+<th>Price (M$)</th>
+<th>Year</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Vulcain 2</td>
+<td>960 / 1359</td>
+<td>Ariane 5</td>
+<td>12</td>
+<td>2017</td>
+</tr>
+<tr class="even">
+<td>RS–25</td>
+<td>1860 / 2279</td>
+<td>Space Shuttle</td>
+<td>50</td>
+<td>2011</td>
+</tr>
+<tr class="odd">
+<td>RS–68</td>
+<td>2950 / 3137</td>
+<td>Delta IV</td>
+<td>15</td>
+<td>2006</td>
+</tr>
+<tr class="even">
+<td>RD–180</td>
+<td>3830 / 4150</td>
+<td>Atlas V</td>
+<td>23.5</td>
+<td>2017</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<table class="table">
+<colgroup>
+<col style="width: 62%">
+<col style="width: 37%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Mission</th>
+<th>Velocity (m/s)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>InterContinental Ballistic Missiles (ICBM)</td>
+<td>8000</td>
+</tr>
+<tr class="even">
+<td>Low Earth Orbit (LEO)</td>
+<td>9000</td>
+</tr>
+<tr class="odd">
+<td>Escape from Earth’s gravity; Moon impact</td>
+<td>12500</td>
+</tr>
+<tr class="even">
+<td>Geostationary Equatorial Orbit (GEO)</td>
+<td>13000</td>
+</tr>
+<tr class="odd">
+<td>Soft landing on the Moon</td>
+<td>15000</td>
+</tr>
+<tr class="even">
+<td>Round trip to the Moon</td>
+<td>18000</td>
+</tr>
+<tr class="odd">
+<td>Round trip to Venus/Mars</td>
+<td>18000 ÷ 27000</td>
+</tr>
+<tr class="even">
+<td>Compensation of orbital perturbations</td>
+<td>50 (per year)</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="useful-links" class="level4">
+<h4 class="anchored" data-anchor-id="useful-links">Useful links</h4>
+<p><a href="https://www.nakka-rocketry.net/softw.html">SRM</a></p>
+<p><a href="https://openrocket.info">openrocket</a></p>
+<p><a href="https://meteor.open-sky.fr">Meteor</a></p>
+<p><a href="https://github.com/reilleya/openMotor">openMotor</a></p>
+<p><a href="https://sourceforge.net/projects/chamber">chamber</a></p>
+<p><a href="https://www.solids4foam.com">solids4foam</a></p>
+<p><a href="https://github.com/IllinoisRocstar/Rocstar">Rocstar</a></p>
 
 
 </section>
@@ -886,6 +1059,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="../Lecture4/Ex/review-questions.html" class="pagination-link">
+        <span class="nav-page-text">Lecture 4 – Review questions</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->

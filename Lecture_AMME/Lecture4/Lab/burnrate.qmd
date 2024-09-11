@@ -1,0 +1,15 @@
+---
+title: Lecture 4 -- Propellant Burn Rate Estimator
+---
+
+<sub>This is an MS Excel application that estimates the burn rate coefficients
+   (a,n) of a rocket propellant based on static test chamber pressure
+   measurements. Requires the pressure vs time data from a pair of static test
+   firings, as well as basic propellant properties. This method is intended to
+   provide a simple means of deriving the fundamental burn rate parameters
+   essential for the design of rocket motors utilizing the given propellant.
+   For a full description of the method, visit my Simplified Method to Estimate
+   Burn Rate Parameters web page. Written by Richard Nakka. 
+</sub>
+
+[BurnRate](https://www.nakka-rocketry.net/softw.html#BS)

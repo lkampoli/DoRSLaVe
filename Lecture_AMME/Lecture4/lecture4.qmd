@@ -176,7 +176,6 @@ $$
 :::
 :::
 
-### Notes:
 <!--
 This equation allows for important considerations about the quantities on which the velocity depends and its maximum achievable value for given conditions in the combustion chamber. First of all, it is observed that \( u \) increases with the increase of the expansion ratio \( \frac{p_e}{p_c} \) and the term \( \frac{2\gamma}{\gamma - 1} \), and that it also depends on the value of \( A_t \). It is also noted that for \( \frac{p_e}{p_c} \to 0 \), the exit velocity tends asymptotically to its maximum value, called the limiting velocity.
 -->
@@ -205,7 +204,6 @@ $$
 \texttt{where:} \Gamma = \sqrt{\gamma \left(\frac{2}{\gamma + 1} \right)^\frac{\gamma + 1}{\gamma - 1}}
 $$
 
-### Notes:
 <!--
 It is observed that \( \dot{m} \) depends only on \( A_t \) and varies little with it, assuming values between 0.63 and 0.67 for \( A_t \) between 1.1 and 1.3. Expression (16.14) highlights the direct proportionality between \( u \) and \( \frac{2\gamma}{\gamma - 1} \), as well as the molar mass \( M \) (recalling \( R = \frac{R_u}{M} \)), and the inverse proportionality between \( u \) and \( T_c \). Regarding the functional dependencies of the mass flow rate, it should be noted that the established value of the mass flow rate is a function of the conditions in the combustion chamber (e.g., injection conditions or characteristics of the solid propellant, depending on the case) and the throat area. Therefore, the value of \( \frac{p_e}{p_c} \) will also depend on the value of \( A_t \). The values of \( T_c \), \( M \), and \( A_t \) are specific to the propellant considered.
 -->
@@ -265,12 +263,12 @@ $$\epsilon = \frac{\Gamma}{\sqrt{\frac{2\gamma}{\gamma-1} \left(\frac{p_e}{p_c}\
 
 $$C_F = f(\gamma, \epsilon, p_c/p_a)$$
 
-### The thrust $F = C_F p_c A_t$ is:
-<ul style="line-height: 1.05;">
+The thrust $F = C_F p_c A_t$ is:
+<ul style="line-height: 1.01;">
   <li>independent of $\mathcal{M}$ and $T_c$</li>
   <li>linearly dependent on $A_t$</li>
   <li>more than linearly dependent on $p_c$</li>
-  <li>linear in $C_F$ which itself decreases with $\gamma$ and has a maximum when $\epsilon$ is such that $p_e = p_a$</li>
+  <li>linear in $C_F$ (decreasing with $\gamma$ and has a max. when $\epsilon$ gives $p_e = p_a$</li>
 </ul>
 
 ---
@@ -289,27 +287,23 @@ $$I_{sp} = \frac{u_{eq}}{g_0} = \frac{F}{\dot{m_p}g_0} = \frac{1}{g_0} \left(\fr
 
 $$c^* = \frac{p_c A_t}{\dot{m}_p} = \frac{\sqrt{R T_c}}{\Gamma} = \frac{1}{\Gamma} \sqrt{\frac{\mathcal{R} T_c}{\mathcal{M}}}$$
 
-### The specific impulse:
+The specific impulse:
 <ul style="line-height: 1.05;">
   <li>increases with $T_C$</li>
-  <li>decreases with $\mathcal{M}</li>
+  <li>decreases with $\mathcal{M}$</li>
   <li>has a maximum when $\epsilon$ is such that $p_e = p_a$</li>
-  <li>slighlty increases with $p_c$ thanks to the increases of the pressure term in C_F</li>
+  <li>slighlty increases with $p_c$ thanks to the increases of the pressure term in $C_F$</li>
 </ul>
 
 ---
 
-<!--
-<div style="display: flex; justify-content: center; align-items: center; height: 300px;">
-  <img src="tabs/tab4.1.png" alt="Typical Specific Impulse Values." style="max-width: 100%; height: auto;">
-</div>
--->
+<div style="margin-bottom: 100px;"></div>
 
 ![Typical Specific Impulse Values.](tabs/tab4.1.png)
 
 ---
 
-<div style="margin-bottom: 50px;"></div>
+<div style="margin-bottom: 100px;"></div>
 
 ![Typical Sea-level and Vacuum Volumetric Specific Impulse Values.](tabs/tab4.2.png)
 
@@ -356,3 +350,55 @@ Source: @Ley](figs/fig4.5.png)
 
 ![Examples of grain shapes and accompanying thrust profiles. Source:
 http:// www.braeunig.us.](figs/fig4.12.png)
+
+---
+
+| Propulsion System      | u_eff (m/s)    | F/W_eng        |
+|------------------------|----------------|----------------|
+| Chemical, liquid propellants | 2500 ÷ 4600 | 50 ÷ 100    |
+| Chemical, solid propellants  | 2000 ÷ 3000 | 50 ÷ 100    |
+| Resistojet              | 2000 ÷ 8000    | 0.06          |
+| Arcjet                  | 4000 ÷ 20000   | 0.01          |
+| Electrostatic           | 25000 ÷ 34000  | 0.001         |
+| Electromagnetic         | 3000 ÷ 12000   | 0.0001        |
+
+---
+
+| Engine   | Thrust (kN) Sea Level/Vacuum | Adopted by     | Price (M$) | Year |
+|----------|------------------------------|----------------|------------|------|
+| Vulcain 2| 960 / 1359                 | Ariane 5       | 12         | 2017 |
+| RS–25    | 1860 / 2279                | Space Shuttle  | 50         | 2011 |
+| RS–68    | 2950 / 3137                | Delta IV       | 15         | 2006 |
+| RD–180   | 3830 / 4150                | Atlas V        | 23.5       | 2017 |
+
+---
+
+| Mission                                    | Velocity (m/s)           |
+|--------------------------------------------|--------------------------|
+| InterContinental Ballistic Missiles (ICBM) | 8000                     |
+| Low Earth Orbit (LEO)                      | 9000                     |
+| Escape from Earth’s gravity; Moon impact   | 12500                    |
+| Geostationary Equatorial Orbit (GEO)       | 13000                    |
+| Soft landing on the Moon                   | 15000                    |
+| Round trip to the Moon                     | 18000                    |
+| Round trip to Venus/Mars                   | 18000 ÷ 27000            |
+| Compensation of orbital perturbations      | 50 (per year)            |
+
+---
+
+### Useful links
+
+[SRM](https://www.nakka-rocketry.net/softw.html)
+
+[openrocket](https://openrocket.info)
+
+[Meteor](https://meteor.open-sky.fr)
+
+[openMotor](https://github.com/reilleya/openMotor)
+
+[chamber](https://sourceforge.net/projects/chamber)
+
+[solids4foam](https://www.solids4foam.com)
+
+[Rocstar](https://github.com/IllinoisRocstar/Rocstar)
+

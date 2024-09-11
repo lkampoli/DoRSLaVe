@@ -1,0 +1,125 @@
+---
+title: Lecture 4 -- Worked exercises
+---
+
+### 4.1 A rocket engine with a convergent nozzle with a minimum throat section of \( B  2 \) diameter produces a thrust of \( B ° ́ 3 \) when tested at sea level. Calculate the chamber pressure, assuming it is higher than \( &   3 ¶ μ \). Consider \( A  B S° . \) What is the impulsive thrust? And the pressure thrust?
+
+**SOLUTION**
+
+The thrust equation is:
+\[ n           # 5 = = Q = : . \]
+
+The pressure in the combustion chamber is calculated using the thrust data and the given conditions:
+\[  ·  R B B X °  <      ; \]
+
+The saturated nozzle conditions imply:
+\[ SR  ̧  Q   \]
+
+For a saturated nozzle:
+\[ =     Z =    R   =  R n  1 R   R  )  R  # Q  D o  Z ma )  A  . \]
+
+So, the impulsive thrust is:
+\[ \text{Impulsive thrust} = 5  \]
+
+The pressure thrust is:
+\[ \text{Pressure thrust} = 5 1⁄2 n =     5 =     # = R   V X    ́ A   Z        R   Q =  # D Q Z  3⁄4 &   ́ \]
+
+### 4.2 A rocket engine using liquid hydrogen and oxygen consumes \( »  ¿ 3 \) of \( À ) \) per second. The oxidizer-to-fuel mixture ratio is \( 3⁄4 ¿ 3 \) of \( Á ) \) for every \( ¿ 3 \) of \( À ) \). The total temperature of the combustion gases is \( °    Â \) and the total pressure in the nozzle (adiabatic and isentropic) is \( B  μ Ã ¶ \). Assuming the mixture of combustion products has \( A  S B T & e   Ä U  Å . ¿ 3 . Â \), calculate:
+
+(a) The thrust provided by the engine at sea level (\( Q   B   μ 3 ¶ \)) in the case of a convergent nozzle.
+
+(b) The thrust in the case of an adapted nozzle.
+
+(c) Assuming \( Æ 5  B S & 3⁄4 Ã Å . ¿ 3 \), calculate \( Q È Ç \), \( É Ç \), \( 5 Ç \), \( Ç 4 \) for the cases of \( Ë   \) and \( Ë  B    2  . . \)
+
+**SOLUTION**
+
+(a) For a convergent nozzle:
+\[ ,  . D  Q  B   l \]
+
+Since the nozzle is saturated:
+\[ n    5 R    R # \]
+
+Using the data provided:
+\[   5  Í Ì    Í  Î   U §   Í Ì    » &  ¿ 3  . . \]
+
+Also:
+\[  R  S 3⁄4 U » 3⁄4 Ã μ ¶  ; \]
+\[ R  V & V & Â ; \]
+\[  R  ° 3 ¿ . 2 Ï ; e \]
+\[ R  B 3⁄4  D Q   Z .  ° 2  . . \]
+
+Thus:
+\[ Z     5 .   R R    S  3⁄4 ° 2 & ) . \]
+
+The thrust is:
+\[ n   ° U  S V  Ä & S 3⁄4 &  ́ 3  U 3⁄4 S 3⁄4 Ä 3  ́ \]
+
+**For Mach calculation:**
+\[ \text{Mach number} =  Y  \]
+
+(b) For an adapted nozzle:
+\[ \text{Thrust} = n    5  = \text{where }   5 \text{ is the already calculated thrust as the nozzle is saturated.} \]
+
+Calculate the Mach number in the exit section:
+\[ \text{Mach number} = \frac{B     B  · = Y ) h  h f g i j e  = Y   ° S Ä ° X . \]
+
+Thus:
+\[  =  B ° Ä & Â ; =  B  V » 2  . \]
+\[  ; =  ° U » X 2  . \]
+\[ e n  X V 3⁄4 S 3⁄4 ́ 3 (  ° S ° 3⁄4 Ð \]
+
+(c) For the specific cases:
+\[ # È Q Ç  S °  Ñ Ò ( S ° B & Ò Ñ \text{ for } Ë  B    2  . . \) \]
+\[ # Ç 4  S T B U Ñ Ò (S  X » Ò Ñ \text{ for } Ë  B    2  . . \) \]
+\[ # 5 Ç  S   Ò Ñ (S  X V Ñ Ò \text{ for } Ë  B    2  . . \) \]
+\[ # Ê Ç É  B S U Ò Ñ ( B S V B Ò Ñ \text{ for } Ë  B    2  . . \) \]
+
+### 4.3 Determine the throat area, exit area, thrust coefficient, and characteristic velocity of a rocket engine. The engine, when adapted to sea level, provides a thrust of `3⁄4   ́ 3` and a specific impulse of `°    .` The propellant has an average molecular weight of `  B 3⁄4 2 3 ¡ Ó . 3 ¿`, and the combustion temperature is `   ° °   Â .`
+
+**SOLUTION**
+
+Given the thrust and specific impulse, the propellant flow rate can be calculated as:
+\[    n . ,     5   B Ä U S Ä ¿ 3  . . \]
+
+Using the flow rate expression:
+\[    m  D   Z .   k  \]
+
+To find \(  Z \), we need \(   \). With \( A \) given in the problem, we can find:
+\[ m  H A A  B   S U X » ; e . . . \]
+
+\[ X ° B » B 3⁄4 3⁄4 3⁄4 » ° Å Â 3 ¿   \]
+
+To calculate \(   \):
+\[ \frac{N}{M O} \]
+\[ \text{where } N = 1 \text{ and } M O \text{ is given} \]
+
+Therefore:
+\[ N  M O  ? & A    . \]
+\[ \text{so, } \text{ \( \frac{N}{M O} \) } =  \frac{S ° ° & » e \text{ and from area law, } =  \]
+
+The thrust coefficient is:
+\[ t .  n   B Ä »    uZS  ° » B U 2  S) \]
+
+And the characteristic velocity:
+\[ R   m B Ä V 3⁄4  2     \]
+
+### 4.4 Calculate the thrust provided by the rocket engine from the previous exercise when the atmospheric pressure drops to `Q   S   ° μ Ã ¶`. Compare this with the thrust obtained with a nozzle identical in every respect except the exit area, designed to be adapted to `Q   S   ° Ã μ ¶`. How do the characteristic velocity and thrust coefficient change compared to the previous exercise?
+
+**SOLUTION**
+
+Due to different environmental conditions, the pressure thrust must be considered:
+\[ \text{where } =    SB μ Ã ¶ \text{ (see previous exercise)} \]
+\[ \text{Then, } n  n 3⁄4 ° & Ä 3  ́         e   ,  # # = Q = Q = \]
+
+Knowing \( n     =  3⁄4    ́ 3 \), the thrust obtained in the previous exercise is used. To find the thrust with the modified nozzle, the chamber pressure, propellant properties, chamber temperature, and throat area are the same as in the previous exercise. The exit area changes to allow greater expansion of the jet. Knowing the ratio \(   D . =  \), we can calculate \( = Y \) and then \( =  \):
+\[ \text{and from area law, } =  \]
+
+**Given:**
+\[ \text{The value of }   . =  \text{ can be used to find }  = : Ô < ;  .  . B ° B » B     : 2    N M #= O = n  B Ä U Ä ° B » B 3⁄4 ° ° U   ́  3⁄4 ° ° U ́ 3     §   ) = S \]
+
+The characteristic velocity \(  R \) remains unchanged from the previous exercise, depending on \( A \) and \(  \), while \( u t \) and \(    5 \) vary as follows:
+\[ Ø Ê u t e  S B T 3⁄4 U ; \]
+\[ \text{and } Ê Ø t u )  B S T 3⁄4 Ä    Ø 5 e \]
+\[ \text{and } 5   Ø )  ° &   \]
+

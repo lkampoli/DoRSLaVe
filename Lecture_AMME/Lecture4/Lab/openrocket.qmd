@@ -1,0 +1,21 @@
+---
+title: Lecture 4 -- Rocket Design and Performance in OpenRocket
+---
+
+<sub> OpenRocket is a free, fully featured model rocket simulator that allows
+   you to design and simulate your rockets before actually building and flying
+   them. The main features include: 
+
+   - Six-degree-of-freedom flight simulation
+   - Automatic design optimization 
+   - Realtime simulated altitude, velocity and acceleration display 
+   - Staging and clustering support 
+   - Cross-platform (Java-based) 
+
+   OpenRocket is an Open Source project licensed under the GNU
+   GPL. This means that the software is free to use for whatever purposes, and
+   the source code is also available for studying and extending. Originally
+   written by Sampo Niskanen. 
+</sub>
+
+[OpenRocket](https://openrocket.info)

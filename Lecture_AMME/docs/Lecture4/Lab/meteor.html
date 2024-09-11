@@ -8,7 +8,7 @@
 
 <meta name="author" content="Lorenzo Campoli">
 
-<title>DoRSLaVe - Lecture 1</title>
+<title>DoRSLaVe - Lecture 4 – SRM design with Meteor</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,24 +24,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../Lecture4/lecture4.html" rel="next">
-<link href="../Lecture0/lecture0.html" rel="prev">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../Lecture4/Lab/openrocket.html" rel="next">
+<link href="../../Lecture4/Lab/srm.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -75,7 +75,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Lecture1/lecture1.html">Lecture 1</a></li><li class="breadcrumb-item"><a href="../Lecture1/lecture1.html">Lecture 1</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../Lecture4/lecture4.html">Lecture 4</a></li><li class="breadcrumb-item"><a href="../../Lecture4/Lab/meteor.html">Lecture 4 – SRM design with Meteor</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -90,7 +90,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="../">DoRSLaVe</a> 
+      <a href="../../">DoRSLaVe</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -102,7 +102,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Home</span></a>
   </div>
 </li>
@@ -117,7 +117,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Lecture0/lecture0.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Lecture0/lecture0.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Course Overview</span></a>
   </div>
 </li>
@@ -134,7 +134,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Lecture1/lecture1.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../Lecture1/lecture1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lecture 1</span></a>
   </div>
 </li>
@@ -159,61 +159,61 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Lecture4/lecture4.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Lecture4/lecture4.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lecture 4</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Lecture4/Ex/review-questions.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Lecture4/Ex/review-questions.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lecture 4 – Review questions</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Lecture4/Ex/worked-exercises.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Lecture4/Ex/worked-exercises.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lecture 4 – Worked exercises</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Lecture4/Ex/proposed-exercises.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Lecture4/Ex/proposed-exercises.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lecture 4 – Proposed exercises</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Lecture4/Lab/srm.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Lecture4/Lab/srm.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lecture 4 – Solid rocket motor design</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Lecture4/Lab/meteor.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Lecture4/Lab/meteor.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Lecture 4 – SRM design with Meteor</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Lecture4/Lab/openrocket.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Lecture4/Lab/openrocket.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lecture 4 – Rocket Design and Performance in OpenRocket</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Lecture4/Lab/burnrate.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Lecture4/Lab/burnrate.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lecture 4 – Propellant Burn Rate Estimator</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Lecture4/Lab/pseudofinocyl.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Lecture4/Lab/pseudofinocyl.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lecture 4 – Grain Geometric Analysis</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Lecture4/Lab/rocstar.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Lecture4/Lab/rocstar.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lecture 4 – Rocstar MultiPhysics simulation suite</span></a>
   </div>
 </li>
@@ -269,21 +269,15 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#the-typical-launch-vehicle-design-process" id="toc-the-typical-launch-vehicle-design-process" class="nav-link active" data-scroll-target="#the-typical-launch-vehicle-design-process">The Typical Launch Vehicle Design Process</a></li>
-  </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="lecture1.slides.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
-    </div>
+        
+    <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="meteor.slides.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Lecture 1</h1>
-<p class="subtitle lead">Introduction to Launch Vehicles (LVs)</p>
+<h1 class="title">Lecture 4 – SRM design with Meteor</h1>
+<p class="subtitle lead">AERO3261</p>
 </div>
 
 
@@ -304,12 +298,10 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="the-typical-launch-vehicle-design-process" class="level3">
-<h3 class="anchored" data-anchor-id="the-typical-launch-vehicle-design-process">The Typical Launch Vehicle Design Process</h3>
-<p><img src="figs/fig1.11.png" alt="The typical LV design process begins with the development of mission requirements and design constraints." width="80%"></p>
+<p><sub>METEOR is a Java implementation of the SRM.XLS Solid Rocket Motor Design spreadsheet. A free-to-use on-line application, METEOR is a convenient, validated tool for designing rocket motors. Includes some useful additional features not currently implemented in SRM.XLS. Written by Jordan Content and Jérôme Bise of Lyon, France. </sub></p>
+<p><a href="https://meteor.open-sky.fr/demo">Meteor</a></p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -547,13 +539,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../Lecture0/lecture0.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Course Overview</span>
+      <a href="../../Lecture4/Lab/srm.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Lecture 4 – Solid rocket motor design</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../Lecture4/lecture4.html" class="pagination-link">
-        <span class="nav-page-text">Lecture 4</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../Lecture4/Lab/openrocket.html" class="pagination-link">
+        <span class="nav-page-text">Lecture 4 – Rocket Design and Performance in OpenRocket</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

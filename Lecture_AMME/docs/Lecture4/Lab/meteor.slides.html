@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-html/tabby.min.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-contrib/reveal-auto-agenda-0.0.3/reveal-auto-agenda.css" rel="stylesheet"><meta charset="utf-8">
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-contrib/reveal-auto-agenda-0.0.3/reveal-auto-agenda.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.3.433">
 
   <meta name="author" content="Lorenzo Campoli">
-  <title>DoRSLaVe - Lecture 4</title>
+  <title>DoRSLaVe - Lecture 4 – SRM design with Meteor</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -31,29 +31,13 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
-  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
-  <script>document.addEventListener("DOMContentLoaded", function () {
- var mathElements = document.getElementsByClassName("math");
- var macros = [];
- for (var i = 0; i < mathElements.length; i++) {
-  var texText = mathElements[i].firstChild;
-  if (mathElements[i].tagName == "SPAN") {
-   katex.render(texText.data, mathElements[i], {
-    displayMode: mathElements[i].classList.contains('display'),
-    throwOnError: false,
-    macros: macros,
-    fleqn: false
-   });
-}}});
-  </script>
-  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css">
-  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="../site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
-  <link href="../site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
-  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto.css">
+  <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
   .callout {
@@ -347,8 +331,8 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Lecture 4</h1>
-  <p class="subtitle">Solid Rocket Motors (SRMs) Propulsion</p>
+  <h1 class="title">Lecture 4 – SRM design with Meteor</h1>
+  <p class="subtitle">AERO3261</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -359,462 +343,13 @@ Lorenzo Campoli
 </div>
 
 </section>
-<section id="outline-of-the-lecture" class="slide level2">
-<h2>Outline of the lecture</h2>
-<div style="height: 50px;">
-
-</div>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ol type="1">
-<li><strong>Introduction</strong></li>
-<li><strong>Compressible flow</strong></li>
-<li><strong>Performance indices</strong></li>
-<li><strong>Space mission requirements</strong></li>
-<li><strong>Thermal rocket engines</strong></li>
-<li><strong>Liquid propellant engines</strong></li>
-</ol>
-</div><div class="column" style="width:50%;">
-<ol start="7" type="1">
-<li><strong>Solid rocket motors</strong></li>
-<li><strong>Electric thrusters</strong></li>
-<li><strong>Secondary propulsion</strong></li>
-<li><strong>Staging</strong></li>
-<li><strong>Some current developments</strong></li>
-<li><strong>Possible future developments</strong></li>
-</ol>
-</div>
-</div>
-</section>
-<section id="goals-of-space-propulsion" class="slide level2">
-<h2>Goals of space propulsion</h2>
-<p><strong>propellere</strong> (latin) = “push forward”</p>
-<div style="height: 30px;">
-
-</div>
-<h3 id="in-order-to">In order to:</h3>
-<ul>
-<li>attain very high speed</li>
-<li>overcome gravity/aerodynamic forces</li>
-<li>maneuvers</li>
-<li>attitude adjustment</li>
-<li>decelerate (re-entry, soft landing)</li>
-</ul>
-<p>Thrust generated as reaction to expulsion of a propellant fluid</p>
-<p>Key requirement: lightweight (both engine and propellants) and cost</p>
-</section>
-<section id="classification-based-on-energy-source" class="slide level2">
-<h2>Classification based on Energy Source</h2>
-<p>– <strong>Exhaust jet momentum generated by means of energy</strong>…</p>
-<ul>
-<li><strong>Chemical</strong>: Oxidizer/Fuel, Monopropellant (Thermal)</li>
-<li><strong>Solar</strong>: Thermal, Electric</li>
-<li><strong>(Electric)</strong>: Solar, Nuclear, Chemical</li>
-<li><strong>Nuclear</strong>: Thermal</li>
-</ul>
-</section>
-<section id="classification-based-on-propulsive-principle" class="slide level2">
-<h2>Classification based on Propulsive Principle</h2>
-<p>– <strong>Transformation of primary energy into jet kinetic energy</strong>…</p>
-<ol type="1">
-<li><strong>Thermal</strong>:
-<ul>
-<li>Chemical<br>
-</li>
-<li>Nuclear<br>
-</li>
-<li>Solar</li>
-</ul></li>
-<li><strong>Electrostatic (ions)</strong>:
-<ul>
-<li>(Electrical) ← Solar</li>
-</ul></li>
-<li><strong>Electromagnetic (plasma)</strong>:
-<ul>
-<li>(Electrical) ← Solar</li>
-</ul></li>
-</ol>
-<p>2 &amp; 3 give low thrust/weight ratios (cannot lift off from the ground).</p>
-</section>
-<section id="lectures-objective" class="slide level2">
-<h2>Lecture’s objective</h2>
-<p>We want to understand how the nozzle design of a thermo-chemical solid rocket motor influences the thrust and the specific impulse</p>
-</section>
-<section id="ideal-nozzle" class="slide level2">
-<h2>Ideal Nozzle</h2>
-<p>Hypotheses:</p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li>combustion details ignored</li>
-<li>thermally and calorically perfect</li>
-<li>non-reactive, homogeneous gas</li>
-<li>steady flow</li>
-<li>1D or quasi-1D model</li>
-<li>negligible nozzle inlet flow velocity</li>
-<li>conditions are uniform in space and time</li>
-<li>isentropic flow (unless shocks)</li>
-<li>inviscid and adiabatic flow</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<img data-src="figs/fig16.2.png">
-<p align="center">
-A quasi 1D duct.
-</p>
-</div>
-</div>
-</section>
 <section class="slide level2">
 
-<p>For <strong>mass conservation</strong>:</p>
-<p><span class="math display"> \rho u A = (\rho + d\rho)(u + du)(A + dA) \quad \Rightarrow \quad d(\rho u A) = 0 \quad \Rightarrow \quad \dot{m} = \rho u A = \text{const.} </span></p>
-<p>For <strong>momentum conservation</strong>:</p>
-<p><span class="math display"> \dot{m}(u + du) - \dot{m}u = pA + \left(p + \frac{dp}{2}\right)dA - \left(p + dp\right)(A + dA) \quad \Rightarrow \quad dp + \rho u du = 0 </span></p>
-<p>For <strong>energy conservation</strong>:</p>
-<p><span class="math display"> \dot{m} \left[e + \frac{u^2}{2} + d \left(e + \frac{u^2}{2} \right) \right] - \dot{m} \left(e+\frac{u^2}{2}\right) = puA - (p + dp)(u + du)(A + dA) </span></p>
-<p><span class="math display"> \dot{m} d\left(e + \frac{u^2}{2}\right) + d(puA) = 0 \quad \Rightarrow \quad \dot{m} d\left(e + \frac{u^2}{2}\right) + d\left(\dot{m} \frac{p}{\rho}\right) = 0 </span></p>
-<p><span class="math display"> \dot{m} d\left(e + \frac{p}{\rho} + \frac{u^2}{2}\right) = 0 \quad \Rightarrow \quad dh_0 = 0 </span></p>
-</section>
-<section class="slide level2">
-
-<p><span class="math display"> Tds = dh - dp/\rho \quad \Rightarrow \quad Tds = dh + udu = dh_0 = 0 </span></p>
-<p><span class="math display"> dh - dp/\rho = 0 \quad \Rightarrow \quad \frac{T}{T_c} = \left(\frac{p}{p_c}\right)^\frac{\gamma - 1}{\gamma} </span></p>
-<p>Thus:</p>
-<p><span class="math display"> h_0 = h_c, T_0 = T_c, p_0 = p_c, ... </span></p>
-</section>
-<section class="slide level2">
-
-<p><span class="math display">
-u_e = \sqrt{2(h_c - h_e)} = \sqrt{\frac{2 \gamma}{\gamma - 1} R T_c \left(1 - \frac{T_e}{T_c}\right)}
-\quad \Rightarrow \quad
-u_e = \sqrt{\frac{2 \gamma}{\gamma - 1} \frac{\mathcal{R} T_c}{\mathcal{M}} \left[1 - \left(\frac{p_e}{p_c}\right)^{\frac{\gamma - 1}{\gamma}}\right]}
-</span></p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><span class="math display">
-u_{lim} = \sqrt{\frac{2\gamma}{\gamma - 1} \frac{\mathcal{R}T_c}{\mathcal{M}}}
-</span></p>
-<p><span class="math display">
-u_e = u_{lim} \sqrt{\left[1 - \left(\frac{p_e}{p_c}\right)^\frac{\gamma-1}{\gamma}\right]}
-</span></p>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figs/fig16.3.png"></p>
-<figcaption>Variation of the ratio between exit velocity and limiting velocity as a function of the expansion ratio.</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-<p><span class="math display">
-\dot{m} = \rho_* u_* A_* = \rho_t u_t A_t
-</span></p>
-<p><span class="math display">
-u_t = a_t = \sqrt{\gamma R T_t} = \sqrt{\gamma R T_c \left(\frac{T_t}{T_c}\right)} = \sqrt{\gamma R T_c \left(\frac{1}{1+\frac{\gamma - 1}{2}M_t^2}\right)} = \sqrt{\gamma R T_c} \left(\frac{2}{\gamma + 1}\right)^{1/2}
-</span></p>
-<p><span class="math display"> \rho_t = \rho_c \left(\frac{\rho_t}{\rho_c}\right) = \frac{p_c}{R T_c} \left(\frac{1}{1+\frac{\gamma - 1}{2}M_t^2}\right)^\frac{1}{\gamma - 1} = \frac{p_c}{RT_c} \left(\frac{2}{\gamma + 1}\right)^\frac{1}{\gamma - 1}
-</span></p>
-<p><span class="math display">
-\dot{m} = \frac{p_c}{RT_c} \left(\frac{2}{\gamma + 1}\right)^\frac{1}{\gamma - 1} \sqrt{\gamma R T_c} \left(\frac{2}{\gamma + 1}\right)^{1/2} A_t = \frac{p_c A_t}{\sqrt{RT_c}} \sqrt{\gamma \left(\frac{2}{\gamma + 1}\right)^\frac{\gamma + 1}{\gamma - 1}}
-</span></p>
-<p><span class="math display">
-\dot{m} = \frac{\Gamma p_c A_t}{\sqrt{R T_c}}
-</span></p>
-<p><span class="math display">
-\texttt{where:} \Gamma = \sqrt{\gamma \left(\frac{2}{\gamma + 1} \right)^\frac{\gamma + 1}{\gamma - 1}}
-</span></p>
-</section>
-<section id="srm-performance" class="slide level2">
-<h2>SRM Performance</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><span style="line-height: 1.05;">We obtained expressions for the mass flow rate and exhaust velocity as a function of the variables in the combustion chamber, area ratio, and the propulsive fluid properties. </span></p>
-<p><span style="color: red;">Now, we want to investigate how these variables influence the SRM performance. </span></p>
-</div><div class="column" style="width:50%;">
-<img data-src="figs/fig4.1.png">
-<p align="center">
-Rocket thrust control volume.
-</p>
-</div>
-</div>
-<p><span class="math display">F = \dot{m}u_e + (p_e - p_a)A_e</span></p>
-</section>
-<section class="slide level2">
-
-<p>What is the expansion ratio that gives the maximum thrust?</p>
-<p><span class="math display">dF = \dot{m} du_e + (p_e - p_a)dA_e + A_e dp_e</span></p>
-<p><span class="math display">
-\begin{align*}
-dF &amp;= \rho_e u_e A_e du_e + A_e dp_e + (p_e - p_a) dA_e \\
-   &amp;= (\rho_e u_e du_e + dp_e) A_e + (p_e - p_a) dA_e \\
-   &amp;= (p_e - p_a) dA_e
-\end{align*}
-</span></p>
-<p><span style="color: blue;">Adapted nozzle!</span></p>
-<p>Thrust of an adapted nozzle:</p>
-<p><span class="math display">F = \dot{m}_p u_e = \Gamma p_c A_t \sqrt{\frac{2\gamma}{\gamma-1} \left[1 - \left(\frac{p_e}{p_c}\right)^\frac{\gamma-1}{\gamma}\right]}</span> </p>
-</section>
-<section class="slide level2">
-
-<p>Then, we can define the thrust coefficient:</p>
-<p><span class="math display">C_F = \frac{F}{p_c A_t} = \Gamma \sqrt{\frac{2\gamma}{\gamma-1} \left[1 - \left(\frac{p_e}{p_c}\right)^\frac{\gamma-1}{\gamma}\right]} + \frac{A_e}{A_t} \left( \frac{p_e}{p_c} - \frac{p_a}{p_c} \right)</span></p>
-<p><span class="math display">\epsilon = \frac{\Gamma}{\sqrt{\frac{2\gamma}{\gamma-1} \left(\frac{p_e}{p_c}\right)^\frac{2}{\gamma} \left[1 - \left(\frac{p_e}{p_c}\right)^\frac{\gamma-1}{\gamma}\right]}}</span></p>
-<p><span class="math display">C_F = f(\gamma, \epsilon, p_c/p_a)</span></p>
-The thrust <span class="math inline">F = C_F p_c A_t</span> is:
-<ul style="line-height: 1.01;">
-<li>
-independent of <span class="math inline">\mathcal{M}</span> and <span class="math inline">T_c</span>
-</li>
-<li>
-linearly dependent on <span class="math inline">A_t</span>
-</li>
-<li>
-more than linearly dependent on <span class="math inline">p_c</span>
-</li>
-<li>
-linear in <span class="math inline">C_F</span> (decreasing with <span class="math inline">\gamma</span> and has a max. when <span class="math inline">\epsilon</span> gives <span class="math inline">p_e = p_a</span>
-</li>
-</ul>
-</section>
-<section class="slide level2">
+<p><sub>METEOR is a Java implementation of the SRM.XLS Solid Rocket Motor Design spreadsheet. A free-to-use on-line application, METEOR is a convenient, validated tool for designing rocket motors. Includes some useful additional features not currently implemented in SRM.XLS. Written by Jordan Content and Jérôme Bise of Lyon, France. </sub></p>
+<p><a href="https://meteor.open-sky.fr/demo">Meteor</a></p>
 
 
-<img data-src="figs/fig3.5.png" class="r-stretch quarto-figure-center"><p class="caption">Thrust coefficient <span class="math inline">C_F</span> of an adapted nozzle as a function of the expansion ratio and specific heat ratio.</p></section>
-<section class="slide level2">
-
-
-<img data-src="figs/fig16.5.png" class="r-stretch quarto-figure-center"><p class="caption">Thrust coefficient <span class="math inline">C_F</span> as a function of expansion ratio and <span class="math inline">p_c/p_a</span> ratio.</p></section>
-<section class="slide level2">
-
-<p>Let’s introduce another characteristic parameter of SRMs, the <strong>Specific Impulse</strong>:</p>
-<p><span class="math display">I_{sp} = \frac{u_{eq}}{g_0} = \frac{F}{\dot{m_p}g_0} = \frac{1}{g_0} \left(\frac{p_c A_t}{\dot{m_p}} \right) C_F = \frac{c^* C_F}{g_0}</span></p>
-<p><span class="math display">c^* = \frac{p_c A_t}{\dot{m}_p} = \frac{\sqrt{R T_c}}{\Gamma} = \frac{1}{\Gamma} \sqrt{\frac{\mathcal{R} T_c}{\mathcal{M}}}</span></p>
-The specific impulse:
-<ul style="line-height: 1.05;">
-<li>
-increases with <span class="math inline">T_C</span>
-</li>
-<li>
-decreases with <span class="math inline">\mathcal{M}</span>
-</li>
-<li>
-has a maximum when <span class="math inline">\epsilon</span> is such that <span class="math inline">p_e = p_a</span>
-</li>
-<li>
-slighlty increases with <span class="math inline">p_c</span> thanks to the increases of the pressure term in <span class="math inline">C_F</span>
-</li>
-</ul>
-</section>
-<section class="slide level2">
-
-<div style="margin-bottom: 100px;">
-
-</div>
-
-<img data-src="tabs/tab4.1.png" class="r-stretch quarto-figure-center"><p class="caption">Typical Specific Impulse Values.</p></section>
-<section class="slide level2">
-
-<div style="margin-bottom: 100px;">
-
-</div>
-
-<img data-src="tabs/tab4.2.png" class="r-stretch quarto-figure-center"><p class="caption">Typical Sea-level and Vacuum Volumetric Specific Impulse Values.</p></section>
-<section class="slide level2">
-
-
-<img data-src="figs/fig4.5.png" class="r-stretch quarto-figure-center"><p class="caption">Specific impulse as a function of nozzle expansion ratio and chamber pressure. (a) Nozzle throat (t) and exit (e) dimensions; (b) <span class="math inline">I_{sp}</span> vs chamber pressure expansion ratio. Source: <span class="citation" data-cites="Ley">@Ley</span></p></section>
-<section class="slide level2">
-
-
-<img data-src="figs/fig4.6.png" class="r-stretch quarto-figure-center"><p class="caption">Specific impulse as a function of propellant type and oxidizer–fuel ratio. Source: <span class="citation" data-cites="Ley">@Ley</span></p></section>
-<section class="slide level2">
-
-
-<img data-src="tabs/tab4.3.png" class="r-stretch quarto-figure-center"><p class="caption">Relationships Between Propellant Mix Ratios and Bulk Density.</p></section>
-<section class="slide level2">
-
-
-<img data-src="figs/fig4.7.png" class="r-stretch quarto-figure-center"><p class="caption">Effective specific impulse considers the variation in <span class="math inline">I_{sp}</span> with time or altitude. A recommended value is: <span class="math inline">I_{sp-eff} = \frac{2}{3} I_{sp-vac} + \frac{1}{3} I_{sp-SL}</span></p></section>
-<section class="slide level2">
-
-<h3 id="rocket-engine-parameters">Rocket Engine Parameters</h3>
-
-<img data-src="tabs/tab4.4.png" class="r-stretch quarto-figure-center"><p class="caption">Rocket Engine Parameter Conversions.</p></section>
-<section id="solid-rocket-motors-srms" class="slide level2">
-<h2>Solid Rocket Motors (SRMs)</h2>
-<h3 id="basic-configurations">Basic configurations</h3>
-
-<img data-src="figs/fig4.9.png" class="r-stretch quarto-figure-center"><p class="caption">Basic arrangement of a solid-propellant rocket motor. Source: Northrop-Grumman.</p></section>
-<section class="slide level2">
-
-<h3 id="srm-types-and-burn-rates">SRM types and burn rates</h3>
-
-<img data-src="figs/fig4.10.png" class="r-stretch quarto-figure-center"><p class="caption">Two primary types of SRMs: left: end burner; right: core burner.</p></section>
-<section class="slide level2">
-
-<h3 id="thrust-profile-and-grain-shape">Thrust profile and grain shape</h3>
-
-<img data-src="figs/fig4.12.png" class="r-stretch quarto-figure-center"><p class="caption">Examples of grain shapes and accompanying thrust profiles. Source: http:// www.braeunig.us.</p></section>
-<section class="slide level2">
-
-<table>
-<thead>
-<tr class="header">
-<th>Propulsion System</th>
-<th>u_eff (m/s)</th>
-<th>F/W_eng</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Chemical, liquid propellants</td>
-<td>2500 ÷ 4600</td>
-<td>50 ÷ 100</td>
-</tr>
-<tr class="even">
-<td>Chemical, solid propellants</td>
-<td>2000 ÷ 3000</td>
-<td>50 ÷ 100</td>
-</tr>
-<tr class="odd">
-<td>Resistojet</td>
-<td>2000 ÷ 8000</td>
-<td>0.06</td>
-</tr>
-<tr class="even">
-<td>Arcjet</td>
-<td>4000 ÷ 20000</td>
-<td>0.01</td>
-</tr>
-<tr class="odd">
-<td>Electrostatic</td>
-<td>25000 ÷ 34000</td>
-<td>0.001</td>
-</tr>
-<tr class="even">
-<td>Electromagnetic</td>
-<td>3000 ÷ 12000</td>
-<td>0.0001</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section class="slide level2">
-
-<table>
-<colgroup>
-<col style="width: 13%">
-<col style="width: 40%">
-<col style="width: 21%">
-<col style="width: 16%">
-<col style="width: 8%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Engine</th>
-<th>Thrust (kN) Sea Level/Vacuum</th>
-<th>Adopted by</th>
-<th>Price (M$)</th>
-<th>Year</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vulcain 2</td>
-<td>960 / 1359</td>
-<td>Ariane 5</td>
-<td>12</td>
-<td>2017</td>
-</tr>
-<tr class="even">
-<td>RS–25</td>
-<td>1860 / 2279</td>
-<td>Space Shuttle</td>
-<td>50</td>
-<td>2011</td>
-</tr>
-<tr class="odd">
-<td>RS–68</td>
-<td>2950 / 3137</td>
-<td>Delta IV</td>
-<td>15</td>
-<td>2006</td>
-</tr>
-<tr class="even">
-<td>RD–180</td>
-<td>3830 / 4150</td>
-<td>Atlas V</td>
-<td>23.5</td>
-<td>2017</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section class="slide level2">
-
-<table>
-<colgroup>
-<col style="width: 62%">
-<col style="width: 37%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Mission</th>
-<th>Velocity (m/s)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>InterContinental Ballistic Missiles (ICBM)</td>
-<td>8000</td>
-</tr>
-<tr class="even">
-<td>Low Earth Orbit (LEO)</td>
-<td>9000</td>
-</tr>
-<tr class="odd">
-<td>Escape from Earth’s gravity; Moon impact</td>
-<td>12500</td>
-</tr>
-<tr class="even">
-<td>Geostationary Equatorial Orbit (GEO)</td>
-<td>13000</td>
-</tr>
-<tr class="odd">
-<td>Soft landing on the Moon</td>
-<td>15000</td>
-</tr>
-<tr class="even">
-<td>Round trip to the Moon</td>
-<td>18000</td>
-</tr>
-<tr class="odd">
-<td>Round trip to Venus/Mars</td>
-<td>18000 ÷ 27000</td>
-</tr>
-<tr class="even">
-<td>Compensation of orbital perturbations</td>
-<td>50 (per year)</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section class="slide level2">
-
-<h3 id="useful-links">Useful links</h3>
-<p><a href="https://www.nakka-rocketry.net/softw.html">SRM</a></p>
-<p><a href="https://openrocket.info">openrocket</a></p>
-<p><a href="https://meteor.open-sky.fr">Meteor</a></p>
-<p><a href="https://github.com/reilleya/openMotor">openMotor</a></p>
-<p><a href="https://sourceforge.net/projects/chamber">chamber</a></p>
-<p><a href="https://www.solids4foam.com">solids4foam</a></p>
-<p><a href="https://github.com/IllinoisRocstar/Rocstar">Rocstar</a></p>
-
-
-<img src="../logos/unisyd.jpeg" class="slide-logo r-stretch"><div class="footer footer-default">
+<img src="../../logos/unisyd.jpeg" class="slide-logo r-stretch"><div class="footer footer-default">
 
 </div>
 </section>
@@ -822,19 +357,19 @@ slighlty increases with <span class="math inline">p_c</span> thanks to the incre
   </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="../site_libs/revealjs/dist/reveal.js"></script>
+  <script src="../../site_libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="../site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
-  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="../../site_libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
-  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>

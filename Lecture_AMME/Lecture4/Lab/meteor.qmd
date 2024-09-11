@@ -1,0 +1,12 @@
+---
+title: Lecture 4 -- SRM design with Meteor
+---
+
+<sub>METEOR is a Java implementation of the SRM.XLS Solid Rocket Motor Design
+   spreadsheet. A free-to-use on-line application, METEOR is a convenient,
+   validated tool for designing rocket motors. Includes some useful additional
+   features not currently implemented in SRM.XLS. Written by Jordan Content and
+   Jérôme Bise of Lyon, France.
+</sub>
+
+[Meteor](https://meteor.open-sky.fr/demo)

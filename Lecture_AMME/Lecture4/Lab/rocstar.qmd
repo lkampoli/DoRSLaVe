@@ -1,0 +1,18 @@
+---
+title: Lecture 4 -- Rocstar MultiPhysics simulation suite
+---
+
+<!-- https://illinoisrocstar.github.io/Rocstar-legacy/tutorials.html#Example -->
+
+<sub>Rocstar is a multiphysics simulation application designed for coupled
+   multiphysics simulations involving fluid-structure interaction (FSI) across
+   moving, reacting interfaces. Rocstar couples multiple domain-specific
+   simulation packages and disparately discretized domains and provides several
+   simulation-supporting services including conservative and accurate data
+   transfer, surface propagation, and parallel I/O. Rocstar is MPI-parallel.
+   Rocstar was originally developed at the University of Illinois Center for
+   Simulation of Advanced Rockets (CSAR) under Department of Energy ASCI
+   program funding.
+</sub>
+
+[Rocstar](https://github.com/IllinoisRocstar/Rocstar)

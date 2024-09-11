@@ -1,0 +1,14 @@
+---
+title: Lecture 4 -- Grain Geometric Analysis
+---
+
+<sub>This spreadsheet computes the Kn (burning-area to throat-area ratio) for a
+   Pseudo-finocyl propellant grain. A Pseudo-finocyl grain configuration
+   consists of a cylindrical grain with a circular bore, from which a number of
+   fins extend radially (similar to a star-grain). Five independant geometric
+   variables allow for great freedom in tailoring of the Kn profile. Such a
+   grain may be fabricated by casting with a suitable mandrel, or by drilling
+   the core, then cutting the fin slots. Written by Richard Nakka. 
+</sub>
+
+[PFC](https://www.nakka-rocketry.net/softw.html#PFC)

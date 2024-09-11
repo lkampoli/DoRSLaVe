@@ -23,12 +23,12 @@ website:
       - section: "Lecture 1"
         contents:
           - Lecture1/lecture1.qmd
-          - Labs/python.qmd
-          - Labs/julia.qmd
-          - Labs/c++.qmd
-          - Labs/fortran.qmd
-          - Labs/matlab.qmd
-          - Ex/coding.qmd
+          #- Labs/python.qmd
+          #- Labs/julia.qmd
+          #- Labs/c++.qmd
+          #- Labs/fortran.qmd
+          #- Labs/matlab.qmd
+          #- Ex/coding.qmd
       - section: "Lecture 2"
         contents:
           #- Lecture2/lecture2.qmd
@@ -50,8 +50,15 @@ website:
       - section: "Lecture 4"
         contents:
           - Lecture4/lecture4.qmd
-          - Labs/internal-ballistics.qmd
-          - Ex/internal-ballistics.qmd
+          - Lecture4/Ex/review-questions.qmd
+          - Lecture4/Ex/worked-exercises.qmd
+          - Lecture4/Ex/proposed-exercises.qmd
+          - Lecture4/Lab/srm.qmd
+          - Lecture4/Lab/meteor.qmd
+          - Lecture4/Lab/openrocket.qmd
+          - Lecture4/Lab/burnrate.qmd
+          - Lecture4/Lab/pseudofinocyl.qmd
+          - Lecture4/Lab/rocstar.qmd
       - section: "Lecture 5"
         contents:
           #- Time-Series-And-Recurrent-Neural-Networks/time-series-and-rnns.qmd
