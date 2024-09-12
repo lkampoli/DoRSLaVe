@@ -5,10 +5,10 @@ title: Course Overview
 ## Your lecturer
 
 ::: columns
-::: {.column width="40%"}
+::: {.column width="35%"}
 ![Dr. Lorenzo Campoli](Lorenzo-Campoli.png)
 :::
-::: {.column width="60%"}
+::: {.column width="65%"}
 
 <br>
 
@@ -20,7 +20,7 @@ title: Course Overview
 - Ass. Prof. at SPBGU, Russia
 - Post-doc at UniMelb
 - Ass. Prof. at Macquarie University
-- Senior System Modelling Eng., Gilmour Space
+- System Modelling Eng., Gilmour Space
 
 :::
 :::
@@ -38,7 +38,7 @@ You will:
 - define and perform test campaigns
 - gain hands-on experience about sub-system modelling using analytical and/or computational tools (e.g. structural analysis, fluid mechanic simulations, fluid-structure interactions, etc.)
 
-## Lecture plans
+## Lecture plan
 
 ::: columns
 ::: {.column width="50%"}
@@ -70,10 +70,10 @@ You will:
 
 The Moodle page contains:
 
-- assignments (individual, group project & exam here),
-- lecture recordings,
-- link to lecture materials ([https://github.com/lkampoli/DoRSLaVe](https://github.com/lkampoli/DoRSLaVe)),
-- link to forum.
+- assignments (individual, group project & exam here)
+- lecture recordings
+- link to lecture materials ([https://github.com/lkampoli/DoRSLaVe](https://github.com/lkampoli/DoRSLaVe))
+- link to forum
 
 The forum will be used for announcements and for questions about the course.
 
@@ -131,6 +131,8 @@ for engaging activities to activate the audience.
 :::
 
 ---
+
+<div style="height: 150px;"></div> 
 
 ::: columns
 ::: column
@@ -215,20 +217,23 @@ Group project over the term. You will:
 - define and perform test campaigns
 - model sub-systems using analytical and/or computational tools
 - verify compliance
-- write a discussion of the results.
+- write a discussion of the results
 
 ## Project components
 
 The deliverables for the project will include:
 
-1. Report Part 1 (sub-systems) due at noon on Friday in Week 5 (15%),
-3. Report Part 2 (system) due at noon on Monday of Week 10 (15%).
-2. Recorded presentation due at noon on Friday in Week 15 (10%),
+1. Report Part 1 (sub-systems) due at noon on Friday in Week 5 (15%)
+3. Report Part 2 (system) due at noon on Monday of Week 10 (15%)
+2. Recorded presentation due at noon on Friday in Week 15 (10%)
 
 ## Due dates
 
 All due dates are at noon of the following weeks 
 ("IA" = Individual Assignments, "GP" = Group Project):
+
+::: columns
+::: column
 
 1.  IA1
 2.  IA2 (Fri)
@@ -238,6 +243,10 @@ All due dates are at noon of the following weeks
 6.  IA6 (Fri)
 7.  IA7 (Fri)
 8.  IA8 (Fri)
+
+:::
+::: column
+
 9.  IA9 (Fri)
 10. IA10 **and** GP Report II (Fri)
 11. IA11 (Fri)
@@ -245,6 +254,9 @@ All due dates are at noon of the following weeks
 13. IA13 (Fri)
 14. IA14 (Fri)
 15. IA15 **and** GP Presentation (Fri)
+
+:::
+:::
 
 ## Late policy
 
@@ -261,7 +273,9 @@ For the project, the general policy is:
 > Late submission will incur a penalty of 5% per day or part thereof (including 
   weekends) from the due date and time. An assignment will not be accepted after 
   5 days (120 hours) of the original deadline unless special consideration has 
-  been approved. Dura lex, sed lex.
+  been approved. 
+
+> Dura lex, sed lex.
 
 <!--
 ## Example: Late policy for Report Part 2

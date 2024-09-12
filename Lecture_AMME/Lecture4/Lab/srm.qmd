@@ -14,3 +14,11 @@ title: Lecture 4 -- Solid rocket motor design
 </sub>
 
 [SRM](https://www.nakka-rocketry.net/softw.html#SRM)
+
+```{r}
+library(readxl)
+
+srm = read_excel('./SRM_2023.xls')
+ 
+srm
+```

@@ -32,6 +32,22 @@
     }
   </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto.css">
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -347,17 +363,17 @@ Lorenzo Campoli
 
 <h3 id="calculate-thrust-effective-exhaust-velocity-chamber-pressure-and-specific-impulse-of-a-rocket-engine-with-the-following-characteristics">4.3 Calculate thrust, effective exhaust velocity, chamber pressure, and specific impulse of a rocket engine with the following characteristics:</h3>
 <ul>
-<li><strong>Characteristic Velocity</strong>:</li>
-<li><strong>Thrust Coefficient</strong>:</li>
-<li><strong>Propellant Flow Rate</strong>:</li>
-<li><strong>Throat Area</strong>:</li>
+<li><strong>Characteristic Velocity</strong>: <span class="math inline">c^*</span> = 1220 m/s</li>
+<li><strong>Thrust Coefficient</strong>: <span class="math inline">C_F</span> = 1.5</li>
+<li><strong>Propellant Flow Rate</strong>: <span class="math inline">\dot{m}</span> = 73 kg/s</li>
+<li><strong>Throat Area</strong>: <span class="math inline">A_t</span> = 0.0248 <span class="math inline">m^2</span></li>
 </ul>
 <p><strong>RESULTS</strong></p>
 <ul>
-<li><strong>Thrust</strong>:</li>
-<li><strong>Effective Exhaust Velocity</strong>:</li>
-<li><strong>Chamber Pressure</strong>:</li>
-<li><strong>Specific Impulse</strong>:</li>
+<li><strong>Thrust</strong>: <span class="math inline">F</span> = 133.6 kN</li>
+<li><strong>Effective Exhaust Velocity</strong>: <span class="math inline">u_{eq}</span> = 1830 m/s</li>
+<li><strong>Chamber Pressure</strong>: <span class="math inline">p_c</span> = 3.59 MPa</li>
+<li><strong>Specific Impulse</strong>: <span class="math inline">I_{sp}</span> = 186.6 s</li>
 </ul>
 <h3 id="calculate-the-characteristic-velocity-of-a-rocket-engine-with-the-following-properties">4.4 Calculate the characteristic velocity of a rocket engine with the following properties:</h3>
 <ul>
@@ -390,7 +406,7 @@ Lorenzo Campoli
 <li><strong>Thrust Coefficient</strong>: <code>t u  B S V &amp; B ,  5   V V 3⁄4  ,</code></li>
 <li><strong>Propellant Saving</strong>: <code>5  X &amp; U ¿ 3 , N   &amp;  B X ¿ 3</code></li>
 </ul></li>
-<li><strong>For <code>o  &amp;</code>:</strong>
+<li><strong>For:</strong>
 <ul>
 <li><strong>Specific Impulse</strong>: <code>u t  S B V U 3⁄4 , 5    Ä V 3⁄4  ,</code></li>
 <li><strong>Propellant Saving</strong>: <code>5  X B B 3 ¿ , N    &amp; &amp; &amp; ¿ 3</code></li>
@@ -399,32 +415,32 @@ Lorenzo Campoli
 <p>Note that the propellant saving is relatively small (<code>&amp; Ð</code>) even considering there was no reduction in initial mass, which would have decreased the propellant mass needed for satellite launch.</p>
 <h3 id="consider-the-main-engine-of-the-european-ariane-5-launcher.-it-is-characterized-by">4.6 Consider the main engine of the European Ariane 5 launcher. It is characterized by:</h3>
 <ul>
-<li><strong>Specific Impulse in a Vacuum</strong>: <code>5   Ø ÈQ   » ° °  .</code></li>
-<li><strong>Characteristic Velocity</strong>: <code>B  μ Ã ¶  ,</code></li>
-<li><strong>Nozzle Area Ratio</strong>: <code>A  B S T &amp;</code></li>
+<li><strong>Specific Impulse in a Vacuum:</strong></li>
+<li><strong>Characteristic Velocity:</strong></li>
+<li><strong>Nozzle Area Ratio:</strong></li>
 </ul>
 <p>Calculate the ratio of exit area to throat area <code>o ,</code> the thrust coefficient in a vacuum <code>t u</code>, the characteristic velocity <code>R</code>, and the average molecular weight of the mixture ``.</p>
 <p><strong>RESULTS</strong></p>
 <ul>
-<li><strong>Exit to Throat Area Ratio</strong>: <code>o  » B S » ;</code></li>
-<li><strong>Thrust Coefficient in a Vacuum</strong>: <code>t u  T B S X X V ;</code></li>
-<li><strong>Characteristic Velocity</strong>: <code>R   &amp; &amp; 3⁄4  2  . ;</code></li>
-<li><strong>Average Molecular Weight</strong>: <code>3 . 3 Ó B ° V ¿ 2 ¡</code></li>
+<li><strong>Exit to Throat Area Ratio</strong>:</li>
+<li><strong>Thrust Coefficient in a Vacuum</strong>:</li>
+<li><strong>Characteristic Velocity</strong>:</li>
+<li><strong>Average Molecular Weight</strong>:</li>
 </ul>
-<h3 id="consider-the-propulsion-system-from-the-previous-exercise.-given-that-it-provides-a-vacuum-thrust-of-è-n-q-b-b-3-calculate-the-thrust-at-sea-level.-compare-the-sea-level-and-vacuum-thrust-values-with-those-obtained-by-replacing-the-divergent-nozzle-with-a-sea-level-adapted-nozzle.-also-compare-the-specific-impulse-in-a-vacuum.">4.7 Consider the propulsion system from the previous exercise. Given that it provides a vacuum thrust of <code>È n Q   B B &amp;  ́ 3</code>, calculate the thrust at sea level. Compare the sea-level and vacuum thrust values with those obtained by replacing the divergent nozzle with a sea-level adapted nozzle. Also, compare the specific impulse in a vacuum.</h3>
+<h3 id="consider-the-propulsion-system-from-the-previous-exercise.-given-that-it-provides-a-vacuum-thrust-of-f_vac-1120-kn-calculate-the-thrust-at-sea-level.-compare-the-sea-level-and-vacuum-thrust-values-with-those-obtained-by-replacing-the-divergent-nozzle-with-a-sea-level-adapted-nozzle.-also-compare-the-specific-impulse-in-a-vacuum.">4.7 Consider the propulsion system from the previous exercise. Given that it provides a vacuum thrust of <span class="math inline">F_{vac}</span> = 1120 kN, calculate the thrust at sea level. Compare the sea-level and vacuum thrust values with those obtained by replacing the divergent nozzle with a sea-level adapted nozzle. Also, compare the specific impulse in a vacuum.</h3>
 <p><strong>RESULTS</strong></p>
 <ul>
-<li><strong>Nozzle with <code>=    &amp; ¶ 3 μ</code>:</strong>
+<li><strong>Nozzle with</strong>:
 <ul>
-<li><strong>Sea-Level Thrust</strong>: <code>M  n  X V B 3 ́ ;</code></li>
-<li><strong>Vacuum Thrust</strong>: <code>È n Q   B B &amp;  ́ 3 ;</code></li>
-<li><strong>Specific Impulse in a Vacuum</strong>: <code>Ø 5 È Q   » °  ° .</code></li>
+<li><strong>Sea-Level Thrust</strong>:</li>
+<li><strong>Vacuum Thrust</strong>:</li>
+<li><strong>Specific Impulse in a Vacuum</strong>:</li>
 </ul></li>
-<li><strong>Nozzle with <code>=   B   μ 3 ¶</code>:</strong>
+<li><strong>Nozzle with</strong>:
 <ul>
-<li><strong>Sea-Level Thrust</strong>: <code>M n   Ä V 3⁄4 3 ́ ;</code></li>
-<li><strong>Vacuum Thrust</strong>: <code>È n Q   B  » U  ́ 3 ;</code></li>
-<li><strong>Specific Impulse in a Vacuum</strong>: <code>ø  Ø 5 ÈQ   »   » .</code></li>
+<li><strong>Sea-Level Thrust</strong>:</li>
+<li><strong>Vacuum Thrust</strong>:</li>
+<li><strong>Specific Impulse in a Vacuum</strong>:</li>
 </ul></li>
 </ul>
 

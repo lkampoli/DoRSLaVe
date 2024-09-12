@@ -2,7 +2,7 @@
 title: Lecture 4 -- Review questions
 ---
 
-### 4.1 What is meant by the limiting velocity of the outflow from a nozzle?
+### 4.1 What is meant by the outflow limiting velocity of a nozzle?
 ### 4.2 What does the limiting velocity depend on?
 ### 4.3 What is the relationship between outflow velocity and limiting velocity?
 ### 4.4 Why are supersonic nozzles always considered in rocket engines?
@@ -18,10 +18,10 @@ title: Lecture 4 -- Review questions
 ### 4.14 What is the expansion ratio that maximizes the thrust coefficient of a rocket engine operating in the atmosphere?
 ### 4.15 On what basis is the expansion ratio of a rocket nozzle operating in a vacuum chosen?
 ### 4.16 Why was hydrogen considered as the propellant fluid for nuclear thermal rocket engines?
-### 4.17 Which of the performance parameters ($n$, $\epsilon_5$, $u_t$, $R$) depend on the pressure in the combustion chamber?
-### 4.18 Which of the performance parameters ($n$, $\epsilon_5$, $u_t$, $R$) depend on the ambient pressure?
-### 4.19 Which of the performance parameters ($n$, $\epsilon_5$, $u_t$, $R$) depend on the temperature in the combustion chamber?
-### 4.20 Which of the performance parameters ($n$, $\epsilon_5$, $u_t$, $R$) depend on the average molecular weight of the propellant fluid?
-### 4.21 Which of the performance parameters ($n$, $\epsilon_5$, $u_t$, $R$) depend on the ratio of specific heats $\gamma$?
-### 4.22 Which of the performance parameters ($n$, $\epsilon_5$, $u_t$, $R$) depend on the area ratio $\frac{A_2}{A_1}$?
+### 4.17 Which of the performance parameters ($F$, $I_{sp}$, $C_F$, $c^*$) depend on the pressure in the combustion chamber?
+### 4.18 Which of the performance parameters ($F$, $I_{sp}$, $C_F$, $c^*$) depend on the ambient pressure?
+### 4.19 Which of the performance parameters ($F$, $I_{sp}$, $C_F$, $c^*$) depend on the temperature in the combustion chamber?
+### 4.20 Which of the performance parameters ($F$, $I_{sp}$, $C_F$, $c^*$) depend on the average molecular weight of the propellant fluid?
+### 4.21 Which of the performance parameters ($F$, $I_{sp}$, $C_F$, $c^*$) depend on the ratio of specific heats $\gamma$?
+### 4.22 Which of the performance parameters ($F$, $I_{sp}$, $C_F$, $c^*$) depend on the area ratio $\frac{A_2}{A_1}$?
 

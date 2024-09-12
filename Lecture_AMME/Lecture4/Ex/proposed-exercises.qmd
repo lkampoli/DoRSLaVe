@@ -3,17 +3,17 @@ title: Lecture 4 -- Proposed exercises
 ---
 
 ### 4.3 Calculate thrust, effective exhaust velocity, chamber pressure, and specific impulse of a rocket engine with the following characteristics:
-- **Characteristic Velocity**: 
-- **Thrust Coefficient**: 
-- **Propellant Flow Rate**: 
-- **Throat Area**: 
+- **Characteristic Velocity**: $c^*$ = 1220 m/s
+- **Thrust Coefficient**: $C_F$ = 1.5
+- **Propellant Flow Rate**: $\dot{m}$ = 73 kg/s
+- **Throat Area**: $A_t$ = 0.0248 $m^2$
 
 **RESULTS**
 
-- **Thrust**: 
-- **Effective Exhaust Velocity**: 
-- **Chamber Pressure**: 
-- **Specific Impulse**:
+- **Thrust**: $F$ = 133.6 kN
+- **Effective Exhaust Velocity**: $u_{eq}$ = 1830 m/s
+- **Chamber Pressure**: $p_c$ = 3.59 MPa
+- **Specific Impulse**: $I_{sp}$ = 186.6 s
 
 ### 4.4 Calculate the characteristic velocity of a rocket engine with the following properties:
 - **Vacuum Thrust**: 
@@ -45,37 +45,36 @@ Calculate the specific impulse and characteristic velocity, assuming the nozzle 
   - **Thrust Coefficient**: `t u  B S V & B ,  5   V V 3⁄4  ,`
   - **Propellant Saving**: ` 5  X & U ¿ 3 , N   &  B X ¿ 3`
 
-- **For `o  &  `:**
+- **For:**
   - **Specific Impulse**: `u t  S B V U 3⁄4 , 5    Ä V 3⁄4  ,`
   - **Propellant Saving**: ` 5  X B B 3 ¿ , N    & & & ¿ 3`
 
 Note that the propellant saving is relatively small (`& Ð`) even considering there was no reduction in initial mass, which would have decreased the propellant mass needed for satellite launch.
 
 ### 4.6 Consider the main engine of the European Ariane 5 launcher. It is characterized by:
-- **Specific Impulse in a Vacuum**: `5   Ø ÈQ   » ° °  .`
-- **Characteristic Velocity**: `   B  μ Ã ¶  ,`
-- **Nozzle Area Ratio**: `A  B S T &`
+- **Specific Impulse in a Vacuum:**
+- **Characteristic Velocity:**
+- **Nozzle Area Ratio:**
 
 Calculate the ratio of exit area to throat area `o ,` the thrust coefficient in a vacuum `t u`, the characteristic velocity `R `, and the average molecular weight of the mixture ``.
 
 **RESULTS**
 
-- **Exit to Throat Area Ratio**: `o  » B S » ;`
-- **Thrust Coefficient in a Vacuum**: `t u  T B S X X V ;`
-- **Characteristic Velocity**: `R   & & 3⁄4  2  . ;`
-- **Average Molecular Weight**: ` 3 . 3 Ó B ° V ¿ 2 ¡`
+- **Exit to Throat Area Ratio**: 
+- **Thrust Coefficient in a Vacuum**: 
+- **Characteristic Velocity**: 
+- **Average Molecular Weight**:
 
-### 4.7 Consider the propulsion system from the previous exercise. Given that it provides a vacuum thrust of `È n Q   B B &  ́ 3`, calculate the thrust at sea level. Compare the sea-level and vacuum thrust values with those obtained by replacing the divergent nozzle with a sea-level adapted nozzle. Also, compare the specific impulse in a vacuum.
+### 4.7 Consider the propulsion system from the previous exercise. Given that it provides a vacuum thrust of $F_{vac}$ = 1120 kN, calculate the thrust at sea level. Compare the sea-level and vacuum thrust values with those obtained by replacing the divergent nozzle with a sea-level adapted nozzle. Also, compare the specific impulse in a vacuum.
 
 **RESULTS**
 
-- **Nozzle with ` =    & ¶ 3 μ`:**
-  - **Sea-Level Thrust**: `M  n  X V B 3 ́ ;`
-  - **Vacuum Thrust**: `È n Q   B B &  ́ 3 ;`
-  - **Specific Impulse in a Vacuum**: `   Ø 5 È Q   » °  ° .`
+- **Nozzle with**: 
+  - **Sea-Level Thrust**:
+  - **Vacuum Thrust**: 
+  - **Specific Impulse in a Vacuum**: 
 
-- **Nozzle with ` =   B   μ 3 ¶`:**
-  - **Sea-Level Thrust**: `M n   Ä V 3⁄4 3 ́ ;`
-  - **Vacuum Thrust**: `È n Q   B  » U  ́ 3 ;`
-  - **Specific Impulse in a Vacuum**: `ø  Ø 5 ÈQ   »   » .`
-
+- **Nozzle with**: 
+  - **Sea-Level Thrust**:
+  - **Vacuum Thrust**: 
+  - **Specific Impulse in a Vacuum**: 

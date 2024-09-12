@@ -63,6 +63,22 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css">
 
 </head>
 
@@ -75,7 +91,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../Lecture4/lecture4.html">Lecture 4</a></li><li class="breadcrumb-item"><a href="../../Lecture4/Ex/worked-exercises.html">Lecture 4 – Worked exercises</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../Lecture4/lecture4.slides.html.slides.html">Lecture 4</a></li><li class="breadcrumb-item"><a href="../../Lecture4/Ex/worked-exercises.html">Lecture 4 – Worked exercises</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -159,7 +175,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture4/lecture4.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Lecture4/lecture4.slides.html.slides.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lecture 4</span></a>
   </div>
 </li>
@@ -298,61 +314,62 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="a-rocket-engine-with-a-convergent-nozzle-with-a-minimum-throat-section-of-b-2-diameter-produces-a-thrust-of-b-3-when-tested-at-sea-level.-calculate-the-chamber-pressure-assuming-it-is-higher-than-3-μ-.-consider-a-b-s-.-what-is-the-impulsive-thrust-and-the-pressure-thrust" class="level4">
-<h4 class="anchored" data-anchor-id="a-rocket-engine-with-a-convergent-nozzle-with-a-minimum-throat-section-of-b-2-diameter-produces-a-thrust-of-b-3-when-tested-at-sea-level.-calculate-the-chamber-pressure-assuming-it-is-higher-than-3-μ-.-consider-a-b-s-.-what-is-the-impulsive-thrust-and-the-pressure-thrust">4.1 A rocket engine with a convergent nozzle with a minimum throat section of ( B 2 ) diameter produces a thrust of ( B ° ́ 3 ) when tested at sea level. Calculate the chamber pressure, assuming it is higher than ( &amp; 3 ¶ μ ). Consider ( A B S° . ) What is the impulsive thrust? And the pressure thrust?</h4>
+<section id="a-rocket-engine-with-a-convergent-nozzle-with-a-minimum-throat-section-of-10-cm-diameter-produces-a-thrust-of-13-kn-when-tested-at-sea-level.-calculate-the-chamber-pressure-assuming-it-is-higher-than-200-kpa.-consider-gamma-1.3.-what-is-the-impulsive-thrust-and-the-pressure-thrust" class="level4">
+<h4 class="anchored" data-anchor-id="a-rocket-engine-with-a-convergent-nozzle-with-a-minimum-throat-section-of-10-cm-diameter-produces-a-thrust-of-13-kn-when-tested-at-sea-level.-calculate-the-chamber-pressure-assuming-it-is-higher-than-200-kpa.-consider-gamma-1.3.-what-is-the-impulsive-thrust-and-the-pressure-thrust">4.1 A rocket engine with a convergent nozzle with a minimum throat section of 10 cm diameter produces a thrust of 13 kN when tested at sea level. Calculate the chamber pressure, assuming it is higher than 200 kPa. Consider <span class="math inline">\gamma</span> = 1.3. What is the impulsive thrust? And the pressure thrust?</h4>
 <p><strong>SOLUTION</strong></p>
-<p>The thrust equation is: [ n # 5 = = Q = : . ]</p>
-<p>The pressure in the combustion chamber is calculated using the thrust data and the given conditions: [ · R B B X ° &lt; ; ]</p>
-<p>The saturated nozzle conditions imply: [ SR ̧ Q ]</p>
-<p>For a saturated nozzle: [ = Z = R = R n 1 R R ) R # Q D o Z ma ) A . ]</p>
-<p>So, the impulsive thrust is: [ = 5 ]</p>
-<p>The pressure thrust is: [ = 5 1⁄2 n = 5 = # = R V X ́ A Z R Q = # D Q Z 3⁄4 &amp; ́ ]</p>
+<p>The thrust equation is: <span class="math inline">F = \dot{m}_p u_e + (p_e - p_a)</span></p>
+<p><span class="math inline">p_c/p^* = (1+\delta)^\frac{\gamma}{\gamma-1} = 1.83</span></p>
+<p><span class="math inline">p^* &gt; p_a</span> <span class="math inline">\Rightarrow</span> <span class="math inline">A_e = A_t</span>, <span class="math inline">p_e = p^*</span>, <span class="math inline">u_e = a^*</span></p>
+<p><span class="math inline">F = [\rho^*(a^*)^2 + p^* - p_a]A_t</span> but <span class="math inline">a^2 = \gamma p/\rho</span></p>
+<p><span class="math inline">F/A_t = (\gamma +1)p^* - p_a</span> <span class="math inline">\Rightarrow</span> <span class="math inline">p^* = 764 kPa</span>, <span class="math inline">p_c = 1400 kPa</span></p>
+<p>Impulsive thrust = <span class="math inline">F_{imp} = \dot{m}_p u_e = \gamma p^* A_t = 7800 N</span></p>
+<p>Pressure thrust = <span class="math inline">F_{pres} = (p_e - p_a)A_e = (p^* - p_a)A_t = 5200 N</span></p>
 </section>
-<section id="a-rocket-engine-using-liquid-hydrogen-and-oxygen-consumes-3-of-à-per-second.-the-oxidizer-to-fuel-mixture-ratio-is-34-3-of-á-for-every-3-of-à-.-the-total-temperature-of-the-combustion-gases-is-â-and-the-total-pressure-in-the-nozzle-adiabatic-and-isentropic-is-b-μ-ã-.-assuming-the-mixture-of-combustion-products-has-a-s-b-t-e-ä-u-å-.-3-.-â-calculate" class="level4">
-<h4 class="anchored" data-anchor-id="a-rocket-engine-using-liquid-hydrogen-and-oxygen-consumes-3-of-à-per-second.-the-oxidizer-to-fuel-mixture-ratio-is-34-3-of-á-for-every-3-of-à-.-the-total-temperature-of-the-combustion-gases-is-â-and-the-total-pressure-in-the-nozzle-adiabatic-and-isentropic-is-b-μ-ã-.-assuming-the-mixture-of-combustion-products-has-a-s-b-t-e-ä-u-å-.-3-.-â-calculate">4.2 A rocket engine using liquid hydrogen and oxygen consumes ( » ¿ 3 ) of ( À ) ) per second. The oxidizer-to-fuel mixture ratio is ( 3⁄4 ¿ 3 ) of ( Á ) ) for every ( ¿ 3 ) of ( À ) ). The total temperature of the combustion gases is ( ° Â ) and the total pressure in the nozzle (adiabatic and isentropic) is ( B μ Ã ¶ ). Assuming the mixture of combustion products has ( A S B T &amp; e Ä U Å . ¿ 3 . Â ), calculate:</h4>
+<section id="a-rocket-engine-using-liquid-hydrogen-and-oxygen-consumes-40-kg-of-h_2-per-second.-the-oxidizer-to-fuel-mixture-ratio-is-5-kg-of-o_2-for-every-kg-of-h_2.-the-total-temperature-of-the-combustion-gases-is-3000-k-and-the-total-pressure-in-the-nozzle-adiabatic-and-isentropic-is-1o-mpa.-assuming-the-mixture-of-combustion-products-has-gamma-1.2-and-r-690-jkgk-calculate" class="level4">
+<h4 class="anchored" data-anchor-id="a-rocket-engine-using-liquid-hydrogen-and-oxygen-consumes-40-kg-of-h_2-per-second.-the-oxidizer-to-fuel-mixture-ratio-is-5-kg-of-o_2-for-every-kg-of-h_2.-the-total-temperature-of-the-combustion-gases-is-3000-k-and-the-total-pressure-in-the-nozzle-adiabatic-and-isentropic-is-1o-mpa.-assuming-the-mixture-of-combustion-products-has-gamma-1.2-and-r-690-jkgk-calculate">4.2 A rocket engine using liquid hydrogen and oxygen consumes 40 kg of <span class="math inline">H_2</span> per second. The oxidizer-to-fuel mixture ratio is 5 kg of <span class="math inline">O_2</span> for every kg of <span class="math inline">H_2</span>. The total temperature of the combustion gases is 3000 K and the total pressure in the nozzle (adiabatic and isentropic) is 1o MPa. Assuming the mixture of combustion products has <span class="math inline">\gamma</span> = 1.2 and <span class="math inline">R</span> = 690 J/kg/K, calculate:</h4>
 <ol type="a">
-<li><p>The thrust provided by the engine at sea level (( Q B μ 3 ¶ )) in the case of a convergent nozzle.</p></li>
+<li><p>The thrust provided by the engine at sea level (<span class="math inline">p_a</span> = 100 kPa) in the case of a convergent nozzle.</p></li>
 <li><p>The thrust in the case of an adapted nozzle.</p></li>
-<li><p>Assuming ( Æ 5 B S &amp; 3⁄4 Ã Å . ¿ 3 ), calculate ( Q È Ç ), ( É Ç ), ( 5 Ç ), ( Ç 4 ) for the cases of ( Ë ) and ( Ë B 2 . . )</p></li>
+<li><p>Assuming <span class="math inline">Q_p</span> = 12.5 MJ/kg calculate <span class="math inline">P_{av}</span>, <span class="math inline">P_j</span>, <span class="math inline">P_p</span>, <span class="math inline">P_d</span> for the cases of <span class="math inline">V</span> = 0 and <span class="math inline">V</span> = 1000 m/s.</p></li>
 </ol>
 <p><strong>SOLUTION</strong></p>
 <ol type="a">
 <li>For a convergent nozzle: [ , . D Q B l ]</li>
 </ol>
-<p>Since the nozzle is saturated: [ n 5 R R # ]</p>
-<p>Using the data provided: [ 5 Í Ì Í Î U § Í Ì » &amp; ¿ 3 . . ]</p>
-<p>Also: [ R S 3⁄4 U » 3⁄4 Ã μ ¶ ; ] [ R V &amp; V &amp; Â ; ] [ R ° 3 ¿ . 2 Ï ; e ] [ R B 3⁄4 D Q Z . ° 2 . . ]</p>
-<p>Thus: [ Z 5 . R R S 3⁄4 ° 2 &amp; ) . ]</p>
-<p>The thrust is: [ n ° U S V Ä &amp; S 3⁄4 &amp; ́ 3 U 3⁄4 S 3⁄4 Ä 3 ́ ]</p>
+<p>Since the nozzle is saturated:</p>
+<p>Using the data provided:</p>
+<p>Also:</p>
+<p>Thus:</p>
+<p>The thrust is:</p>
 <p><strong>For Mach calculation:</strong> [ = Y ]</p>
 <ol start="2" type="a">
 <li>For an adapted nozzle: [ = n 5 = 5 ]</li>
 </ol>
 <p>Calculate the Mach number in the exit section: [ = \frac{B B · = Y ) h h f g i j e = Y ° S Ä ° X . ]</p>
-<p>Thus: [ = B ° Ä &amp; Â ; = B V » 2 . ] [ ; = ° U » X 2 . ] [ e n X V 3⁄4 S 3⁄4 ́ 3 ( ° S ° 3⁄4 Ð ]</p>
+<p>Thus:</p>
 <ol start="3" type="a">
 <li>For the specific cases: [ # È Q Ç S ° Ñ Ò ( S ° B &amp; Ò Ñ Ë B 2 . . ) ] [ # Ç 4 S T B U Ñ Ò (S X » Ò Ñ Ë B 2 . . ) ] [ # 5 Ç S Ò Ñ (S X V Ñ Ò Ë B 2 . . ) ] [ # Ê Ç É B S U Ò Ñ ( B S V B Ò Ñ Ë B 2 . . ) ]</li>
 </ol>
 </section>
-<section id="determine-the-throat-area-exit-area-thrust-coefficient-and-characteristic-velocity-of-a-rocket-engine.-the-engine-when-adapted-to-sea-level-provides-a-thrust-of-34-3-and-a-specific-impulse-of-.-the-propellant-has-an-average-molecular-weight-of-b-34-2-3-ó-.-3-and-the-combustion-temperature-is-â-." class="level4">
-<h4 class="anchored" data-anchor-id="determine-the-throat-area-exit-area-thrust-coefficient-and-characteristic-velocity-of-a-rocket-engine.-the-engine-when-adapted-to-sea-level-provides-a-thrust-of-34-3-and-a-specific-impulse-of-.-the-propellant-has-an-average-molecular-weight-of-b-34-2-3-ó-.-3-and-the-combustion-temperature-is-â-.">4.3 Determine the throat area, exit area, thrust coefficient, and characteristic velocity of a rocket engine. The engine, when adapted to sea level, provides a thrust of <code>3⁄4   ́ 3</code> and a specific impulse of <code>°    .</code> The propellant has an average molecular weight of <code>B 3⁄4 2 3 ¡ Ó . 3 ¿</code>, and the combustion temperature is <code>° °   Â .</code></h4>
+<section id="determine-the-throat-area-exit-area-thrust-coefficient-and-characteristic-velocity-of-a-rocket-engine.-the-engine-when-adapted-to-sea-level-provides-a-thrust-of-500-kn-and-a-specific-impulse-of-300-s.-the-propellant-has-an-average-molecular-weight-of-mathcalm-15-kmolkg-and-the-combustion-temperature-is-t_c-3300-k." class="level4">
+<h4 class="anchored" data-anchor-id="determine-the-throat-area-exit-area-thrust-coefficient-and-characteristic-velocity-of-a-rocket-engine.-the-engine-when-adapted-to-sea-level-provides-a-thrust-of-500-kn-and-a-specific-impulse-of-300-s.-the-propellant-has-an-average-molecular-weight-of-mathcalm-15-kmolkg-and-the-combustion-temperature-is-t_c-3300-k.">4.3 Determine the throat area, exit area, thrust coefficient, and characteristic velocity of a rocket engine. The engine, when adapted to sea level, provides a thrust of 500 kN and a specific impulse of 300 s. The propellant has an average molecular weight of <span class="math inline">\mathcal{M}</span> = 15 kmol/kg and the combustion temperature is <span class="math inline">T_c</span> = 3300 K.</h4>
 <p><strong>SOLUTION</strong></p>
-<p>Given the thrust and specific impulse, the propellant flow rate can be calculated as: [ n . , 5 B Ä U S Ä ¿ 3 . . ]</p>
-<p>Using the flow rate expression: [ m D Z . k ]</p>
-<p>To find ( Z ), we need ( ). With ( A ) given in the problem, we can find: [ m H A A B S U X » ; e . . . ]</p>
-<p>[ X ° B » B 3⁄4 3⁄4 3⁄4 » ° Å Â 3 ¿ ]</p>
+<p>Given the thrust and specific impulse, the propellant flow rate can be calculated as:</p>
+<p>Using the flow rate expression:</p>
+<p>To find ( Z ), we need ( ). With ( A ) given in the problem, we can find:</p>
 <p>To calculate ( ): [ ] [ N = 1 M O ]</p>
 <p>Therefore: [ N M O ? &amp; A . ] [ = \frac{S ° ° &amp; » e = ]</p>
-<p>The thrust coefficient is: [ t . n B Ä » uZS ° » B U 2 S) ]</p>
-<p>And the characteristic velocity: [ R m B Ä V 3⁄4 2 ]</p>
+<p>The thrust coefficient is:</p>
+<p>And the characteristic velocity:</p>
 </section>
-<section id="calculate-the-thrust-provided-by-the-rocket-engine-from-the-previous-exercise-when-the-atmospheric-pressure-drops-to-q-s-μ-ã-.-compare-this-with-the-thrust-obtained-with-a-nozzle-identical-in-every-respect-except-the-exit-area-designed-to-be-adapted-to-q-s-ã-μ-.-how-do-the-characteristic-velocity-and-thrust-coefficient-change-compared-to-the-previous-exercise" class="level4">
-<h4 class="anchored" data-anchor-id="calculate-the-thrust-provided-by-the-rocket-engine-from-the-previous-exercise-when-the-atmospheric-pressure-drops-to-q-s-μ-ã-.-compare-this-with-the-thrust-obtained-with-a-nozzle-identical-in-every-respect-except-the-exit-area-designed-to-be-adapted-to-q-s-ã-μ-.-how-do-the-characteristic-velocity-and-thrust-coefficient-change-compared-to-the-previous-exercise">4.4 Calculate the thrust provided by the rocket engine from the previous exercise when the atmospheric pressure drops to <code>Q   S   ° μ Ã ¶</code>. Compare this with the thrust obtained with a nozzle identical in every respect except the exit area, designed to be adapted to <code>Q   S   ° Ã μ ¶</code>. How do the characteristic velocity and thrust coefficient change compared to the previous exercise?</h4>
+<section id="calculate-the-thrust-provided-by-the-rocket-engine-from-the-previous-exercise-when-the-atmospheric-pressure-drops-to-p_a-0.0-mpa-and-compare-this-with-the-thrust-obtained-with-a-nozzle-identical-in-every-respect-except-the-exit-area-designed-to-be-adapted-to-p_a-0.04-mpa.-how-do-the-characteristic-velocity-and-thrust-coefficient-change-compared-to-the-previous-exercise" class="level4">
+<h4 class="anchored" data-anchor-id="calculate-the-thrust-provided-by-the-rocket-engine-from-the-previous-exercise-when-the-atmospheric-pressure-drops-to-p_a-0.0-mpa-and-compare-this-with-the-thrust-obtained-with-a-nozzle-identical-in-every-respect-except-the-exit-area-designed-to-be-adapted-to-p_a-0.04-mpa.-how-do-the-characteristic-velocity-and-thrust-coefficient-change-compared-to-the-previous-exercise">4.4 Calculate the thrust provided by the rocket engine from the previous exercise when the atmospheric pressure drops to <span class="math inline">p_a</span> = 0.0 MPa and compare this with the thrust obtained with a nozzle identical in every respect except the exit area, designed to be adapted to <span class="math inline">p_a</span> = 0.04 MPa. How do the characteristic velocity and thrust coefficient change compared to the previous exercise?</h4>
 <p><strong>SOLUTION</strong></p>
-<p>Due to different environmental conditions, the pressure thrust must be considered: [ = SB μ Ã ¶ ] [ n n 3⁄4 ° &amp; Ä 3 ́ e , # # = Q = Q = ]</p>
-<p>Knowing ( n = 3⁄4 ́ 3 ), the thrust obtained in the previous exercise is used. To find the thrust with the modified nozzle, the chamber pressure, propellant properties, chamber temperature, and throat area are the same as in the previous exercise. The exit area changes to allow greater expansion of the jet. Knowing the ratio ( D . = ), we can calculate ( = Y ) and then ( = ): [ = ]</p>
-<p><strong>Given:</strong> [ . = = : Ô &lt; ; . . B ° B » B : 2 N M #= O = n B Ä U Ä ° B » B 3⁄4 ° ° U ́ 3⁄4 ° ° U ́ 3 § ) = S ]</p>
-<p>The characteristic velocity ( R ) remains unchanged from the previous exercise, depending on ( A ) and ( ), while ( u t ) and ( 5 ) vary as follows: [ Ø Ê u t e S B T 3⁄4 U ; ] [ Ê Ø t u ) B S T 3⁄4 Ä Ø 5 e ] [ 5 Ø ) ° &amp; ]</p>
+<p>Due to different environmental conditions, the pressure thrust must be considered:</p>
+<p>Knowing <span class="math inline">F_0 = \dot{m} u_e</span> = 500 kN, the thrust obtained in the previous exercise is used. To find the thrust with the modified nozzle, the chamber pressure, propellant properties, chamber temperature, and throat area are the same as in the previous exercise. The exit area changes to allow greater expansion of the jet. Knowing the ratio ( D . = ), we can calculate ( = Y ) and then:</p>
+<p>[ = ]</p>
+<p><strong>Given:</strong></p>
+<p>The characteristic velocity ( R ) remains unchanged from the previous exercise, depending on ( A ) and ( ), while ( u t ) and ( 5 ) vary as follows:</p>
 
 
 </section>
