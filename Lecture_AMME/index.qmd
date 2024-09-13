@@ -15,79 +15,75 @@ editor:
 
 # Overview
 
-These are the lecture slides for the **"Design of Rockets and Space Launch
-Vehicles"** course from The University of Sydney. They can be used to see and
-follow which topics are covered in the course. The slides are not intended to
-be used to learn the design of rockets and space launch vehicles from scratch.
-For that, you need to attend the lectures and complete the assignments and
-assessment sessions.
+These are the lecture slides for the **"Design of Rockets and Space Launch Vehicles"** course from The University of Sydney.
+They can be used to see and follow which topics are covered in the course.
+The slides are not intended to be used to learn the design of rockets and space launch vehicles from scratch.
+For that, you need to attend the lectures and complete the assignments and assessment sessions.
 
 # Lecture Materials
 
-- [Lecture 0: Course Overview](/Lecture0/lecture0.html) ([slides](/Lecture0/lecture0.pdf))
+-   [Lecture 0: Course Overview](/Lecture0/lecture0.html) ([slides](/Lecture0/lecture0.pdf))
 
-- [Lecture 1: Introduction to Launch Vehicles (LVs)](/Lecture1/lecture1.html) ([slides](/Lecture1/lecture1.pdf))
+-   [Lecture 1: Introduction to Launch Vehicles (LVs)](/Lecture1/lecture1.html) ([slides](/Lecture1/lecture1.pdf))
 
-- [Lecture 2: History of rocketry & LVs](/Lecture2/lecture2.html) ([slides](/Lecture2/lecture2.pdf))
+-   [Lecture 2: History of rocketry & LVs](/Lecture2/lecture2.html) ([slides](/Lecture2/lecture2.pdf))
 
-- [Lecture 3: Mission requirements](/Lecture3/lecture3.html) ([slides](/Lecture3/lecture3.pdf))
+-   [Lecture 3: Mission requirements](/Lecture3/lecture3.html) ([slides](/Lecture3/lecture3.pdf))
 
-- [Lecture 4: Propulsion](/Lecture4/lecture4.html) ([slides](/Lecture4/lecture4.pdf))
+-   [Lecture 4: Propulsion](/Lecture4/lecture4.html) ([slides](/Lecture4/lecture4.pdf))
 
-- [Lecture 5: Performance estimation](/Lecture5/lecture5.html) ([slides](/Lecture5/lecture5.pdf))
+-   [Lecture 5: Performance estimation](/Lecture5/lecture5.html) ([slides](/Lecture5/lecture5.pdf))
 
-- [Lecture 6: LV trajectory optimization](/Lecture6/lecture6.html) ([slides](/Lecture6/lecture6.pdf))
+-   [Lecture 6: LV trajectory optimization](/Lecture6/lecture6.html) ([slides](/Lecture6/lecture6.pdf))
 
-- [Lecture 7: LV structures](/Lecture7/lecture7.html) ([slides](/Lecture7/lecture7.pdf))
+-   [Lecture 7: LV structures](/Lecture7/lecture7.html) ([slides](/Lecture7/lecture7.pdf))
 
-- [Lecture 8: LV ground, transportation & ascent loads](/Lecture8/lecture8.html) ([slides](/Lecture8/lecture8.pdf))
+-   [Lecture 8: LV ground, transportation & ascent loads](/Lecture8/lecture8.html) ([slides](/Lecture8/lecture8.pdf))
 
-- [Lecture 9: Launch environment](/Lecture9/lecture9.html) ([slides](/Lecture9/lecture9.pdf))
+-   [Lecture 9: Launch environment](/Lecture9/lecture9.html) ([slides](/Lecture9/lecture9.pdf))
 
-- [Lecture 10: Stability & Instabilities](/Lecture10/lecture10.html) ([slides](/Lecture10/lecture10.pdf))
+-   [Lecture 10: Stability & Instabilities](/Lecture10/lecture10.html) ([slides](/Lecture10/lecture10.pdf))
 
-- [Lecture 11: LV Manufacturing](/Lecture11/lecture11.html) ([slides](/Lecture11/lecture11.pdf))
+-   [Lecture 11: LV Manufacturing](/Lecture11/lecture11.html) ([slides](/Lecture11/lecture11.pdf))
 
-- [Lecture 12: LV systems](/Lecture12/lecture12.html) ([slides](/Lecture12/lecture12.pdf))
+-   [Lecture 12: LV systems](/Lecture12/lecture12.html) ([slides](/Lecture12/lecture12.pdf))
 
-- [Lecture 13: Testing](/Lecture13/lecture13.html) ([slides](/Lecture13/lecture13.pdf))
+-   [Lecture 13: Testing](/Lecture13/lecture13.html) ([slides](/Lecture13/lecture13.pdf))
 
-- [Lecture 14: Failures](/Lecture14/lecture14.html) ([slides](/Lecture14/lecture14.pdf))
+-   [Lecture 14: Failures](/Lecture14/lecture14.html) ([slides](/Lecture14/lecture14.pdf))
 
-- [Lecture 15: LV Financial analysis](/Lecture15/lecture15.html) ([slides](/Lecture15/lecture15.pdf))
+-   [Lecture 15: LV Financial analysis](/Lecture15/lecture15.html) ([slides](/Lecture15/lecture15.pdf))
 
 # Readings
 
-A significant amount of resources has been utilized to compile the lecture
-notes, which serve as the primary reference for this course. All cited books,
-papers, reports, and theses can be accessed through electronic databases or
-found at The University of Sydney Library. Below, you will find the recommended
-readings for each topic and week. Additional references are available in the
-bibliography for further exploration.
+A significant amount of resources has been utilized to compile the lecture notes, which serve as the primary reference for this course.
+All cited books, papers, reports, and theses can be accessed through electronic databases or found at The University of Sydney Library.
+Below, you will find the recommended readings for each topic and week.
+Additional references are available in the bibliography for further exploration.
 
-| Week | Readings                                                                                                                                                                                                                                      |
-|:--------------:|--------------------------------------------------------|
-|  1   | @edberg2022design: Chapter 1                                     |
-|  2   | @edberg2022design: Chapter 2                                     |
-|  3   | @edberg2022design: Chapter 3                                     |
+| Week | Readings                                                                                                                                                                        |
+|:----:|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  1   | @edberg2022design: Chapter 1                                                                                                                                                    |
+|  2   | @edberg2022design: Chapter 2                                                                                                                                                    |
+|  3   | @edberg2022design: Chapter 3                                                                                                                                                    |
 |  4   | @edberg2022design: Chapter 4, @humble1995space: Chapter 6, @hill1992mechanics: Chapter 10, 11, 12, @sutton2011rocket: Chapter 12, 13, 14, 15, @zucrow1948principles: Chapter 12 |
-|  5   | @edberg2022design: Chapter 5                                     |
-|  6   | @edberg2022design: Chapter 6                                     |
-|  7   | @edberg2022design: Chapter 7                                     |
-|  8   | @edberg2022design: Chapter 8                                     |
-|  9   | @edberg2022design: Chapter 9                                     |
-|  10  | @edberg2022design: Chapter 10                                    |
-|  11  | @edberg2022design: Chapter 11                                    |
-|  12  | @edberg2022design: Chapter 12                                    |
-|  13  | @edberg2022design: Chapter 13                                    |
-|  14  | @edberg2022design: Chapter 14                                    |
-|  15  | @edberg2022design: Chapter 15                                    |
+|  5   | @edberg2022design: Chapter 5                                                                                                                                                    |
+|  6   | @edberg2022design: Chapter 6                                                                                                                                                    |
+|  7   | @edberg2022design: Chapter 7                                                                                                                                                    |
+|  8   | @edberg2022design: Chapter 8                                                                                                                                                    |
+|  9   | @edberg2022design: Chapter 9                                                                                                                                                    |
+|  10  | @edberg2022design: Chapter 10                                                                                                                                                   |
+|  11  | @edberg2022design: Chapter 11                                                                                                                                                   |
+|  12  | @edberg2022design: Chapter 12                                                                                                                                                   |
+|  13  | @edberg2022design: Chapter 13                                                                                                                                                   |
+|  14  | @edberg2022design: Chapter 14                                                                                                                                                   |
+|  15  | @edberg2022design: Chapter 15                                                                                                                                                   |
 
 : {tbl-colwidths="\[6,94\]"}
 
 # Contributors
 
-- Lorenzo Campoli
+-   Lorenzo Campoli
 
 # Copyright
 

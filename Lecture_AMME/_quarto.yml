@@ -105,7 +105,7 @@ format:
     theme: [serif, shared.scss, revealjs-style.scss]
     controls: true
     controls-tutorial: true
-    logo: logos/unisyd.jpeg
+    #logo: logos/unisyd.jpeg
     transition: none
     slide-number: c/t
     preview-links: false
