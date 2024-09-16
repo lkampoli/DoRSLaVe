@@ -1,0 +1,996 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  ignorenonframetext,
+]{beamer}
+\usepackage{pgfpages}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}{: }
+\setbeamercolor{caption name}{fg=normal text.fg}
+\beamertemplatenavigationsymbolsempty
+% Prevent slide breaks in the middle of a paragraph
+\widowpenalties 1 10000
+\raggedbottom
+\setbeamertemplate{part page}{
+  \centering
+  \begin{beamercolorbox}[sep=16pt,center]{part title}
+    \usebeamerfont{part title}\insertpart\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{section page}{
+  \centering
+  \begin{beamercolorbox}[sep=12pt,center]{part title}
+    \usebeamerfont{section title}\insertsection\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{subsection page}{
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center]{part title}
+    \usebeamerfont{subsection title}\insertsubsection\par
+  \end{beamercolorbox}
+}
+\AtBeginPart{
+  \frame{\partpage}
+}
+\AtBeginSection{
+  \ifbibliography
+  \else
+    \frame{\sectionpage}
+  \fi
+}
+\AtBeginSubsection{
+  \frame{\subsectionpage}
+}
+
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else  
+    % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\newif\ifbibliography
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+\usepackage{caption}
+% Make caption package work with longtable
+\makeatletter
+\def\fnum@table{\tablename~\thetable}
+\makeatother
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+\makeatletter
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\makeatletter
+\makeatother
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Lecture 4},
+  pdfauthor={Lorenzo Campoli},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Lecture 4}
+\subtitle{AERO3261 -- Rocket Propulsion}
+\author{Lorenzo Campoli}
+\date{}
+
+\begin{document}
+\frame{\titlepage}
+\begin{frame}{Outline of the lecture}
+\protect\hypertarget{outline-of-the-lecture}{}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\begin{enumerate}
+\tightlist
+\item
+  \textbf{Introduction}
+\item
+  \textbf{Compressible flow}
+\item
+  \textbf{Performance indices}
+\item
+  \textbf{Space mission requirements}
+\item
+  \textbf{Thermal rocket engines}
+\item
+  \textbf{Liquid propellant engines}
+\end{enumerate}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+\begin{enumerate}
+\setcounter{enumi}{6}
+\tightlist
+\item
+  \textbf{Solid rocket motors}
+\item
+  \textbf{Electric thrusters}
+\item
+  \textbf{Secondary propulsion}
+\item
+  \textbf{Staging}
+\item
+  \textbf{Some current developments}
+\item
+  \textbf{Possible future developments}
+\end{enumerate}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Goals of space propulsion}
+\protect\hypertarget{goals-of-space-propulsion}{}
+\textbf{propellere} (latin) = ``push forward''
+
+\begin{block}{In order to:}
+\protect\hypertarget{in-order-to}{}
+\begin{itemize}
+\tightlist
+\item
+  attain very high speed
+\item
+  overcome gravity/aerodynamic forces
+\item
+  maneuvers
+\item
+  attitude adjustment
+\item
+  decelerate (re-entry, soft landing)
+\end{itemize}
+
+\textbf{Thrust} generated as reaction to expulsion of a propellant fluid
+
+\textbf{Key requirement}: lightweight (both engine and propellants) and
+cost
+\end{block}
+\end{frame}
+
+\begin{frame}{Thrust generation}
+\protect\hypertarget{thrust-generation}{}
+\begin{itemize}
+\tightlist
+\item
+  Reaction to ejection of propulsive fluid momentum:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    rocket engine: propellants stored on board \(\rightarrow\) products
+  \end{itemize}
+\end{itemize}
+
+Engine
+
+Thrust (kN) SL/Vacuum
+
+Adopted by
+
+Price (M\$)
+
+Year
+
+Vulcain 2
+
+960 / 1359
+
+Ariane 5
+
+12
+
+2017
+
+RS--25
+
+1860 / 2279
+
+Space Shuttle
+
+50
+
+2011
+
+RS--68
+
+2950 / 3137
+
+Delta IV
+
+15
+
+2006
+
+RD--180
+
+3830 / 4150
+
+Atlas V
+
+23.5
+
+2017
+
+Search for simplicity \(\rightarrow\) contain part count
+\end{frame}
+
+\begin{frame}{Engineering goal}
+\protect\hypertarget{engineering-goal}{}
+\begin{itemize}
+\tightlist
+\item
+  attain given target at minimum cost
+\item
+  costs of a space mission:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    launcher, payload, launch operations, monitoring, insurance,
+    propellants
+  \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\tightlist
+\item
+  Propulsion system dominating: 44\% to 59\%; \textgreater{} 70\%
+  including tanks
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Why using rockets?}
+\protect\hypertarget{why-using-rockets}{}
+\textbf{Space missions require:}
+
+\begin{itemize}
+\tightlist
+\item
+  very high speed
+\item
+  operating outside the atmosphere
+\end{itemize}
+
+\begin{block}{Jet engine: \(f \simeq \dot{m} (u_e - v)\)}
+\protect\hypertarget{jet-engine-f-simeq-dotm-u_e---v}{}
+\end{block}
+
+\begin{block}{Rocket: \(f \simeq \dot{m} u_e\)}
+\protect\hypertarget{rocket-f-simeq-dotm-u_e}{}
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Thrust jet engine}: limited by \(u_e - v\)
+\item
+  \textbf{Rocket thrust}: independent of \(v\) → any \(v\) can be
+  attained (in principle)
+\end{itemize}
+
+where \(u_e\) is the jet exit velocity and \(v\) is the aircraft/rocket
+speed
+\end{block}
+\end{frame}
+
+\begin{frame}{Circular orbit velocity}
+\protect\hypertarget{circular-orbit-velocity}{}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\begin{itemize}
+\tightlist
+\item
+  \textbf{m}: satellite mass
+\item
+  \textbf{\(\bf{M_E}\)}: earth mass
+\item
+  \textbf{G}: universal gravitational constant
+\end{itemize}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+\begin{itemize}
+\tightlist
+\item
+  \textbf{r}: orbit radius
+\item
+  \(\bf{\mu_e}\): earth source potential constant
+\end{itemize}
+\end{column}
+\end{columns}
+
+\[\frac{mv^2}{r} = G\frac{m M_E}{r^2}, \qquad \mu_E = G M_E = 3.986 \times 10^{14} \ \text{m}^3 \text{s}^{-2}, \qquad v_c = \sqrt{\frac{\mu_T}{r}}\]
+
+\begin{itemize}
+\item
+  **For an orbit at h = 0 → r = \(R_{E,\text{equat}}\):
+  \(v_c = \sqrt{\frac{3.986 \times 10^{14}}{6378 \times 10^3}} \approx 7905 \ \text{m/s}\)
+\item
+  For orbit at h = 200 km → \(v_c \approx 7800 \ \text{m/s}\)
+\item
+  \textbf{\(\Delta v\)}: ideal
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Space missions requirements (∆v)}
+\protect\hypertarget{space-missions-requirements-v}{}
+\begin{itemize}
+\item
+  Propellant mass \textgreater{} 80\% → tight coupling between design of
+  launcher and propulsion system
+\item
+  High cost orbit injection:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    LEO (low earth orbit)
+  \item
+    GEO (geostationary equatorial orbit)
+  \item
+    cost GEO ≃ cost LEO x (5÷10)
+  \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\begin{block}{Classification based on Energy Source}
+\protect\hypertarget{classification-based-on-energy-source}{}
+-- \textbf{Exhaust jet momentum generated by means of energy}\ldots{}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Chemical}: Oxidizer/Fuel, Monopropellant (Thermal)
+\item
+  \textbf{Solar}: Thermal, Electric
+\item
+  \textbf{(Electric)}: Solar, Nuclear, Chemical
+\item
+  \textbf{Nuclear}: Thermal
+\end{itemize}
+\end{block}
+
+\begin{block}{Classification based on Propulsive Principle}
+\protect\hypertarget{classification-based-on-propulsive-principle}{}
+-- \textbf{Transformation of primary energy into jet kinetic
+energy}\ldots{}
+
+\begin{enumerate}
+\tightlist
+\item
+  \textbf{Thermal}: Chemical, Nuclear, Solar\\
+\item
+  \textbf{Electrostatic (ions)}: Electrical ← Solar,
+\item
+  \textbf{Electromagnetic (plasma)}: Electrical ← Solar
+\end{enumerate}
+
+2 \& 3 give low thrust/weight ratios (cannot lift off from the ground).
+\end{block}
+\end{frame}
+
+\begin{frame}{Definition of launcher masses}
+\protect\hypertarget{definition-of-launcher-masses}{}
+\begin{itemize}
+\tightlist
+\item
+  \textbf{\(m_{pl}\)}: Payload Mass
+\item
+  \textbf{\(m_p\)}: Propellant Mass
+\item
+  \textbf{\(m_s\)}: Structural (Inert) Mass
+\item
+  \textbf{\(m_0\)}: Launcher Initial Mass
+\item
+  \textbf{\(m_f\)}: Launcher Final Mass
+\end{itemize}
+
+\[m_0 = m_{pl} + m_p + m_s\]
+
+\[m_f = m_{pl} + m_s\]
+
+\[m_f = m_0 - m_p\]
+\end{frame}
+
+\begin{frame}{Definition of mass ratios}
+\protect\hypertarget{definition-of-mass-ratios}{}
+\begin{itemize}
+\item
+  \textbf{Mass ratio (final/initial)} \[MR = \frac{m_f}{m_0}\]
+\item
+  \textbf{Payload ratio:} \[\lambda = \frac{m_{pl}}{m_0}\]
+\item
+  \textbf{Structural coefficient} \[\kappa_s = \frac{m_s}{m_p + m_s}\]
+
+  \[m_s = \frac{m_p}{1 - \kappa_s}\]
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Lecture's objective}
+\protect\hypertarget{lectures-objective}{}
+We want to understand how the nozzle design of a thermo-chemical solid
+rocket motor influences the thrust and the specific impulse
+\end{frame}
+
+\begin{frame}{Ideal Nozzle}
+\protect\hypertarget{ideal-nozzle}{}
+Hypotheses:
+
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\begin{itemize}
+\tightlist
+\item
+  combustion details ignored
+\item
+  thermally and calorically perfect
+\item
+  non-reactive, homogeneous gas
+\item
+  steady flow
+\item
+  1D or quasi-1D model
+\item
+  negligible nozzle inlet flow velocity
+\item
+  conditions are uniform in space and time
+\item
+  isentropic flow (unless shocks)
+\item
+  inviscid and adiabatic flow
+\end{itemize}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+\includegraphics{figs/fig16.2.png}
+
+A quasi 1D duct.
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+For \textbf{mass conservation}:
+
+\[ \rho u A = (\rho + d\rho)(u + du)(A + dA) \quad \Rightarrow \quad d(\rho u A) = 0 \quad \Rightarrow \quad \dot{m} = \rho u A = \text{const.} \]
+
+For \textbf{momentum conservation}:
+
+\[ \dot{m}(u + du) - \dot{m}u = pA + \left(p + \frac{dp}{2}\right)dA - \left(p + dp\right)(A + dA) \quad \Rightarrow \quad dp + \rho u du = 0 \]
+
+For \textbf{energy conservation}:
+
+\[ \dot{m} \left[e + \frac{u^2}{2} + d \left(e + \frac{u^2}{2} \right) \right] - \dot{m} \left(e+\frac{u^2}{2}\right) = puA - (p + dp)(u + du)(A + dA) \]
+
+\[ \dot{m} d\left(e + \frac{u^2}{2}\right) + d(puA) = 0 \quad \Rightarrow \quad \dot{m} d\left(e + \frac{u^2}{2}\right) + d\left(\dot{m} \frac{p}{\rho}\right) = 0 \]
+
+\[ \dot{m} d\left(e + \frac{p}{\rho} + \frac{u^2}{2}\right) = 0 \quad \Rightarrow \quad dh_0 = 0 \]
+\end{frame}
+
+\begin{frame}
+\[ Tds = dh - dp/\rho \quad \Rightarrow \quad Tds = dh + udu = dh_0 = 0 \]
+
+\[ dh - dp/\rho = 0 \quad \Rightarrow \quad \frac{T}{T_c} = \left(\frac{p}{p_c}\right)^\frac{\gamma - 1}{\gamma} \]
+
+Thus: \(h_0 = h_c = const., T_0 = T_c = const., p_0 = p_c = const.\)
+
+From the energy eq. we obtain the velocity at a generic nozzle section:
+
+\[
+u_e = \sqrt{2(h_c - h_e)} = \sqrt{\frac{2 \gamma}{\gamma - 1} R T_c \left(1 - \frac{T_e}{T_c}\right)}
+\quad \Rightarrow \quad 
+u_e = \sqrt{\frac{2 \gamma}{\gamma - 1} \frac{\mathcal{R} T_c}{\mathcal{M}} \left[1 - \left(\frac{p_e}{p_c}\right)^{\frac{\gamma - 1}{\gamma}}\right]}
+\]
+
+\[u_{lim} = \sqrt{\frac{2\gamma}{\gamma - 1} \frac{\mathcal{R}T_c}{\mathcal{M}}} \quad \text{and} \quad u_e = u_{lim} \sqrt{\left[1 - \left(\frac{p_e}{p_c}\right)^\frac{\gamma-1}{\gamma}\right]}\]
+\end{frame}
+
+\begin{frame}
+\begin{figure}
+
+{\centering \includegraphics{figs/fig16.3.png}
+
+}
+
+\caption{Variation of the ratio between exit velocity and limiting
+velocity as a function of the expansion ratio.}
+
+\end{figure}
+\end{frame}
+
+\begin{frame}
+We also want to express the mass flow rate as a function of nozzle
+characteristic variables:
+
+\[
+\dot{m} = \rho_* u_* A_* = \rho_t u_t A_t
+\]
+
+\[
+u_t = a_t = \sqrt{\gamma R T_t} = \sqrt{\gamma R T_c \left(\frac{T_t}{T_c}\right)} = \sqrt{\gamma R T_c \left(\frac{1}{1+\frac{\gamma - 1}{2}M_t^2}\right)} = \sqrt{\gamma R T_c} \left(\frac{2}{\gamma + 1}\right)^{1/2}
+\]
+
+\[ \rho_t = \rho_c \left(\frac{\rho_t}{\rho_c}\right) = \frac{p_c}{R T_c} \left(\frac{1}{1+\frac{\gamma - 1}{2}M_t^2}\right)^\frac{1}{\gamma - 1} = \frac{p_c}{RT_c} \left(\frac{2}{\gamma + 1}\right)^\frac{1}{\gamma - 1} 
+\]
+
+\[
+\dot{m} = \frac{p_c}{RT_c} \left(\frac{2}{\gamma + 1}\right)^\frac{1}{\gamma - 1} \sqrt{\gamma R T_c} \left(\frac{2}{\gamma + 1}\right)^{1/2} A_t = \frac{p_c A_t}{\sqrt{RT_c}} \sqrt{\gamma \left(\frac{2}{\gamma + 1}\right)^\frac{\gamma + 1}{\gamma - 1}}
+\]
+
+\[\dot{m} = \frac{\Gamma p_c A_t}{\sqrt{R T_c}} \quad \text{where} \quad \Gamma = \sqrt{\gamma \left(\frac{2}{\gamma + 1} \right)^\frac{\gamma + 1}{\gamma - 1}}\]
+\end{frame}
+
+\begin{frame}
+\includegraphics{lecture4_files/figure-beamer/cell-2-output-1.pdf}
+\end{frame}
+
+\begin{frame}
+\begin{block}{Rocket Engine Performance Parameters}
+\protect\hypertarget{rocket-engine-performance-parameters}{}
+\includegraphics{tabs/tab4.4.png}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\begin{itemize}
+\item
+  \textbf{EFFECTIVE EXHAUST VELOCITY} (in m/s)
+  \[u_{\text{eff}} = \frac{F}{\dot{m}_p}\]
+\item
+  \textbf{SPECIFIC IMPULSE} (in s; more used on historical grounds)
+  \[I_{\text{sp}} = \frac{F}{\dot{w}}\]
+\end{itemize}
+
+\[I_{\text{sp}} = \frac{F}{g_0 \dot{m}_p} \rightarrow I_{\text{sp}} = \frac{u_{\text{eff}}}{g_0} \quad [s] \quad \text{with} \quad g_0 = 9.80665 \, \text{m/s}^2\]
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{ENGINE THRUST/WEIGHT RATIO}
+  \[w_{\text{eng}} = \frac{F}{m_{\text{eng}} g_0} \quad \text{where} \quad \dot{w} = g\dot{m}_p\]
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\begin{longtable}[]{@{}lll@{}}
+\toprule\noalign{}
+Propulsion System & \(u_{eff}\) (m/s) & \(F/w_{eng}\) \\
+\midrule\noalign{}
+\endhead
+Chemical, liquid propellants & 2500 ÷ 4600 & 50 ÷ 100 \\
+Chemical, solid propellants & 2000 ÷ 3000 & 50 ÷ 100 \\
+Resistojet & 2000 ÷ 8000 & 0.06 \\
+Arcjet & 4000 ÷ 20000 & 0.01 \\
+Electrostatic & 25000 ÷ 34000 & 0.001 \\
+Electromagnetic & 3000 ÷ 12000 & 0.0001 \\
+\bottomrule\noalign{}
+\end{longtable}
+\end{frame}
+
+\begin{frame}{Definition of thrust}
+\protect\hypertarget{definition-of-thrust}{}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+{We obtained expressions for the mass flow rate and exhaust velocity as
+a function of the variables in the combustion chamber, area ratio, and
+the propulsive fluid properties. }
+
+{Now, we want to investigate how these variables influence the SRM
+performance. }
+\end{column}
+
+\begin{column}{0.5\textwidth}
+\includegraphics{figs/fig4.1.png}
+
+Rocket thrust control volume
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Derivation of the thrust of an endoreactor}
+\protect\hypertarget{derivation-of-the-thrust-of-an-endoreactor}{}
+\begin{figure}
+
+{\centering \includegraphics{figs/fig3.3.png}
+
+}
+
+\caption{Volume of control for the derivation of the thrust expression
+for an endoreactor.}
+
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\begin{equation}
+\sum_{i}F_{i}=\frac{d}{dt}\int_{V}\rho udV+\int_{S}\rho u\left(\boldsymbol{u}\cdot\boldsymbol{n}\right)dS
+\end{equation}
+
+\begin{equation}
+\int_{S}\rho u\left(\boldsymbol{u}\cdot\boldsymbol{n}\right)dS=\left(\rho_{e}u_{e}A_{e}\right)u_{e}=\dot{m}_{p}u_{e}
+\end{equation}
+
+\begin{equation}
+\sum_{i}F_{i}=F+\int_{S-S_{e}}p_{a}\left(-\boldsymbol{n}\cdot \boldsymbol{i}\right)dS+\int_{S_{e}}p_{e}\left(-\boldsymbol{n}\cdot \boldsymbol{i}\right)dS
+\end{equation}
+
+\begin{equation}
+\oint_{S}\boldsymbol{n}dS=0
+\end{equation}
+
+\begin{equation}
+\int_{S-S_{e}}p_{a}\left(-\boldsymbol{n}\cdot\boldsymbol{i}\right)dS+\int_{S_{e}}p_{a}\left(\boldsymbol{n}\cdot\boldsymbol{i}\right)dS=p_{a}A_{e}
+\end{equation}
+
+\begin{equation}
+\sum_{i}F_{i}=F-\left(p_{e}-p_{a}\right)A_{e}
+\end{equation}
+
+\begin{equation}
+F=\dot{m}_{p}u_{e}+\left(p_{e}-p_{a}\right)A_{e}
+\end{equation}
+\end{frame}
+
+\begin{frame}
+\begin{block}{Equivalent (or Effective) Exhaust Velocity}
+\protect\hypertarget{equivalent-or-effective-exhaust-velocity}{}
+\[F = \dot{m}_p u_{eq}\]
+
+\[u_{eq} = \frac{F}{\dot{m}_p} = u_e + \frac{(p_e - p_a)A_e}{\dot{m}_p}\]
+\end{block}
+\end{frame}
+
+\begin{frame}
+What is the expansion ratio that gives the maximum thrust?
+
+\[F = \dot{m}u_e + (p_e - p_a)A_e\]
+
+\[dF = \dot{m} du_e + (p_e - p_a)dA_e + A_e dp_e\]
+
+\[
+\begin{align*}
+dF &= \rho_e u_e A_e du_e + A_e dp_e + (p_e - p_a) dA_e \\
+   &= (\rho_e u_e du_e + dp_e) A_e + (p_e - p_a) dA_e \\
+   &= (p_e - p_a) dA_e
+\end{align*}
+\]
+
+{Adapted nozzle!}
+\end{frame}
+
+\begin{frame}
+Expression of the \textbf{thrust} of a nozzle:
+
+\begin{equation}
+F = \Gamma p_c A_t \sqrt{\frac{2\gamma}{\gamma-1} \left[1 - \left(\frac{p_e}{p_c}\right)^\frac{\gamma-1}{\gamma}\right]} + \frac{A_e}{A_t} \left( \frac{p_e}{p_c} - \frac{p_a}{p_c} \right)
+\end{equation}
+
+Then, we can define the \textbf{thrust coefficient}:
+
+\begin{equation}
+C_F = \frac{F}{p_c A_t} = \Gamma \sqrt{\frac{2\gamma}{\gamma-1} \left[1 - \left(\frac{p_e}{p_c}\right)^\frac{\gamma-1}{\gamma}\right]} + \frac{A_e}{A_t} \left( \frac{p_e}{p_c} - \frac{p_a}{p_c} \right)
+\end{equation}
+
+The thrust \(F = C_F p_c A_t\) is:
+
+independent of \(\mathcal{M}\) and \(T_c\)
+
+linearly dependent on \(A_t\)
+
+more than linearly dependent on \(p_c\)
+
+linear in \(C_F\) (decreasing with \(\gamma\) and has a max. when
+\(\epsilon\) gives \(p_e = p_a\)
+\end{frame}
+
+\begin{frame}
+\[C_F = f(\gamma, \epsilon, p_c/p_a)\]
+
+\begin{itemize}
+\tightlist
+\item
+  Separation for \(p_e < (0.25 ÷ 0.4) p_a\)
+\item
+  Higher ratios \(p_c/p_a\) → higher \(C_F\) but require higher
+  \(\epsilon\) = \(A_e/A_t\) → higher nozzle weight, friction losses
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\begin{figure}
+
+{\centering \includegraphics{figs/fig16.5.png}
+
+}
+
+\caption{Thrust coefficient \(C_F\) as a function of expansion ratio and
+\(p_c/p_a\) ratio.}
+
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\[ \text{nozzle expansion ratio: } \epsilon = \frac{A_e}{A_t} = \frac{\Gamma}{\sqrt{\frac{2\gamma}{\gamma-1} \left(\frac{p_e}{p_c}\right)^\frac{2}{\gamma} \left[1 - \left(\frac{p_e}{p_c}\right)^\frac{\gamma-1}{\gamma}\right]}}\]
+
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\includegraphics{figs/fig.3.4l.png}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+\includegraphics{figs/fig.3.5l.png}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+Let's introduce another characteristic parameter of SRMs, the
+\textbf{Specific Impulse}:
+
+\[I_{sp} = \frac{u_{eq}}{g_0} = \frac{F}{\dot{m_p}g_0} = \frac{1}{g_0} \left(\frac{p_c A_t}{\dot{m_p}} \right) C_F = \frac{c^* C_F}{g_0}\]
+
+\[c^* = \frac{p_c A_t}{\dot{m}_p} = \frac{\sqrt{R T_c}}{\Gamma} = \frac{1}{\Gamma} \sqrt{\frac{\mathcal{R} T_c}{\mathcal{M}}}\]
+
+The specific impulse:
+
+increases with \(T_C\)
+
+decreases with \(\mathcal{M}\)
+
+has a maximum when \(\epsilon\) is such that \(p_e = p_a\)
+
+slighlty increases with \(p_c\) thanks to the increases of the pressure
+term in \(C_F\)
+\end{frame}
+
+\begin{frame}
+\begin{figure}
+
+{\centering \includegraphics{tabs/tab4.1.png}
+
+}
+
+\caption{Typical Specific Impulse Values.}
+
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\begin{figure}
+
+{\centering \includegraphics{tabs/tab4.2.png}
+
+}
+
+\caption{Typical Sea-level and Vacuum Volumetric Specific Impulse
+Values.}
+
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\begin{figure}
+
+{\centering \includegraphics{figs/fig4.5.png}
+
+}
+
+\caption{Specific impulse as a function of nozzle expansion ratio and
+chamber pressure. (a) Nozzle throat (t) and exit (e) dimensions; (b)
+\(I_{sp}\) vs chamber pressure expansion ratio. Source: @Ley}
+
+\end{figure}
+\end{frame}
+
+\begin{frame}{Solid Rocket Motors (SRMs)}
+\protect\hypertarget{solid-rocket-motors-srms}{}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\begin{figure}
+
+{\centering \includegraphics{figs/fig4.9.png}
+
+}
+
+\caption{Basic arrangement of a solid-propellant rocket motor. Source:
+Northrop-Grumman.}
+
+\end{figure}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+\begin{itemize}
+\tightlist
+\item
+  Pros/cons:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    simple
+  \item
+    storable
+  \item
+    easily scalable design
+  \item
+    lower performance (\(u_{eff}\))
+  \item
+    non re--ignitable, non throttleable
+  \end{itemize}
+\item
+  Main components:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    combustion chamber
+  \item
+    propellant grain
+  \item
+    igniter
+  \item
+    nozzle
+  \end{itemize}
+\item
+  Uses: boosters, upper stages, tactical missiles, gas generators
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\begin{block}{SRM types and burn rates}
+\protect\hypertarget{srm-types-and-burn-rates}{}
+\begin{figure}
+
+{\centering \includegraphics{figs/fig4.10.png}
+
+}
+
+\caption{Two primary types of SRMs: left: end burner; right: core
+burner.}
+
+\end{figure}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\begin{block}{Thrust profile and grain shape}
+\protect\hypertarget{thrust-profile-and-grain-shape}{}
+\begin{figure}
+
+{\centering \includegraphics{figs/fig4.12.png}
+
+}
+
+\caption{Examples of grain shapes and accompanying thrust profiles.
+Source: http:// www.braeunig.us.}
+
+\end{figure}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.6286}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.3714}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Mission
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Velocity (m/s)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+InterContinental Ballistic Missiles (ICBM) & 8000 \\
+Low Earth Orbit (LEO) & 9000 \\
+Escape from Earth's gravity; Moon impact & 12500 \\
+Geostationary Equatorial Orbit (GEO) & 13000 \\
+Soft landing on the Moon & 15000 \\
+Round trip to the Moon & 18000 \\
+Round trip to Venus/Mars & 18000 ÷ 27000 \\
+Compensation of orbital perturbations & 50 (per year) \\
+\bottomrule\noalign{}
+\end{longtable}
+
+\begin{itemize}
+\tightlist
+\item
+  Goal of the propulsion system: deliver a velocity increment ∆v
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\end{frame}
+
+
+
+\end{document}

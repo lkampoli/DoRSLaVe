@@ -2,6 +2,47 @@
 title: Lecture 4 -- Proposed exercises
 ---
 
+<!--
+The first stage engines of the Ariane 5 launcher (named Vulcain) are powered by
+liquid hydrogen and oxygen, with an oxidizer-to-fuel mass flow rate ratio of
+$r$ = $m_{ox}$ / $m_f$ = 5.89. The combustion chamber pressure is $p_c$ = 10
+MPa. Under these conditions, a chemical equilibrium calculation, gives the
+following characteristics for the combustion products:
+- $T_c$ = 3636 K,
+- $W$ = 13.136 kg/kmole, 
+- $\gamma$ = 1.201
+
+Assuming optimal expansion ($p_e$ = $p_a$) at the ambient pressure
+corresponding to sea level ($p_a$ = 101.325 kPa), determine the Mach number
+$M_e$ at the nozzle exit, the nozzle expansion ratio $\epsilon$ = $A_e$/$A_t$,
+the exit temperature $T_e$, the thrust coefficient $C_F$, the characteristic
+velocity $c^*$, the discharge coefficient $C_D$, and the effective exit
+velocity $c$.
+
+Next, assuming you want to design an engine with sea-level thrust equal to that
+of the Vulcain engine (F = 860 kN), determine the mass flow rate $\dot{m}$, the
+throat area $A_t$, and the nozzle exit area $A_e$.
+
+By inverting equation (3.29), with a known ratio of p_e / p_c = 101.325 / 10^6
+= (7 / 10^6), we find M_e = 3.393. The nozzle expansion ratio can then be found
+from equation (3.35), which gives ε = 11.72. The exit temperature is calculated
+using equation (3.28), T_e = 1684 K. It can be observed that the gases exiting
+the nozzle are still quite hot, meaning there is energy that cannot be fully
+exploited.
+
+From equation (3.32), we find that in this case α = 0.6488. Equation (3.38),
+considering that in our case the pressure term is zero (p_e = p_a), gives C_F =
+1.642. Equation (3.47) gives c* = 2338 m/s, and equation (3.50) gives C_D =
+0.0004277 s/m. Finally, the effective exit velocity is given by equation (2.12)
+as c = 3839 m/s.
+
+To size the engine for the desired thrust, a mass flow rate is required, which
+from equation (2.6) results in ṁ = 224 kg/s. From equation (2.10), the throat
+area is A_t = 0.05237 m², and the exit area is A_e = ε * A_t = 0.6137 m².
+Incidentally, the Vulcain does not operate with optimal expansion at sea level,
+as its nozzle is actually characterized by an expansion ratio of ε = 45.
+-->
+
 ### 4.3 Calculate thrust, effective exhaust velocity, chamber pressure, and specific impulse of a rocket engine with the following characteristics:
 - **Characteristic Velocity**: $c^*$ = 1220 m/s
 - **Thrust Coefficient**: $C_F$ = 1.5
@@ -15,6 +56,7 @@ title: Lecture 4 -- Proposed exercises
 - **Chamber Pressure**: $p_c$ = 3.59 MPa
 - **Specific Impulse**: $I_{sp}$ = 186.6 s
 
+<!--
 ### 4.4 Calculate the characteristic velocity of a rocket engine with the following properties:
 - **Vacuum Thrust**: 
 - **Sea-Level Thrust**:
@@ -78,3 +120,4 @@ Calculate the ratio of exit area to throat area `o ,` the thrust coefficient in 
   - **Sea-Level Thrust**:
   - **Vacuum Thrust**: 
   - **Specific Impulse in a Vacuum**: 
+-->

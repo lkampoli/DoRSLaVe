@@ -1,6 +1,6 @@
 ---
 title: "Design of Rockets and Space Launch Vehicles"
-subtitle: "Lecture slides for AERO3261"
+subtitle: "Lecture slides for AERO3261, AERO5260, AERO5200, AMME5510"
 author: Dr. Lorenzo Campoli
 bibliography: library.bib
 csl: apa.csl
@@ -11,14 +11,22 @@ editor_options:
 editor: 
   markdown: 
     wrap: sentence
+output: 
+  beamer_presentation:
+    keep_tex: true
+#  pdf_document: 
+#    includes:
+#      in_header: preamble.tex
 ---
 
 # Overview
 
-These are the lecture slides for the **"Design of Rockets and Space Launch Vehicles"** course from The University of Sydney.
-They can be used to see and follow which topics are covered in the course.
-The slides are not intended to be used to learn the design of rockets and space launch vehicles from scratch.
-For that, you need to attend the lectures and complete the assignments and assessment sessions.
+These are the lecture slides for the **"Design of Rockets and Space Launch
+Vehicles"** course from The University of Sydney. They can be used to see and
+follow which topics are covered in the course. The slides are not intended to
+be used to learn the design of rockets and space launch vehicles from scratch.
+For that, you need to attend the lectures and complete the assignments and
+assessment sessions.
 
 # Lecture Materials
 

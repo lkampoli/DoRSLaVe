@@ -129,7 +129,6 @@ format:
     auto-agenda:
       heading: Lecture Outline
 
-subtitle: AERO3261
 author: Lorenzo Campoli
 strip-comments: true
 html-math-method: katex
@@ -141,3 +140,10 @@ execute:
   echo: true
   freeze: false
   daemon: false
+
+output: 
+  beamer_presentation:
+    keep_tex: true
+#  pdf_document: 
+#    includes:
+#      in_header: preamble.tex

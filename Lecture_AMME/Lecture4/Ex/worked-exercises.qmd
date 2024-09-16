@@ -7,20 +7,22 @@ title: Lecture 4 -- Worked exercises
 **SOLUTION**
 
 The thrust equation is:
+
 $F = \dot{m}_p u_e + (p_e - p_a)$
 
 $p_c/p^* = (1+\delta)^\frac{\gamma}{\gamma-1} = 1.83$
 
-$p^* > p_a$ $\Rightarrow$ $A_e = A_t$, $p_e = p^*$, $u_e = a^*$
+$p^* > p_a$ $\Rightarrow$ $A_e = A_t$, \quad $p_e = p^*$, \quad $u_e = a^*$
 
-$F = [\rho^*(a^*)^2 + p^* - p_a]A_t$  but $a^2 = \gamma p/\rho$
+$F = [\rho^*(a^*)^2 + p^* - p_a]A_t$  \quad but \quad $a^2 = \gamma p/\rho$
 
-$F/A_t = (\gamma +1)p^* - p_a$ $\Rightarrow$ $p^* = 764 kPa$, $p_c = 1400 kPa$
+$F/A_t = (\gamma +1)p^* - p_a$ $\Rightarrow$ $p^* = 764 kPa$, \quad $p_c = 1400 kPa$
 
-Impulsive thrust = $F_{imp} = \dot{m}_p u_e = \gamma p^* A_t = 7800 N$
+Impulsive thrust: $F_{imp} = \dot{m}_p u_e = \gamma p^* A_t = 7800 N$
 
-Pressure thrust = $F_{pres} = (p_e - p_a)A_e = (p^* - p_a)A_t = 5200 N$
+Pressure thrust: $F_{pres} = (p_e - p_a)A_e = (p^* - p_a)A_t = 5200 N$
 
+<!--
 ### 4.2 A rocket engine using liquid hydrogen and oxygen consumes 40 kg of $H_2$ per second. The oxidizer-to-fuel mixture ratio is 5 kg of $O_2$ for every kg of $H_2$. The total temperature of the combustion gases is 3000 K and the total pressure in the nozzle (adiabatic and isentropic) is 1o MPa. Assuming the mixture of combustion products has $\gamma$ = 1.2 and $R$ = 690 J/kg/K, calculate:
 
 (a) The thrust provided by the engine at sea level ($p_a$ = 100 kPa) in the case of a convergent nozzle.
@@ -104,3 +106,4 @@ expansion of the jet. Knowing the ratio \(   D . =  \), we can calculate \( = Y
 The characteristic velocity \(  R \) remains unchanged from the previous
 exercise, depending on \( A \) and \(  \), while \( u t \) and \(    5 \) vary
 as follows:
+-->
