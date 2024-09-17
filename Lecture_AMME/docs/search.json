@@ -1,0 +1,408 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Design of Rockets and Space Launch Vehicles",
+    "section": "",
+    "text": "These are the lecture slides for the “Design of Rockets and Space Launch Vehicles” course from The University of Sydney. They can be used to see and follow which topics are covered in the course. The slides are not intended to be used to learn the design of rockets and space launch vehicles from scratch. For that, you need to attend the lectures and complete the assignments and assessment sessions."
+  },
+  {
+    "objectID": "index.html#overview",
+    "href": "index.html#overview",
+    "title": "Design of Rockets and Space Launch Vehicles",
+    "section": "",
+    "text": "These are the lecture slides for the “Design of Rockets and Space Launch Vehicles” course from The University of Sydney. They can be used to see and follow which topics are covered in the course. The slides are not intended to be used to learn the design of rockets and space launch vehicles from scratch. For that, you need to attend the lectures and complete the assignments and assessment sessions."
+  },
+  {
+    "objectID": "index.html#lecture-materials",
+    "href": "index.html#lecture-materials",
+    "title": "Design of Rockets and Space Launch Vehicles",
+    "section": "Lecture Materials",
+    "text": "Lecture Materials\n\nLecture 0: Course Overview (slides)\nLecture 1: Introduction to Launch Vehicles (LVs) (slides)\nLecture 2: History of rocketry & LVs (slides)\nLecture 3: Mission requirements (slides)\nLecture 4: Propulsion (slides)\nLecture 5: Performance estimation (slides)\nLecture 6: LV trajectory optimization (slides)\nLecture 7: LV structures (slides)\nLecture 8: LV ground, transportation & ascent loads (slides)\nLecture 9: Launch environment (slides)\nLecture 10: Stability & Instabilities (slides)\nLecture 11: LV Manufacturing (slides)\nLecture 12: LV systems (slides)\nLecture 13: Testing (slides)\nLecture 14: Failures (slides)\nLecture 15: LV Financial analysis (slides)"
+  },
+  {
+    "objectID": "index.html#readings",
+    "href": "index.html#readings",
+    "title": "Design of Rockets and Space Launch Vehicles",
+    "section": "Readings",
+    "text": "Readings\nA significant amount of resources has been utilized to compile the lecture notes, which serve as the primary reference for this course. All cited books, papers, reports, and theses can be accessed through electronic databases or found at The University of Sydney Library. Below, you will find the recommended readings for each topic and week. Additional references are available in the bibliography for further exploration.\n\n\n\n\n\n\n\nWeek\nReadings\n\n\n\n\n1\nEdberg (2022): Chapter 1\n\n\n2\nEdberg (2022): Chapter 2\n\n\n3\nEdberg (2022): Chapter 3\n\n\n4\nEdberg (2022): Chapter 4, Humble (1995): Chapter 6, Hill & Peterson (1992): Chapter 10, 11, 12, Sutton & Biblarz (2011): Chapter 12, 13, 14, 15, Zucrow (1948): Chapter 12\n\n\n5\nEdberg (2022): Chapter 5\n\n\n6\nEdberg (2022): Chapter 6\n\n\n7\nEdberg (2022): Chapter 7\n\n\n8\nEdberg (2022): Chapter 8\n\n\n9\nEdberg (2022): Chapter 9\n\n\n10\nEdberg (2022): Chapter 10\n\n\n11\nEdberg (2022): Chapter 11\n\n\n12\nEdberg (2022): Chapter 12\n\n\n13\nEdberg (2022): Chapter 13\n\n\n14\nEdberg (2022): Chapter 14\n\n\n15\nEdberg (2022): Chapter 15"
+  },
+  {
+    "objectID": "index.html#contributors",
+    "href": "index.html#contributors",
+    "title": "Design of Rockets and Space Launch Vehicles",
+    "section": "Contributors",
+    "text": "Contributors\n\nLorenzo Campoli"
+  },
+  {
+    "objectID": "index.html#copyright",
+    "href": "index.html#copyright",
+    "title": "Design of Rockets and Space Launch Vehicles",
+    "section": "Copyright",
+    "text": "Copyright\nLorenzo Campoli"
+  },
+  {
+    "objectID": "Lecture4/Lab/srm.html",
+    "href": "Lecture4/Lab/srm.html",
+    "title": "Lecture 4 – Solid rocket motor design",
+    "section": "",
+    "text": "SRM is an MS EXCEL spreadsheet that takes user-inputted motor and grain geometry data and computes Kn over the duration of the motor burn, generates a pressure-time curve, a thrust-time curve, as well as performance parameters such as total impulse and delivered specific impulse. Motor performance data is also summarized for easy input into a trajectory simulation software, such as SOAR. Although primarily intended for designing motors using KN-Dextrose or KN-Sorbitol propellant, other propellants may be specified with user inputted propellant properties. Solely for cylindrical grain configurations, such as BATES. Written by R.A. Nakka. \nSRM\n\nlibrary(readxl)\n\nsrm = read_excel('./SRM_2023.xls')\n\nNew names:\n• `` -&gt; `...2`\n\nsrm\n\n# A tibble: 83 × 4\n   `SRM 2023.XLS`                          ...2  `Written by:` `Richard A.Nakka`\n   &lt;chr&gt;                                   &lt;lgl&gt; &lt;chr&gt;         &lt;chr&gt;            \n 1 Solid Rocket Motor Performance          NA    Version:      2023 (for free d…\n 2 &lt;NA&gt;                                    NA    Date:         45008            \n 3 &lt;NA&gt;                                    NA    &lt;NA&gt;          &lt;NA&gt;             \n 4 Instructions for use: Enter required d… NA    &lt;NA&gt;          &lt;NA&gt;             \n 5 Note that some data cells have drop-do… NA    &lt;NA&gt;          &lt;NA&gt;             \n 6 Then click on the Solve buttons (1-3)   NA    &lt;NA&gt;          &lt;NA&gt;             \n 7 &lt;NA&gt;                                    NA    &lt;NA&gt;          &lt;NA&gt;             \n 8 &lt;NA&gt;                                    NA    &lt;NA&gt;          &lt;NA&gt;             \n 9 Introduction                            NA    &lt;NA&gt;          &lt;NA&gt;             \n10 &lt;NA&gt;                                    NA    &lt;NA&gt;          &lt;NA&gt;             \n# ℹ 73 more rows"
+  },
+  {
+    "objectID": "Lecture4/Lab/pseudofinocyl.html",
+    "href": "Lecture4/Lab/pseudofinocyl.html",
+    "title": "Lecture 4 – Grain Geometric Analysis",
+    "section": "",
+    "text": "This spreadsheet computes the Kn (burning-area to throat-area ratio) for a Pseudo-finocyl propellant grain. A Pseudo-finocyl grain configuration consists of a cylindrical grain with a circular bore, from which a number of fins extend radially (similar to a star-grain). Five independant geometric variables allow for great freedom in tailoring of the Kn profile. Such a grain may be fabricated by casting with a suitable mandrel, or by drilling the core, then cutting the fin slots. Written by Richard Nakka. \nPFC"
+  },
+  {
+    "objectID": "Lecture4/Lab/meteor.html",
+    "href": "Lecture4/Lab/meteor.html",
+    "title": "Lecture 4 – SRM design with Meteor",
+    "section": "",
+    "text": "METEOR is a Java implementation of the SRM.XLS Solid Rocket Motor Design spreadsheet. A free-to-use on-line application, METEOR is a convenient, validated tool for designing rocket motors. Includes some useful additional features not currently implemented in SRM.XLS. Written by Jordan Content and Jérôme Bise of Lyon, France. \nMeteor"
+  },
+  {
+    "objectID": "Lecture4/Ex/worked-exercises.html",
+    "href": "Lecture4/Ex/worked-exercises.html",
+    "title": "Lecture 4 – Worked exercises",
+    "section": "",
+    "text": "4.1 A rocket engine with a convergent nozzle with a minimum throat section of 10 cm diameter produces a thrust of 13 kN when tested at sea level. Calculate the chamber pressure, assuming it is higher than 200 kPa. Consider \\gamma = 1.3. What is the impulsive thrust? And the pressure thrust?\nSOLUTION\nThe thrust equation is:\nF = \\dot{m}_p u_e + (p_e - p_a)\np_c/p^* = (1+\\delta)^\\frac{\\gamma}{\\gamma-1} = 1.83\np^* &gt; p_a \\Rightarrow A_e = A_t, p_e = p^*, u_e = a^*\nF = [\\rho^*(a^*)^2 + p^* - p_a]A_t but a^2 = \\gamma p/\\rho\nF/A_t = (\\gamma +1)p^* - p_a \\Rightarrow p^* = 764 kPa, p_c = 1400 kPa\nImpulsive thrust: F_{imp} = \\dot{m}_p u_e = \\gamma p^* A_t = 7800 N\nPressure thrust: F_{pres} = (p_e - p_a)A_e = (p^* - p_a)A_t = 5200 N"
+  },
+  {
+    "objectID": "Lecture4/Ex/proposed-exercises.html",
+    "href": "Lecture4/Ex/proposed-exercises.html",
+    "title": "Lecture 4 – Proposed exercises",
+    "section": "",
+    "text": "4.3 Calculate thrust, effective exhaust velocity, chamber pressure, and specific impulse of a rocket engine with the following characteristics:\n\nCharacteristic Velocity: c^* = 1220 m/s\nThrust Coefficient: C_F = 1.5\nPropellant Flow Rate: \\dot{m} = 73 kg/s\nThroat Area: A_t = 0.0248 m^2\n\nRESULTS\n\nThrust: F = 133.6 kN\nEffective Exhaust Velocity: u_{eq} = 1830 m/s\nChamber Pressure: p_c = 3.59 MPa\nSpecific Impulse: I_{sp} = 186.6 s"
+  },
+  {
+    "objectID": "Lecture0/lecture0.html",
+    "href": "Lecture0/lecture0.html",
+    "title": "Course Overview",
+    "section": "",
+    "text": "Dr. Lorenzo Campoli\n\n\n\n\n\nBachelor in Aerospace Eng. (Sapienza)\nMaster in Space Eng. (Sapienza)\nII Level Master in STS (Sapienza)\nPhD in Theoretical and Applied Mechanics (Sapienza)\nPost-doc at SPBGU, Russia\nAss. Prof. at SPBGU, Russia\nPost-doc at UniMelb\nAss. Prof. at Macquarie University\nSystem Modelling Eng., Gilmour Space"
+  },
+  {
+    "objectID": "Lecture0/lecture0.html#learning-activities",
+    "href": "Lecture0/lecture0.html#learning-activities",
+    "title": "Course Overview",
+    "section": "Learning activities",
+    "text": "Learning activities\n\nLearning activities\nThe learning activities of this course involve the following:\n\nLectures:\n\nPreparing for & engaging in each week’s lecture\n\nSelf-study:\n\nPerforming reading of relevant textbook chapters\nDoing exercise questions (conceptual and applied)\n\nLabs:\n\nActively engaging in the lab sessions\n\nAssignments:\n\nGroup project\n\nSeminars:\n\nOne seminar per student presented during the course\n\n\n\n\nLecture’s format\n\n\n\nThe line depicts the level of audience attention during a 60-minute lecture and includes periods of high attention and low attention. The blue boxes highlight the proper timing for instruction (prime time) relative to the level of attention, and the gray box (down time) highlights the appropriate placement for engaging activities to activate the audience.\n\n\n\n\n\nProper positioning of audience participation within a lecture.\n\n\n\n\n\n\n\n\n\n\n\nTo counteract low attention periods, a 60-minute lecture will be divided into three segments lasting 20 minutes each. The engaging activities are then placed in the middle of each 20-minute cycle.\n\n\n\n\n\nUse of multiple prime time-down time cycles.\n\n\n\n\n\n\n\nContact hours\nThe lectures are 2 hours each week.\nThe tutorials are a mix of conceptual, theoretical questions, pen and paper exercise, and hands-on coding and simulation sessions.\nMake sure to use this time to ask your tutor for guidance on your project.\nIn later weeks, the tutorials will focus on project help and exam preparation.\nConsultation hours can be online or in-person and scheduled weekly (see Moodle for Zoom link).\n\n\nExercises\nOn the website, I have added longer exercises for you to try.\nTry to finish them around the week they are released.\nThese will be useful practice for the final exam."
+  },
+  {
+    "objectID": "Lecture0/lecture0.html#assessment",
+    "href": "Lecture0/lecture0.html#assessment",
+    "title": "Course Overview",
+    "section": "Assessment",
+    "text": "Assessment\n\nCourse Grade Breakdown\n\nIndividual Assignments (30%)\nGroup Project (35%)\nExam (30%)\nSeminar (5%)\n\n\n\nAssignments\nThere are 15 assignment tasks, each worth 2% each.\nThe best 10 of 15 being counted, adding up to 30%.\nThese are formative assignments, so are marked.\nThey are due on Friday at noon in each week.\nI’ll release them at least 10 days before the due date.\n\n\nProject\nGroup project over the term. You will:\n\ndesign a space mission program\ndesign a space launch vehicle system\ndefine and evaluate mission requirements and design constraints\nperform preliminary feasibility studies\ndefine critical project reviews and milestones\ndefine and perform test campaigns\nmodel sub-systems using analytical and/or computational tools\nverify compliance\nwrite a discussion of the results\n\n\n\nProject components\nThe deliverables for the project will include:\n\nReport Part 1 (sub-systems) due at noon on Friday in Week 5 (15%)\nReport Part 2 (system) due at noon on Monday of Week 10 (15%)\nRecorded presentation due at noon on Friday in Week 15 (10%)\n\n\n\nDue dates\nAll due dates are at noon of the following weeks (“IA” = Individual Assignments, “GP” = Group Project):\n\n\n\nIA1\nIA2 (Fri)\nIA3 (Fri)\nIA4 (Fri)\nIA5 and GP Report I (Fri)\nIA6 (Fri)\nIA7 (Fri)\nIA8 (Fri)\n\n\n\nIA9 (Fri)\nIA10 and GP Report II (Fri)\nIA11 (Fri)\nIA12 (Fri)\nIA13 (Fri)\nIA14 (Fri)\nIA15 and GP Presentation (Fri)\n\n\n\n\n\nLate policy\nIf submitting late, you must apply for special considerations through The University of Sydney central system. If you ask me for an extension, I will refer you to the special considerations system.\nWithout special consideration, late assignments will not be marked. I have noticed that special considerations will not be granted for assignments tasks if you can still get full marks without that task.\nFor the project, the general policy is:\n\nLate submission will incur a penalty of 5% per day or part thereof (including weekends) from the due date and time. An assignment will not be accepted after 5 days (120 hours) of the original deadline unless special consideration has been approved.\n\n\nDura lex, sed lex.\n\n\n\nFinal exam\nThe exam will test the concepts presented in the lectures.\nThe exam is a take-home format, and thus will be open book and open notes.\nYou’ll be given 5 exercises randomly selected from the lecture material, and will work individually to complete it.\n\n\nSeminars\nEach student is asked to deliver a seminar presentation of 30-45 minutes to the rest of the students within the timeframe of the course. The topic of the seminar can be proposed by the me or by the student. A calendar will be provided on the Forum page."
+  },
+  {
+    "objectID": "Lecture0/lecture0.html#past-student-feedback",
+    "href": "Lecture0/lecture0.html#past-student-feedback",
+    "title": "Course Overview",
+    "section": "Past student feedback",
+    "text": "Past student feedback\n\nBest parts of the course? Project\n\n“Having an open ended project allowed me to do something I had interest in.”\n\n\n“The assignment was really good as it gave you ownership of what problem to choose and investigate. The course itself is super interesting and insightful, and really practical since time isn’t wasted on coding but rather the concepts and how to apply these models.”\n\n\n\nThe style\n\n“I think the hands–on approach to learning how to code up CFD solver was quite useful. Not going too deeply into the inner workings models (some ways this might happen would be deriving certian formulas and proofs of certian theorems) allowed us to devote more attention to learning how worked in an intuitive way. This perhaps is more helpful for a first timer to the subject area. I think that being too entrenched in the theorem–and–proof style of learning, though instilling rigor to the course as well as being entertaining to the geniuses and masochists, can make content too heavy and turgid for most. Having a lighter approach is more suitable to the needs of us students and allows us to gain a sufficient grasp of more types of numerical CFD solvers.”\n\n\n\nComments put in the wrong form\nNot about the course but about me:\n\n“crazy amount of interest in field demonstrated by lecturer. Amazing personality.”\n\n\n“He carried some of that young energy with him.”\n\n\n\nImprovements\nWhat could be improved?\n\n“More time for the project and removal of the final exam. I believe this project can reflect the real world even more if we had more time.”\n\nThere were others related to deadlines and number of assignment tasks, which were already implemented.\nThe next slides are answering the question: Is there anything you wish you could have told your former self before starting to help them be prepared to learn these topics?\n\n\nBrushing up on Maths, Physics and Coding\n\n“In hindsight, a piece of advice I would give my past self before starting this course would be to have a solid grasp of basic mathematical manipulations. I believe reinstating such prerequisites would greatly enhance the ability for students to fully thrive in this course.”\n\n\n“Something I wish I could have told my former self before taking this course, was to brush up on general Fortran/C++/Python skills”.\n\n\n\nTime management\n\n“If I could give advice to my former self it would be to start the project early and try to read ahead. Looking forward, I hope to continue to be able to learn more about propulsion and rocket science and am glad to have been exposed to resources like real numerical solvers.”\n\n\n“Something that I would have told my former self before starting is to not fall behind in the early stages of the term as the first couple weeks really builds the foundation for the remaining weeks of the term. Because I fell behind earlier, it was quite difficult for me to catch up during the rest of the term.”\n\n\n“Moreover, I would still ask myself to start assignments earlier instead of leaving until the last minute.”\n\n\n\nPlanning\n\n“If I could tell my former self something before starting, it would be to really focus on understanding the concepts first before jumping into coding the techniques. I think I could have saved a lot of time in the assignment if I spent more time understanding the concepts in more depth instead of rushing into the coding aspect of things.”\n\n\n“In terms of the assignment and coding I would have told my former self to do things properly the first time rather than doing a rough job and having to go back and fix it. Going back and altering early code can lead to really frustrating problems later so I would have told myself to not be lazy in the initial stages because it makes life a lot easier towards the end of the project.”\n\n\n\nPatience\n\n“If I could go back and advise my former self before starting the course, I would emphasise the importance of patience. Rocket science can be quite challenging, and it’s easy to get discouraged when facing complex models and dependences. I would advise myself to just clear my mind then come back when this happens, rather than rack my brain for hours to no avail.”\n\n\n“If I was give some advice to my former self, I would say that coding takes a long time to master and be prepared to put in the time and effort. There were some assignments which I really struggled to understand the concept, resulting in many errors (some of which were just caused by language behaviour I was not aware of) and many hours of debugging.”\n\n\n\nDon’t panic\n\n“If I could go back to tell my former self (when I was struggling to work with the first ever assignment), I would tell myself that do not panic and read the lecture slides carefully. The slides are actually extremely helpful in tackling the assignment questions.”"
+  },
+  {
+    "objectID": "Lecture0/lecture0.slides.html#your-lecturer",
+    "href": "Lecture0/lecture0.slides.html#your-lecturer",
+    "title": "Course Overview",
+    "section": "Your lecturer",
+    "text": "Your lecturer\n\n\n\n\n\nDr. Lorenzo Campoli\n\n\n\n\n\nBachelor in Aerospace Eng. (Sapienza)\nMaster in Space Eng. (Sapienza)\nII Level Master in STS (Sapienza)\nPhD in Theoretical and Applied Mechanics (Sapienza)\nPost-doc at SPBGU, Russia\nAss. Prof. at SPBGU, Russia\nPost-doc at UniMelb\nAss. Prof. at Macquarie University\nSystem Modelling Eng., Gilmour Space"
+  },
+  {
+    "objectID": "Lecture0/lecture0.slides.html#course-objectives",
+    "href": "Lecture0/lecture0.slides.html#course-objectives",
+    "title": "Course Overview",
+    "section": "Course objectives",
+    "text": "Course objectives\nDesign of Rockets and Space Launch Vehicles\nYou will:\n\nunderstand rocket and space launch vehicle systems\nnavigate the typical LV design process\ndefine and evaluate mission requirements and design constraints\ndefine critical project reviews and milestones\ndefine and perform test campaigns\ngain hands-on experience about sub-system modelling using analytical and/or computational tools (e.g. structural analysis, fluid mechanic simulations, fluid-structure interactions, etc.)"
+  },
+  {
+    "objectID": "Lecture0/lecture0.slides.html#lecture-plan",
+    "href": "Lecture0/lecture0.slides.html#lecture-plan",
+    "title": "Course Overview",
+    "section": "Lecture plan",
+    "text": "Lecture plan\n\n\n\nIntroduction to Launch Vehicles (LVs)\nHistory of rocketry & LVs\nMission requirements\nPropulsion\nPerformance estimation\nLV trajectory optimization\nLV structures\n\n\n\nLV ground, transportation & ascent loads\nLaunch environment\nStability & Instabilities\nLV Manufacturing\nLV systems\nTesting\nFailures\nLV Financial analysis"
+  },
+  {
+    "objectID": "Lecture0/lecture0.slides.html#moodle-forum",
+    "href": "Lecture0/lecture0.slides.html#moodle-forum",
+    "title": "Course Overview",
+    "section": "Moodle & Forum",
+    "text": "Moodle & Forum\nThe Moodle page contains:\n\nassignments (individual, group project & exam here)\nlecture recordings\nlink to lecture materials (https://github.com/lkampoli/DoRSLaVe)\nlink to forum\n\nThe forum will be used for announcements and for questions about the course.\nIf it is something confidential, then email me."
+  },
+  {
+    "objectID": "Lecture0/lecture0.slides.html#learning-activities-1",
+    "href": "Lecture0/lecture0.slides.html#learning-activities-1",
+    "title": "Course Overview",
+    "section": "Learning activities",
+    "text": "Learning activities\nThe learning activities of this course involve the following:\n\nLectures:\n\nPreparing for & engaging in each week’s lecture\n\nSelf-study:\n\nPerforming reading of relevant textbook chapters\nDoing exercise questions (conceptual and applied)\n\nLabs:\n\nActively engaging in the lab sessions\n\nAssignments:\n\nGroup project\n\nSeminars:\n\nOne seminar per student presented during the course"
+  },
+  {
+    "objectID": "Lecture0/lecture0.slides.html#lectures-format",
+    "href": "Lecture0/lecture0.slides.html#lectures-format",
+    "title": "Course Overview",
+    "section": "Lecture’s format",
+    "text": "Lecture’s format\n\n\n\nThe line depicts the level of audience attention during a 60-minute lecture and includes periods of high attention and low attention. The blue boxes highlight the proper timing for instruction (prime time) relative to the level of attention, and the gray box (down time) highlights the appropriate placement for engaging activities to activate the audience.\n\n\n\n\n\nProper positioning of audience participation within a lecture."
+  },
+  {
+    "objectID": "Lecture0/lecture0.slides.html#contact-hours",
+    "href": "Lecture0/lecture0.slides.html#contact-hours",
+    "title": "Course Overview",
+    "section": "Contact hours",
+    "text": "Contact hours\nThe lectures are 2 hours each week.\nThe tutorials are a mix of conceptual, theoretical questions, pen and paper exercise, and hands-on coding and simulation sessions.\nMake sure to use this time to ask your tutor for guidance on your project.\nIn later weeks, the tutorials will focus on project help and exam preparation.\nConsultation hours can be online or in-person and scheduled weekly (see Moodle for Zoom link)."
+  },
+  {
+    "objectID": "Lecture0/lecture0.slides.html#exercises",
+    "href": "Lecture0/lecture0.slides.html#exercises",
+    "title": "Course Overview",
+    "section": "Exercises",
+    "text": "Exercises\nOn the website, I have added longer exercises for you to try.\nTry to finish them around the week they are released.\nThese will be useful practice for the final exam."
+  },
+  {
+    "objectID": "Lecture0/lecture0.slides.html#course-grade-breakdown",
+    "href": "Lecture0/lecture0.slides.html#course-grade-breakdown",
+    "title": "Course Overview",
+    "section": "Course Grade Breakdown",
+    "text": "Course Grade Breakdown\n\nIndividual Assignments (30%)\nGroup Project (35%)\nExam (30%)\nSeminar (5%)"
+  },
+  {
+    "objectID": "Lecture0/lecture0.slides.html#assignments",
+    "href": "Lecture0/lecture0.slides.html#assignments",
+    "title": "Course Overview",
+    "section": "Assignments",
+    "text": "Assignments\nThere are 15 assignment tasks, each worth 2% each.\nThe best 10 of 15 being counted, adding up to 30%.\nThese are formative assignments, so are marked.\nThey are due on Friday at noon in each week.\nI’ll release them at least 10 days before the due date."
+  },
+  {
+    "objectID": "Lecture0/lecture0.slides.html#project",
+    "href": "Lecture0/lecture0.slides.html#project",
+    "title": "Course Overview",
+    "section": "Project",
+    "text": "Project\nGroup project over the term. You will:\n\ndesign a space mission program\ndesign a space launch vehicle system\ndefine and evaluate mission requirements and design constraints\nperform preliminary feasibility studies\ndefine critical project reviews and milestones\ndefine and perform test campaigns\nmodel sub-systems using analytical and/or computational tools\nverify compliance\nwrite a discussion of the results"
+  },
+  {
+    "objectID": "Lecture0/lecture0.slides.html#project-components",
+    "href": "Lecture0/lecture0.slides.html#project-components",
+    "title": "Course Overview",
+    "section": "Project components",
+    "text": "Project components\nThe deliverables for the project will include:\n\nReport Part 1 (sub-systems) due at noon on Friday in Week 5 (15%)\nReport Part 2 (system) due at noon on Monday of Week 10 (15%)\nRecorded presentation due at noon on Friday in Week 15 (10%)"
+  },
+  {
+    "objectID": "Lecture0/lecture0.slides.html#due-dates",
+    "href": "Lecture0/lecture0.slides.html#due-dates",
+    "title": "Course Overview",
+    "section": "Due dates",
+    "text": "Due dates\nAll due dates are at noon of the following weeks (“IA” = Individual Assignments, “GP” = Group Project):\n\n\n\nIA1\nIA2 (Fri)\nIA3 (Fri)\nIA4 (Fri)\nIA5 and GP Report I (Fri)\nIA6 (Fri)\nIA7 (Fri)\nIA8 (Fri)\n\n\n\nIA9 (Fri)\nIA10 and GP Report II (Fri)\nIA11 (Fri)\nIA12 (Fri)\nIA13 (Fri)\nIA14 (Fri)\nIA15 and GP Presentation (Fri)"
+  },
+  {
+    "objectID": "Lecture0/lecture0.slides.html#late-policy",
+    "href": "Lecture0/lecture0.slides.html#late-policy",
+    "title": "Course Overview",
+    "section": "Late policy",
+    "text": "Late policy\nIf submitting late, you must apply for special considerations through The University of Sydney central system. If you ask me for an extension, I will refer you to the special considerations system.\nWithout special consideration, late assignments will not be marked. I have noticed that special considerations will not be granted for assignments tasks if you can still get full marks without that task.\nFor the project, the general policy is:\n\nLate submission will incur a penalty of 5% per day or part thereof (including weekends) from the due date and time. An assignment will not be accepted after 5 days (120 hours) of the original deadline unless special consideration has been approved.\n\n\nDura lex, sed lex."
+  },
+  {
+    "objectID": "Lecture0/lecture0.slides.html#final-exam",
+    "href": "Lecture0/lecture0.slides.html#final-exam",
+    "title": "Course Overview",
+    "section": "Final exam",
+    "text": "Final exam\nThe exam will test the concepts presented in the lectures.\nThe exam is a take-home format, and thus will be open book and open notes.\nYou’ll be given 5 exercises randomly selected from the lecture material, and will work individually to complete it."
+  },
+  {
+    "objectID": "Lecture0/lecture0.slides.html#seminars",
+    "href": "Lecture0/lecture0.slides.html#seminars",
+    "title": "Course Overview",
+    "section": "Seminars",
+    "text": "Seminars\nEach student is asked to deliver a seminar presentation of 30-45 minutes to the rest of the students within the timeframe of the course. The topic of the seminar can be proposed by the me or by the student. A calendar will be provided on the Forum page."
+  },
+  {
+    "objectID": "Lecture0/lecture0.slides.html#best-parts-of-the-course-project",
+    "href": "Lecture0/lecture0.slides.html#best-parts-of-the-course-project",
+    "title": "Course Overview",
+    "section": "Best parts of the course? Project",
+    "text": "Best parts of the course? Project\n\n“Having an open ended project allowed me to do something I had interest in.”\n\n\n“The assignment was really good as it gave you ownership of what problem to choose and investigate. The course itself is super interesting and insightful, and really practical since time isn’t wasted on coding but rather the concepts and how to apply these models.”"
+  },
+  {
+    "objectID": "Lecture0/lecture0.slides.html#the-style",
+    "href": "Lecture0/lecture0.slides.html#the-style",
+    "title": "Course Overview",
+    "section": "The style",
+    "text": "The style\n\n“I think the hands–on approach to learning how to code up CFD solver was quite useful. Not going too deeply into the inner workings models (some ways this might happen would be deriving certian formulas and proofs of certian theorems) allowed us to devote more attention to learning how worked in an intuitive way. This perhaps is more helpful for a first timer to the subject area. I think that being too entrenched in the theorem–and–proof style of learning, though instilling rigor to the course as well as being entertaining to the geniuses and masochists, can make content too heavy and turgid for most. Having a lighter approach is more suitable to the needs of us students and allows us to gain a sufficient grasp of more types of numerical CFD solvers.”"
+  },
+  {
+    "objectID": "Lecture0/lecture0.slides.html#comments-put-in-the-wrong-form",
+    "href": "Lecture0/lecture0.slides.html#comments-put-in-the-wrong-form",
+    "title": "Course Overview",
+    "section": "Comments put in the wrong form",
+    "text": "Comments put in the wrong form\nNot about the course but about me:\n\n“crazy amount of interest in field demonstrated by lecturer. Amazing personality.”\n\n\n“He carried some of that young energy with him.”"
+  },
+  {
+    "objectID": "Lecture0/lecture0.slides.html#improvements",
+    "href": "Lecture0/lecture0.slides.html#improvements",
+    "title": "Course Overview",
+    "section": "Improvements",
+    "text": "Improvements\nWhat could be improved?\n\n“More time for the project and removal of the final exam. I believe this project can reflect the real world even more if we had more time.”\n\nThere were others related to deadlines and number of assignment tasks, which were already implemented.\nThe next slides are answering the question: Is there anything you wish you could have told your former self before starting to help them be prepared to learn these topics?"
+  },
+  {
+    "objectID": "Lecture0/lecture0.slides.html#brushing-up-on-maths-physics-and-coding",
+    "href": "Lecture0/lecture0.slides.html#brushing-up-on-maths-physics-and-coding",
+    "title": "Course Overview",
+    "section": "Brushing up on Maths, Physics and Coding",
+    "text": "Brushing up on Maths, Physics and Coding\n\n“In hindsight, a piece of advice I would give my past self before starting this course would be to have a solid grasp of basic mathematical manipulations. I believe reinstating such prerequisites would greatly enhance the ability for students to fully thrive in this course.”\n\n\n“Something I wish I could have told my former self before taking this course, was to brush up on general Fortran/C++/Python skills”."
+  },
+  {
+    "objectID": "Lecture0/lecture0.slides.html#time-management",
+    "href": "Lecture0/lecture0.slides.html#time-management",
+    "title": "Course Overview",
+    "section": "Time management",
+    "text": "Time management\n\n“If I could give advice to my former self it would be to start the project early and try to read ahead. Looking forward, I hope to continue to be able to learn more about propulsion and rocket science and am glad to have been exposed to resources like real numerical solvers.”\n\n\n“Something that I would have told my former self before starting is to not fall behind in the early stages of the term as the first couple weeks really builds the foundation for the remaining weeks of the term. Because I fell behind earlier, it was quite difficult for me to catch up during the rest of the term.”\n\n\n“Moreover, I would still ask myself to start assignments earlier instead of leaving until the last minute.”"
+  },
+  {
+    "objectID": "Lecture0/lecture0.slides.html#planning",
+    "href": "Lecture0/lecture0.slides.html#planning",
+    "title": "Course Overview",
+    "section": "Planning",
+    "text": "Planning\n\n“If I could tell my former self something before starting, it would be to really focus on understanding the concepts first before jumping into coding the techniques. I think I could have saved a lot of time in the assignment if I spent more time understanding the concepts in more depth instead of rushing into the coding aspect of things.”\n\n\n“In terms of the assignment and coding I would have told my former self to do things properly the first time rather than doing a rough job and having to go back and fix it. Going back and altering early code can lead to really frustrating problems later so I would have told myself to not be lazy in the initial stages because it makes life a lot easier towards the end of the project.”"
+  },
+  {
+    "objectID": "Lecture0/lecture0.slides.html#patience",
+    "href": "Lecture0/lecture0.slides.html#patience",
+    "title": "Course Overview",
+    "section": "Patience",
+    "text": "Patience\n\n“If I could go back and advise my former self before starting the course, I would emphasise the importance of patience. Rocket science can be quite challenging, and it’s easy to get discouraged when facing complex models and dependences. I would advise myself to just clear my mind then come back when this happens, rather than rack my brain for hours to no avail.”\n\n\n“If I was give some advice to my former self, I would say that coding takes a long time to master and be prepared to put in the time and effort. There were some assignments which I really struggled to understand the concept, resulting in many errors (some of which were just caused by language behaviour I was not aware of) and many hours of debugging.”"
+  },
+  {
+    "objectID": "Lecture0/lecture0.slides.html#dont-panic",
+    "href": "Lecture0/lecture0.slides.html#dont-panic",
+    "title": "Course Overview",
+    "section": "Don’t panic",
+    "text": "Don’t panic\n\n“If I could go back to tell my former self (when I was struggling to work with the first ever assignment), I would tell myself that do not panic and read the lecture slides carefully. The slides are actually extremely helpful in tackling the assignment questions.”"
+  },
+  {
+    "objectID": "Lecture1/lecture1.slides.html#the-typical-launch-vehicle-design-process",
+    "href": "Lecture1/lecture1.slides.html#the-typical-launch-vehicle-design-process",
+    "title": "Lecture 1",
+    "section": "The Typical Launch Vehicle Design Process",
+    "text": "The Typical Launch Vehicle Design Process"
+  },
+  {
+    "objectID": "Lecture1/lecture1.html",
+    "href": "Lecture1/lecture1.html",
+    "title": "Lecture 1",
+    "section": "",
+    "text": "The Typical Launch Vehicle Design Process"
+  },
+  {
+    "objectID": "Lecture4/Ex/review-questions.html",
+    "href": "Lecture4/Ex/review-questions.html",
+    "title": "Lecture 4 – Review questions",
+    "section": "",
+    "text": "4.1 What is meant by the outflow limiting velocity of a nozzle?\n\n\n4.2 What does the limiting velocity depend on?\n\n\n4.3 What is the relationship between outflow velocity and limiting velocity?\n\n\n4.4 Why are supersonic nozzles always considered in rocket engines?\n\n\n4.5 What is the relationship between mass flow rate and pressure in the combustion chamber?\n\n\n4.6 Write the expression for the mass flow rate in an ideal supersonic nozzle (i.e., isentropic and saturated) as a function of the characteristics of the propellant and the parameters in the combustion chamber.\n\n\n4.7 What is the definition of thrust coefficient?\n\n\n4.8 What is the definition of characteristic velocity?\n\n\n4.9 Write the expression for specific impulse as a function of characteristic velocity and thrust coefficient.\n\n\n4.10 On what factors does the thrust coefficient depend?\n\n\n4.11 What is the effect of an increase in combustion chamber temperature on specific impulse? What is the effect of an increase in combustion chamber pressure? And what about an increase in the average molecular weight of the mixture?\n\n\n4.12 What is the effect of an increase in combustion chamber temperature on thrust? What is the effect of an increase in combustion chamber pressure? And what about an increase in the average molecular weight of the mixture?\n\n\n4.13 What is the limitation of conical nozzles? When can they prove to be advantageous?\n\n\n4.14 What is the expansion ratio that maximizes the thrust coefficient of a rocket engine operating in the atmosphere?\n\n\n4.15 On what basis is the expansion ratio of a rocket nozzle operating in a vacuum chosen?\n\n\n4.16 Why was hydrogen considered as the propellant fluid for nuclear thermal rocket engines?\n\n\n4.17 Which of the performance parameters (F, I_{sp}, C_F, c^*) depend on the pressure in the combustion chamber?\n\n\n4.18 Which of the performance parameters (F, I_{sp}, C_F, c^*) depend on the ambient pressure?\n\n\n4.19 Which of the performance parameters (F, I_{sp}, C_F, c^*) depend on the temperature in the combustion chamber?\n\n\n4.20 Which of the performance parameters (F, I_{sp}, C_F, c^*) depend on the average molecular weight of the propellant fluid?\n\n\n4.21 Which of the performance parameters (F, I_{sp}, C_F, c^*) depend on the ratio of specific heats \\gamma?\n\n\n4.22 Which of the performance parameters (F, I_{sp}, C_F, c^*) depend on the area ratio \\frac{A_2}{A_1}?"
+  },
+  {
+    "objectID": "Lecture4/Lab/burnrate.html",
+    "href": "Lecture4/Lab/burnrate.html",
+    "title": "Lecture 4 – Propellant Burn Rate Estimator",
+    "section": "",
+    "text": "This is an MS Excel application that estimates the burn rate coefficients (a,n) of a rocket propellant based on static test chamber pressure measurements. Requires the pressure vs time data from a pair of static test firings, as well as basic propellant properties. This method is intended to provide a simple means of deriving the fundamental burn rate parameters essential for the design of rocket motors utilizing the given propellant. For a full description of the method, visit my Simplified Method to Estimate Burn Rate Parameters web page. Written by Richard Nakka. \nBurnRate"
+  },
+  {
+    "objectID": "Lecture4/Lab/openrocket.html",
+    "href": "Lecture4/Lab/openrocket.html",
+    "title": "Lecture 4 – Rocket Design and Performance in OpenRocket",
+    "section": "",
+    "text": "OpenRocket is a free, fully featured model rocket simulator that allows you to design and simulate your rockets before actually building and flying them. The main features include:\n\nSix-degree-of-freedom flight simulation\nAutomatic design optimization\nRealtime simulated altitude, velocity and acceleration display\nStaging and clustering support\nCross-platform (Java-based)\n\nOpenRocket is an Open Source project licensed under the GNU GPL. This means that the software is free to use for whatever purposes, and the source code is also available for studying and extending. Originally written by Sampo Niskanen. \nOpenRocket"
+  },
+  {
+    "objectID": "Lecture4/Lab/rocstar.html",
+    "href": "Lecture4/Lab/rocstar.html",
+    "title": "Lecture 4 – Rocstar MultiPhysics simulation suite",
+    "section": "",
+    "text": "Rocstar is a multiphysics simulation application designed for coupled multiphysics simulations involving fluid-structure interaction (FSI) across moving, reacting interfaces. Rocstar couples multiple domain-specific simulation packages and disparately discretized domains and provides several simulation-supporting services including conservative and accurate data transfer, surface propagation, and parallel I/O. Rocstar is MPI-parallel. Rocstar was originally developed at the University of Illinois Center for Simulation of Advanced Rockets (CSAR) under Department of Energy ASCI program funding. \nRocstar"
+  },
+  {
+    "objectID": "Lecture4/lecture4.slides.html#outline-of-the-lecture",
+    "href": "Lecture4/lecture4.slides.html#outline-of-the-lecture",
+    "title": "Lecture 4",
+    "section": "Outline of the lecture",
+    "text": "Outline of the lecture\n\n\n\n\n\n\nIntroduction\nCompressible flow\nSpace mission requirements\nPerformance indices\nLiquid propellant engines\nSolid rocket motors\nHybrid motors\n\n\n\nElectric thrusters\nNuclear propulsion\nSecondary propulsion\nStaging\nCurrent challenges\nPossible future developments"
+  },
+  {
+    "objectID": "Lecture4/lecture4.slides.html#goals-of-space-propulsion",
+    "href": "Lecture4/lecture4.slides.html#goals-of-space-propulsion",
+    "title": "Lecture 4",
+    "section": "Goals of space propulsion",
+    "text": "Goals of space propulsion\npropellere (latin) = “push forward”\n\n\n\nIn order to:\n\nattain very high speed\novercome gravity/aerodynamic forces\nmaneuvers\nattitude adjustment\ndecelerate (re-entry, soft landing)\n\nThrust generated as reaction to expulsion of a propellant fluid\nKey requirement: lightweight (both engine and propellants) and cost"
+  },
+  {
+    "objectID": "Lecture4/lecture4.slides.html#thrust-generation",
+    "href": "Lecture4/lecture4.slides.html#thrust-generation",
+    "title": "Lecture 4",
+    "section": "Thrust generation",
+    "text": "Thrust generation\n\nReaction to ejection of propulsive fluid momentum:\n\nrocket engine: propellants stored on board \\rightarrow products\n\n\n\n\n\n\nEngine\n\n\nThrust (kN) SL/Vacuum\n\n\nAdopted by\n\n\nPrice (M$)\n\n\nYear\n\n\n\n\nVulcain 2\n\n\n960 / 1359\n\n\nAriane 5\n\n\n12\n\n\n2017\n\n\n\n\nRS–25\n\n\n1860 / 2279\n\n\nSpace Shuttle\n\n\n50\n\n\n2011\n\n\n\n\nRS–68\n\n\n2950 / 3137\n\n\nDelta IV\n\n\n15\n\n\n2006\n\n\n\n\nRD–180\n\n\n3830 / 4150\n\n\nAtlas V\n\n\n23.5\n\n\n2017\n\n\n\n\nSearch for simplicity \\rightarrow contain part count"
+  },
+  {
+    "objectID": "Lecture4/lecture4.slides.html#solid-rocket-motors-srms",
+    "href": "Lecture4/lecture4.slides.html#solid-rocket-motors-srms",
+    "title": "Lecture 4",
+    "section": "Solid Rocket Motors (SRMs)",
+    "text": "Solid Rocket Motors (SRMs)\n\n\n\n\n\nBasic arrangement of a solid-propellant rocket motor.\n\n\n\n\nPros/cons:\n\nsimple\nstorable\neasily scalable design\nlower performance (u_{eff})\nnon re–ignitable, non throttleable\n\nMain components:\n\ncombustion chamber\npropellant grain\nigniter\nnozzle\n\nUses: boosters, upper stages, tactical missiles, gas generators"
+  },
+  {
+    "objectID": "Lecture4/lecture4.slides.html#engineering-goal",
+    "href": "Lecture4/lecture4.slides.html#engineering-goal",
+    "title": "Lecture 4",
+    "section": "Engineering goal",
+    "text": "Engineering goal\n\nattain given target at minimum cost\ncosts of a space mission:\n\nlauncher, payload, launch operations, monitoring, insurance, propellants\n\n\n\n\nPropulsion system dominating: 44% to 59%; &gt; 70% including tanks"
+  },
+  {
+    "objectID": "Lecture4/lecture4.slides.html#space-missions-requirements-v",
+    "href": "Lecture4/lecture4.slides.html#space-missions-requirements-v",
+    "title": "Lecture 4",
+    "section": "Space missions requirements (∆v)",
+    "text": "Space missions requirements (∆v)\n\nPropellant mass &gt; 80% → tight coupling between design of launcher and propulsion system\nHigh cost orbit injection:\n\nLEO (low earth orbit)\nGEO (geostationary equatorial orbit)\ncost GEO \\simeq cost LEO x (5÷10)\n\n\n\n\n\n\nMission\n\n\nVelocity (m/s)\n\n\n\n\nIntercontinental Ballistic Missiles (ICBM)\n\n\n8000\n\n\n\n\nLow Earth Orbit (LEO)\n\n\n9000\n\n\n\n\nEscape from Earth’s gravity; Moon impact\n\n\n12500\n\n\n\n\nGeostationary Equatorial Orbit (GEO)\n\n\n13000\n\n\n\n\nSoft landing on the Moon\n\n\n15000\n\n\n\n\nRound trip to the Moon\n\n\n18000\n\n\n\n\nRound trip to Venus/Mars\n\n\n18000 ÷ 27000\n\n\n\n\nCompensation of orbital perturbations\n\n\n50 (per year)"
+  },
+  {
+    "objectID": "Lecture4/lecture4.slides.html#why-using-rockets",
+    "href": "Lecture4/lecture4.slides.html#why-using-rockets",
+    "title": "Lecture 4",
+    "section": "Why using rockets?",
+    "text": "Why using rockets?\nSpace missions require:\n\nvery high speed\noperating outside the atmosphere\n\nJet engine: f \\simeq \\dot{m} (u_e - v)\nRocket: f \\simeq \\dot{m} u_e\n\nThrust jet engine: limited by u_e - v\nRocket thrust: independent of v \\rightarrow any v can be attained (in principle)\n\nwhere u_e is the jet exit velocity and v is the aircraft/rocket speed"
+  },
+  {
+    "objectID": "Lecture4/lecture4.slides.html#lectures-objective",
+    "href": "Lecture4/lecture4.slides.html#lectures-objective",
+    "title": "Lecture 4",
+    "section": "Lecture’s objective",
+    "text": "Lecture’s objective\nWe want to understand how the nozzle design of a thermo-chemical solid rocket motor influences the thrust and the specific impulse"
+  },
+  {
+    "objectID": "Lecture4/lecture4.slides.html#derivation-of-the-thrust-of-an-endoreactor",
+    "href": "Lecture4/lecture4.slides.html#derivation-of-the-thrust-of-an-endoreactor",
+    "title": "Lecture 4",
+    "section": "Derivation of the thrust of an endoreactor",
+    "text": "Derivation of the thrust of an endoreactor\n\nVolume of control for the derivation of the thrust expression for an endoreactor."
+  },
+  {
+    "objectID": "Lecture4/lecture4.slides.html#ideal-nozzle",
+    "href": "Lecture4/lecture4.slides.html#ideal-nozzle",
+    "title": "Lecture 4",
+    "section": "Ideal Nozzle",
+    "text": "Ideal Nozzle\nHypotheses:\n\n\n\ncombustion details ignored\nthermally and calorically perfect\nnon-reactive, homogeneous gas\nsteady flow\n1D or quasi-1D model\nnegligible nozzle inlet flow velocity\nconditions are uniform in space and time\nisentropic flow (unless shocks)\ninviscid and adiabatic flow\n\n\n\n\nA quasi 1D duct."
+  },
+  {
+    "objectID": "Lecture4/lecture4.html",
+    "href": "Lecture4/lecture4.html",
+    "title": "Lecture 4",
+    "section": "",
+    "text": "Introduction\nCompressible flow\nSpace mission requirements\nPerformance indices\nLiquid propellant engines\nSolid rocket motors\nHybrid motors\n\n\n\nElectric thrusters\nNuclear propulsion\nSecondary propulsion\nStaging\nCurrent challenges\nPossible future developments"
+  },
+  {
+    "objectID": "Lecture4/lecture4.html#footnotes",
+    "href": "Lecture4/lecture4.html#footnotes",
+    "title": "Lecture 4",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nd^2F/dA_2^2 &lt; 0, being: dp_e/dA_e &lt; 0 and dp_a/dA_e = 0.↩︎"
+  }
+]

@@ -454,15 +454,15 @@ plt.show()
 
 Expression of the **thrust** of an (adapted) nozzle:
 
-\begin{equation}
+$$
 F = \Gamma p_c A_t \sqrt{\frac{2\gamma}{\gamma-1} \left[1 - \left(\frac{p_e}{p_c}\right)^\frac{\gamma-1}{\gamma}\right]}
-\end{equation}
+$$
 
 Then, we can define the **thrust coefficient**:
 
-\begin{equation}
+$$
 C_F = \frac{F}{p_c A_t} = \Gamma \sqrt{\frac{2\gamma}{\gamma-1} \left[1 - \left(\frac{p_e}{p_c}\right)^\frac{\gamma-1}{\gamma}\right]} + \frac{A_e}{A_t} \left( \frac{p_e}{p_c} - \frac{p_a}{p_c} \right)
-\end{equation}
+$$
 
 The thrust $F = C_F p_c A_t$ is:
 
