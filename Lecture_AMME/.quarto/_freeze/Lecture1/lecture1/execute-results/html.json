@@ -1,0 +1,11 @@
+{
+  "hash": "95d0e6022166e9e247670624c716e565",
+  "result": {
+    "markdown": "---\ntitle: Lecture 1\nsubtitle: Introduction to Launch Vehicles (LVs)\n---\n\n<!--\n\n\n\n# The Typical Launch Vehicle Design Process {data-visibility=\"uncounted\"}\n-->\n\n## The Typical Launch Vehicle Design Process\n\n<!--\n## Space launch system\n\n![The major elements of a launch vehicle design process.](figs/fig1.9.png)\n\n## Spacecraft system\n\n![The design and operation of many spacecraft systems, shown in blue shading, depend heavily on the launch vehicle.](figs/fig1.10.png)\n## Typical Launch Vehicle Design Process\n-->\n\n<!--The typical LV design process begins with the development of mission requirements and design constraints.\n![Launch vehicle design process.](figs/fig1.11.png)\n-->\n\n<img src=\"figs/fig1.11.png\" alt=\"The typical LV design process begins with the development of mission requirements and design constraints.\" width=\"80%\" />\n\n",
+    "supporting": [
+      "lecture1_files/figure-revealjs"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

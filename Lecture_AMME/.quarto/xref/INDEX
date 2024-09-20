@@ -1,0 +1,127 @@
+{
+  "index.qmd": {
+    "index.html": "9544cdec",
+    "index.slides.html": "fe9dadd9"
+  },
+  "Artificial-Intelligence/course-overview.qmd": {
+    "course-overview.html": "18a60f4d",
+    "course-overview.slides.html": "2af91dd1"
+  },
+  "Tabular-Data/project.qmd": {
+    "project.html": "7c4c80a8",
+    "project.slides.html": "38bad8c1"
+  },
+  "Advanced-Tabular-Data/entity-embedding.qmd": {
+    "entity-embedding.html": "2afaf714",
+    "entity-embedding.slides.html": "12ffb296"
+  },
+  "Advanced-Tabular-Data/optimisation.qmd": {
+    "optimisation.html": "9c7d18f6",
+    "optimisation.slides.html": "ceaaf64c"
+  },
+  "Advanced-Topics/interpretability.qmd": {
+    "interpretability.html": "74d42d95",
+    "interpretability.slides.html": "23c53c88"
+  },
+  "Artificial-Intelligence/artificial-intelligence.qmd": {
+    "artificial-intelligence.html": "52675827",
+    "artificial-intelligence.slides.html": "543a3fdf"
+  },
+  "Tabular-Data/categorical-variables.qmd": {
+    "categorical-variables.html": "ba2d9390",
+    "categorical-variables.slides.html": "037c7bf4"
+  },
+  "Tabular-Data/classification.qmd": {
+    "classification.html": "ec776e7c",
+    "classification.slides.html": "d373e412"
+  },
+  "Tabular-Data/deep-learning-keras.qmd": {
+    "deep-learning-keras.html": "c5c41549",
+    "deep-learning-keras.slides.html": "4ba55e1d"
+  },
+  "Lecture1/latex-lab.qmd": {
+    "latex-lab.html": "653e7d3d",
+    "latex-lab.tex": "882e5021"
+  },
+  "Lecture1/course-overview.qmd": {
+    "course-overview.html": "49c12091",
+    "course-overview.slides.html": "ca98160e"
+  },
+  "Lecture0/course-overview.qmd": {
+    "course-overview.html": "4b6ce296",
+    "course-overview.slides.html": "101377a4"
+  },
+  "Lecture2/gans.qmd": {
+    "gans.html": "efce7781",
+    "gans.slides.html": "94803585"
+  },
+  "Lecture2/artificial-intelligence.qmd": {
+    "artificial-intelligence.html": "c1bd4825",
+    "artificial-intelligence.slides.html": "b53226be"
+  },
+  "Lecture2/course-overview.qmd": {
+    "course-overview.html": "9ae09943",
+    "course-overview.slides.html": "2e1ea7db"
+  },
+  "Lecture2/lecture2.qmd": {
+    "lecture2.html": "35f04fba",
+    "lecture2.slides.html": "1943bc4e"
+  },
+  "Lecture0/lecture0.qmd": {
+    "lecture0.html": "e2851ebd",
+    "lecture0.slides.html": "6a5f83eb"
+  },
+  "Lecture1/lecture1.qmd": {
+    "lecture1.html": "c3cd1d68",
+    "lecture1.slides.html": "e860f70a"
+  },
+  "Lecture3/lecture3.qmd": {
+    "lecture3.html": "9bb97298",
+    "lecture3.slides.html": "7e177d12"
+  },
+  "Lecture4/lecture4.qmd": {
+    "lecture4.html": "fb741cca",
+    "lecture4.slides.html": "53cd6258",
+    "lecture4.tex": "f76618de"
+  },
+  "Lecture4/ex/ex4.qmd": {
+    "ex4.html": "09878100",
+    "ex4.slides.html": "1811df32"
+  },
+  "Lecture4/Ex/review-questions.qmd": {
+    "review-questions.html": "bed804c3",
+    "review-questions.slides.html": "2098fcd3"
+  },
+  "Lecture4/Ex/worked-exercises.qmd": {
+    "worked-exercises.html": "160b5a20",
+    "worked-exercises.slides.html": "b1fe2428"
+  },
+  "Lecture4/Ex/proposed-exercises.qmd": {
+    "proposed-exercises.html": "ff6ca8dc",
+    "proposed-exercises.slides.html": "e08556e1"
+  },
+  "Lecture4/Lab/meteor.qmd": {
+    "meteor.html": "54cedc7c",
+    "meteor.slides.html": "b15b1781"
+  },
+  "Lecture4/Lab/openrocket.qmd": {
+    "openrocket.html": "75c8c656",
+    "openrocket.slides.html": "bcac5920"
+  },
+  "Lecture4/Lab/srm.qmd": {
+    "srm.html": "0ae3c553",
+    "srm.slides.html": "a0b277f8"
+  },
+  "Lecture4/Lab/burnrate.qmd": {
+    "burnrate.html": "36f59a10",
+    "burnrate.slides.html": "4c49405b"
+  },
+  "Lecture4/Lab/pseudofinocyl.qmd": {
+    "pseudofinocyl.html": "6a65852e",
+    "pseudofinocyl.slides.html": "8b1c9f9f"
+  },
+  "Lecture4/Lab/rocstar.qmd": {
+    "rocstar.html": "481c04a0",
+    "rocstar.slides.html": "8130ac7a"
+  }
+}

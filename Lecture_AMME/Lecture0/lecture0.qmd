@@ -20,7 +20,6 @@ title: Course Overview
 - Ass. Prof. at SPBGU, Russia
 - Post-doc at UniMelb
 - Ass. Prof. at Macquarie University
-- System Modelling Eng., Gilmour Space
 
 :::
 :::

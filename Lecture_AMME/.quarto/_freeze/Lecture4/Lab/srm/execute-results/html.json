@@ -1,0 +1,20 @@
+{
+  "hash": "9f23b3cf256747ae0a48dc10e36ba540",
+  "result": {
+    "markdown": "---\ntitle: Lecture 4 -- Solid rocket motor design\n---\n\n\n\n<sub>SRM is an MS EXCEL spreadsheet that takes user-inputted motor and grain\n   geometry data and computes Kn over the duration of the motor burn, generates\n   a pressure-time curve, a thrust-time curve, as well as performance\n   parameters such as total impulse and delivered specific impulse. Motor\n   performance data is also summarized for easy input into a trajectory\n   simulation software, such as SOAR. Although primarily intended for designing\n   motors using KN-Dextrose or KN-Sorbitol propellant, other propellants may be\n   specified with user inputted propellant properties. Solely for cylindrical\n   grain configurations, such as BATES. Written by R.A. Nakka.\n</sub>\n\n[SRM](https://www.nakka-rocketry.net/softw.html#SRM)\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(readxl)\n\nsrm = read_excel('./SRM_2023.xls')\n \nsrm\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n# A tibble: 83 × 4\n   `SRM 2023.XLS`                          ...2  `Written by:` `Richard A.Nakka`\n   <chr>                                   <lgl> <chr>         <chr>            \n 1 Solid Rocket Motor Performance          NA    Version:      2023 (for free d…\n 2 <NA>                                    NA    Date:         45008            \n 3 <NA>                                    NA    <NA>          <NA>             \n 4 Instructions for use: Enter required d… NA    <NA>          <NA>             \n 5 Note that some data cells have drop-do… NA    <NA>          <NA>             \n 6 Then click on the Solve buttons (1-3)   NA    <NA>          <NA>             \n 7 <NA>                                    NA    <NA>          <NA>             \n 8 <NA>                                    NA    <NA>          <NA>             \n 9 Introduction                            NA    <NA>          <NA>             \n10 <NA>                                    NA    <NA>          <NA>             \n# ℹ 73 more rows\n```\n:::\n:::\n",
+    "supporting": [
+      "srm_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-after-body": [
+        "\n<script>\n  // htmlwidgets need to know to resize themselves when slides are shown/hidden.\n  // Fire the \"slideenter\" event (handled by htmlwidgets.js) when the current\n  // slide changes (different for each slide format).\n  (function () {\n    // dispatch for htmlwidgets\n    function fireSlideEnter() {\n      const event = window.document.createEvent(\"Event\");\n      event.initEvent(\"slideenter\", true, true);\n      window.document.dispatchEvent(event);\n    }\n\n    function fireSlideChanged(previousSlide, currentSlide) {\n      fireSlideEnter();\n\n      // dispatch for shiny\n      if (window.jQuery) {\n        if (previousSlide) {\n          window.jQuery(previousSlide).trigger(\"hidden\");\n        }\n        if (currentSlide) {\n          window.jQuery(currentSlide).trigger(\"shown\");\n        }\n      }\n    }\n\n    // hookup for slidy\n    if (window.w3c_slidy) {\n      window.w3c_slidy.add_observer(function (slide_num) {\n        // slide_num starts at position 1\n        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);\n      });\n    }\n\n  })();\n</script>\n\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
